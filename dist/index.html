@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="逐条回放狼人杀中的公开支持、怀疑与投票，点击关系查看原话。">
+  <title>狼人杀 · 关系回放</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='12' fill='none' stroke='%233850aa' stroke-width='3'/%3E%3Ccircle cx='16' cy='4' r='4' fill='%233850aa'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<svg class="icon-library" aria-hidden="true"><defs>
+ <symbol id="i-play" viewBox="0 0 24 24"><path d="m9 5 11 7-11 7z" fill="currentColor" stroke="none"/></symbol>
+ <symbol id="i-pause" viewBox="0 0 24 24"><path d="M7 5v14M17 5v14" stroke="currentColor" stroke-width="4"/></symbol>
+ <symbol id="i-prev" viewBox="0 0 24 24"><path d="m15 6-6 6 6 6M5 5v14"/></symbol>
+ <symbol id="i-next" viewBox="0 0 24 24"><path d="m9 6 6 6-6 6M19 5v14"/></symbol>
+ <symbol id="i-reset" viewBox="0 0 24 24"><path d="M4 9a8 8 0 1 1 0 7M4 3v6h6"/></symbol>
+ <symbol id="i-close" viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18"/></symbol>
+ <symbol id="i-download" viewBox="0 0 24 24"><path d="M12 3v12m-5-5 5 5 5-5M4 15v5h16v-5"/></symbol>
+ <symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 10v7m0-11v1"/></symbol>
+</defs></svg>
+<header class="site-header">
+ <div class="brand"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span><div><h1>狼人杀<span>关系回放</span></h1><p>公开立场如何形成，又如何改变</p></div></div>
+ <div class="header-meta"><span class="game-tag">H1</span><span>12 位玩家 · 3 个白天</span><button id="method-button" class="quiet-button"><svg class="icon"><use href="#i-info"/></svg>阅读图示</button></div>
+</header>
+<main>
+ <div class="workspace">
+  <section class="graph-section" aria-label="玩家关系网络">
+   <div class="graph-heading"><div><div class="day-title"><h2 id="day-heading">第 1 天</h2><span id="phase-label" class="phase-label">投票前快照</span></div><p id="graph-caption">当天最后一次明确立场，箭头指向被评价者。</p></div><label class="reveal-control"><input type="checkbox" id="reveal-roles"><span>赛后视角</span></label></div>
+   <div class="graph-toolbar">
+    <fieldset class="layer-controls"><legend class="sr-only">关系图层</legend>
+     <label class="layer-control support"><input id="layer-support" type="checkbox" checked aria-label="显示支持关系"><span class="line-key"></span><span>支持</span><b id="support-count">0</b></label>
+     <label class="layer-control suspect"><input id="layer-suspect" type="checkbox" checked aria-label="显示怀疑关系"><span class="line-key"></span><span>怀疑</span><b id="suspect-count">0</b></label>
+     <label class="layer-control vote"><input id="layer-vote" type="checkbox" checked aria-label="显示投票关系"><span class="line-key"></span><span id="vote-label">投票</span><b id="vote-count">0</b></label>
+    </fieldset>
+    <div class="canvas-actions"><button id="reset-view" class="icon-button" aria-label="重置图形视图" title="重置图形视图"><svg class="icon"><use href="#i-reset"/></svg></button><button id="export-svg" class="icon-button" aria-label="下载当前网络图" title="下载 SVG 网络图"><svg class="icon"><use href="#i-download"/></svg></button></div>
+   </div>
+   <div class="graph-wrap"><svg id="network" viewBox="0 0 860 740" role="group" aria-label="12位玩家的有向关系网络，节点可用键盘选择"><title>狼人杀关系网络</title><desc>玩家按座位号顺时针排列。选择玩家可以聚焦关系，选择连线可以查看原话。</desc></svg><div id="graph-empty" class="graph-empty" hidden>当前没有可见连线<span>打开关系图层，或拖动时间线查看其他发言。</span></div></div>
+   <div class="graph-footer"><span id="focus-summary">点击玩家聚焦，点击连线查看原话</span><button id="clear-focus" class="text-button" hidden>显示所有玩家</button><span class="graph-hint">滚轮缩放 · 拖动平移</span></div>
+  </section>
+  <aside class="inspector" aria-label="发言与关系证据">
+   <div class="inspector-heading"><h2 id="inspector-title">当前发言</h2><button id="clear-edge" class="icon-button" aria-label="返回当前发言" hidden><svg class="icon"><use href="#i-close"/></svg></button></div>
+   <div id="inspector-content" class="inspector-content"></div>
+  </aside>
+ </div>
+ <section class="timeline-section" aria-label="对局回放时间线">
+  <div class="timeline-top"><div class="timeline-label"><h2>对局时间线</h2><span id="frame-position"></span></div><div class="snapshot-controls"><span>投票前快照</span><button class="day-button" data-day="1">第 1 天</button><button class="day-button" data-day="2">第 2 天</button><button class="day-button" data-day="3">第 3 天</button></div></div>
+  <div class="timeline-track"><svg id="activity" viewBox="0 0 1200 54" preserveAspectRatio="none" aria-hidden="true"></svg><input id="timeline" type="range" min="0" max="1" value="0" step="1" aria-label="逐条发言时间线"></div>
+  <div class="timeline-bottom"><div class="transport"><button id="previous" class="icon-button" aria-label="上一段发言"><svg class="icon"><use href="#i-prev"/></svg></button><button id="play" class="play-button"><svg class="icon"><use href="#i-play"/></svg><span>播放</span></button><button id="next" class="icon-button" aria-label="下一段发言"><svg class="icon"><use href="#i-next"/></svg></button><div class="time-readout"><strong id="current-time">00:00</strong><span>/ 53:40</span></div><label class="speed-label"><span class="sr-only">播放速度</span><select id="speed" aria-label="播放速度"><option value="0.5">0.5×</option><option value="1" selected>1×</option><option value="2">2×</option><option value="4">4×</option></select></label></div><div class="timeline-right"><button id="restart" class="text-button">从头播放</button><span class="keyboard-hint">空格 播放 / 暂停 · ← → 逐段</span></div></div>
+ </section>
+ <footer class="page-footer"><span>AI 辅助首轮编码，保留原文以供核查。</span><button id="download-edges" class="text-button">导出当前边表</button><span>跨白天重置立场；访谈、回放、条件推演不计为明确边。</span></footer>
+</main>
+<dialog id="method-dialog" aria-labelledby="method-title"><div class="dialog-heading"><h2 id="method-title">怎样阅读这张图</h2><button id="close-method" class="icon-button" aria-label="关闭说明"><svg class="icon"><use href="#i-close"/></svg></button></div><div class="method-content">
+ <p><strong>圆周是固定座位。</strong>箭头从发言者指向评价对象。绿实线表示认可好人身份，红虚线表示怀疑身份，蓝点线表示实际投票。</p>
+ <p><strong>时间线按发言段落推进。</strong>同一天内，每对玩家保留最后一次明确立场；明确未定会移除该对连线。切换白天时，不自动继承前一天关系。</p>
+ <p><strong>投票单独成层。</strong>第1天先展示选警票，发生放逐票后替换为放逐票。第2天11号漏报票不补齐；最后8号疑似自投不绘制自环。</p>
+ <p><strong>出局后仍保留座位。</strong>当日图保留已公开形成的立场和票型，后续白天不把出局者计入当日关系。遗言可阅读，但不改写此前投票前快照。</p>
+ <p><strong>赛后视角显示身份元数据。</strong>已确认、推定、未知分别标注；该开关不会改变公开关系。原发言中的身份声称仍按原文保留。</p>
+ <p>来源：本局逐字稿及同目录社会网络分析方案。所有关系均是AI首轮编码，部分说话人映射和票型仍待人工核查。</p>
+ <a href="https://d3js.org/getting-started" target="_blank" rel="noreferrer">使用 D3.js 构建</a>
+ </div></dialog>
+<div id="toast" class="toast" role="status"></div>
+<script src="vendor/d3.v7.min.js"></script><script src="data.js"></script><script src="engine.js"></script><script src="app.js"></script>
+</body>
+</html>

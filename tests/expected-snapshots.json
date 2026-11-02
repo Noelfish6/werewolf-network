@@ -1,0 +1,942 @@
+[
+  {
+    "game_id": "H1",
+    "day": 1,
+    "Source": "H1-P01",
+    "Target": "H1-P02",
+    "Type": "Directed",
+    "Weight": 1,
+    "Layer": "suspect",
+    "last_event_id": "H1-R0028"
+  },
+  {
+    "game_id": "H1",
+    "day": 1,
+    "Source": "H1-P01",
+    "Target": "H1-P05",
+    "Type": "Directed",
+    "Weight": 1,
+    "Layer": "suspect",
+    "last_event_id": "H1-R0029"
+  },
+  {
+    "game_id": "H1",
+    "day": 1,
+    "Source": "H1-P01",
+    "Target": "H1-P06",
+    "Type": "Directed",
+    "Weight": 1,
+    "Layer": "suspect",
+    "last_event_id": "H1-R0030"
+  },
+  {
+    "game_id": "H1",
+    "day": 1,
+    "Source": "H1-P01",
+    "Target": "H1-P08",
+    "Type": "Directed",
+    "Weight": 1,
+    "Layer": "support",
+    "last_event_id": "H1-R0002"
+  },
+  {
+    "game_id": "H1",
+    "day": 1,
+    "Source": "H1-P01",
+    "Target": "H1-P11",
+    "Type": "Directed",
+    "Weight": 1,
+    "Layer": "suspect",
+    "last_event_id": "H1-R0031"
+  },
+  {
+    "game_id": "H1",
+    "day": 1,
+    "Source": "H1-P02",
+    "Target": "H1-P01",
+    "Type": "Directed",
+    "Weight": 1,
+    "Layer": "suspect",
+    "last_event_id": "H1-R0035"
+  },
+  {
+    "game_id": "H1",
+    "day": 1,
+    "Source": "H1-P02",
+    "Target": "H1-P04",
+    "Type": "Directed",
+    "Weight": 1,
+    "Layer": "suspect",
+    "last_event_id": "H1-R0036"
+  },
+  {
+    "game_id": "H1",
+    "day": 1,
+    "Source": "H1-P02",
+    "Target": "H1-P05",
+    "Type": "Directed",
+    "Weight": 1,
+    "Layer": "support",
+    "last_event_id": "H1-R0038"
+  },
+  {
+    "game_id": "H1",
+    "day": 1,
+    "Source": "H1-P02",
+    "Target": "H1-P06",
+    "Type": "Directed",
+    "Weight": 1,
+    "Layer": "support",
+    "last_event_id": "H1-R0039"
+  },
+  {
+    "game_id": "H1",
+    "day": 1,
+    "Source": "H1-P02",
+    "Target": "H1-P08",
+    "Type": "Directed",
+    "Weight": 1,
+    "Layer": "suspect",
+    "last_event_id": "H1-R0034"
+  },
+  {
+    "game_id": "H1",
+    "day": 1,
+    "Source": "H1-P02",
+    "Target": "H1-P11",
+    "Type": "Directed",
+    "Weight": 1,
+    "Layer": "support",
+    "last_event_id": "H1-R0040"
+  },
+  {
+    "game_id": "H1",
+    "day": 1,
+    "Source": "H1-P03",
+    "Target": "H1-P09",
+    "Type": "Directed",
+    "Weight": 1,
+    "Layer": "suspect",
+    "last_event_id": "H1-R0045"
+  },
+  {
+    "game_id": "H1",
+    "day": 1,
+    "Source": "H1-P03",
+    "Target": "H1-P11",
+    "Type": "Directed",
+    "Weight": 1,
+    "Layer": "support",
+    "last_event_id": "H1-R0044"
+  },
+  {
+    "game_id": "H1",
+    "day": 1,
+    "Source": "H1-P04",
+    "Target": "H1-P01",
+    "Type": "Directed",
+    "Weight": 1,
+    "Layer": "suspect",
+    "last_event_id": "H1-R0046"
+  },
+  {
+    "game_id": "H1",
+    "day": 1,
+    "Source": "H1-P04",
+    "Target": "H1-P08",
+    "Type": "Directed",
+    "Weight": 1,
+    "Layer": "suspect",
+    "last_event_id": "H1-R0047"
+  },
+  {
+    "game_id": "H1",
+    "day": 1,
+    "Source": "H1-P05",
+    "Target": "H1-P01",
+    "Type": "Directed",
+    "Weight": 1,
+    "Layer": "suspect",
+    "last_event_id": "H1-R0056"
+  },
+  {
+    "game_id": "H1",
+    "day": 1,
+    "Source": "H1-P05",
+    "Target": "H1-P02",
+    "Type": "Directed",
+    "Weight": 1,
+    "Layer": "support",
+    "last_event_id": "H1-R0058"
+  },
+  {
+    "game_id": "H1",
+    "day": 1,
+    "Source": "H1-P05",
+    "Target": "H1-P03",
+    "Type": "Directed",
+    "Weight": 1,
+    "Layer": "support",
+    "last_event_id": "H1-R0059"
+  },
+  {
+    "game_id": "H1",
+    "day": 1,
+    "Source": "H1-P05",
+    "Target": "H1-P04",
+    "Type": "Directed",
+    "Weight": 1,
+    "Layer": "support",
+    "last_event_id": "H1-R0060"
+  },
+  {
+    "game_id": "H1",
+    "day": 1,
+    "Source": "H1-P05",
+    "Target": "H1-P08",
+    "Type": "Directed",
+    "Weight": 1,
+    "Layer": "support",
+    "last_event_id": "H1-R0053"
+  },
+  {
+    "game_id": "H1",
+    "day": 1,
+    "Source": "H1-P05",
+    "Target": "H1-P09",
+    "Type": "Directed",
+    "Weight": 1,
+    "Layer": "suspect",
+    "last_event_id": "H1-R0062"
+  },
+  {
+    "game_id": "H1",
+    "day": 1,
+    "Source": "H1-P05",
+    "Target": "H1-P10",
+    "Type": "Directed",
+    "Weight": 1,
+    "Layer": "support",
+    "last_event_id": "H1-R0055"
+  },
+  {
+    "game_id": "H1",
+    "day": 1,
+    "Source": "H1-P05",
+    "Target": "H1-P12",
+    "Type": "Directed",
+    "Weight": 1,
+    "Layer": "suspect",
+    "last_event_id": "H1-R0061"
+  },
+  {
+    "game_id": "H1",
+    "day": 1,
+    "Source": "H1-P06",
+    "Target": "H1-P01",
+    "Type": "Directed",
+    "Weight": 1,
+    "Layer": "suspect",
+    "last_event_id": "H1-R0065"
+  },
+  {
+    "game_id": "H1",
+    "day": 1,
+    "Source": "H1-P06",
+    "Target": "H1-P03",
+    "Type": "Directed",
+    "Weight": 1,
+    "Layer": "support",
+    "last_event_id": "H1-R0067"
+  },
+  {
+    "game_id": "H1",
+    "day": 1,
+    "Source": "H1-P06",
+    "Target": "H1-P04",
+    "Type": "Directed",
+    "Weight": 1,
+    "Layer": "support",
+    "last_event_id": "H1-R0068"
+  },
+  {
+    "game_id": "H1",
+    "day": 1,
+    "Source": "H1-P06",
+    "Target": "H1-P08",
+    "Type": "Directed",
+    "Weight": 1,
+    "Layer": "support",
+    "last_event_id": "H1-R0078"
+  },
+  {
+    "game_id": "H1",
+    "day": 1,
+    "Source": "H1-P06",
+    "Target": "H1-P10",
+    "Type": "Directed",
+    "Weight": 1,
+    "Layer": "support",
+    "last_event_id": "H1-R0069"
+  },
+  {
+    "game_id": "H1",
+    "day": 1,
+    "Source": "H1-P06",
+    "Target": "H1-P11",
+    "Type": "Directed",
+    "Weight": 1,
+    "Layer": "support",
+    "last_event_id": "H1-R0070"
+  },
+  {
+    "game_id": "H1",
+    "day": 1,
+    "Source": "H1-P07",
+    "Target": "H1-P03",
+    "Type": "Directed",
+    "Weight": 1,
+    "Layer": "support",
+    "last_event_id": "H1-R0080"
+  },
+  {
+    "game_id": "H1",
+    "day": 1,
+    "Source": "H1-P07",
+    "Target": "H1-P04",
+    "Type": "Directed",
+    "Weight": 1,
+    "Layer": "support",
+    "last_event_id": "H1-R0081"
+  },
+  {
+    "game_id": "H1",
+    "day": 1,
+    "Source": "H1-P08",
+    "Target": "H1-P01",
+    "Type": "Directed",
+    "Weight": 1,
+    "Layer": "support",
+    "last_event_id": "H1-R0083"
+  },
+  {
+    "game_id": "H1",
+    "day": 1,
+    "Source": "H1-P08",
+    "Target": "H1-P02",
+    "Type": "Directed",
+    "Weight": 1,
+    "Layer": "support",
+    "last_event_id": "H1-R0005"
+  },
+  {
+    "game_id": "H1",
+    "day": 1,
+    "Source": "H1-P08",
+    "Target": "H1-P05",
+    "Type": "Directed",
+    "Weight": 1,
+    "Layer": "suspect",
+    "last_event_id": "H1-R0091"
+  },
+  {
+    "game_id": "H1",
+    "day": 1,
+    "Source": "H1-P08",
+    "Target": "H1-P09",
+    "Type": "Directed",
+    "Weight": 1,
+    "Layer": "support",
+    "last_event_id": "H1-R0096"
+  },
+  {
+    "game_id": "H1",
+    "day": 1,
+    "Source": "H1-P08",
+    "Target": "H1-P11",
+    "Type": "Directed",
+    "Weight": 1,
+    "Layer": "suspect",
+    "last_event_id": "H1-R0098"
+  },
+  {
+    "game_id": "H1",
+    "day": 1,
+    "Source": "H1-P08",
+    "Target": "H1-P12",
+    "Type": "Directed",
+    "Weight": 1,
+    "Layer": "support",
+    "last_event_id": "H1-R0095"
+  },
+  {
+    "game_id": "H1",
+    "day": 1,
+    "Source": "H1-P09",
+    "Target": "H1-P01",
+    "Type": "Directed",
+    "Weight": 1,
+    "Layer": "support",
+    "last_event_id": "H1-R0106"
+  },
+  {
+    "game_id": "H1",
+    "day": 1,
+    "Source": "H1-P09",
+    "Target": "H1-P07",
+    "Type": "Directed",
+    "Weight": 1,
+    "Layer": "suspect",
+    "last_event_id": "H1-R0107"
+  },
+  {
+    "game_id": "H1",
+    "day": 1,
+    "Source": "H1-P09",
+    "Target": "H1-P11",
+    "Type": "Directed",
+    "Weight": 1,
+    "Layer": "suspect",
+    "last_event_id": "H1-R0104"
+  },
+  {
+    "game_id": "H1",
+    "day": 1,
+    "Source": "H1-P10",
+    "Target": "H1-P01",
+    "Type": "Directed",
+    "Weight": 1,
+    "Layer": "suspect",
+    "last_event_id": "H1-R0009"
+  },
+  {
+    "game_id": "H1",
+    "day": 1,
+    "Source": "H1-P10",
+    "Target": "H1-P03",
+    "Type": "Directed",
+    "Weight": 1,
+    "Layer": "support",
+    "last_event_id": "H1-R0112"
+  },
+  {
+    "game_id": "H1",
+    "day": 1,
+    "Source": "H1-P10",
+    "Target": "H1-P04",
+    "Type": "Directed",
+    "Weight": 1,
+    "Layer": "support",
+    "last_event_id": "H1-R0113"
+  },
+  {
+    "game_id": "H1",
+    "day": 1,
+    "Source": "H1-P10",
+    "Target": "H1-P08",
+    "Type": "Directed",
+    "Weight": 1,
+    "Layer": "support",
+    "last_event_id": "H1-R0011"
+  },
+  {
+    "game_id": "H1",
+    "day": 1,
+    "Source": "H1-P11",
+    "Target": "H1-P01",
+    "Type": "Directed",
+    "Weight": 1,
+    "Layer": "suspect",
+    "last_event_id": "H1-R0135"
+  },
+  {
+    "game_id": "H1",
+    "day": 1,
+    "Source": "H1-P11",
+    "Target": "H1-P03",
+    "Type": "Directed",
+    "Weight": 1,
+    "Layer": "support",
+    "last_event_id": "H1-R0133"
+  },
+  {
+    "game_id": "H1",
+    "day": 1,
+    "Source": "H1-P11",
+    "Target": "H1-P04",
+    "Type": "Directed",
+    "Weight": 1,
+    "Layer": "support",
+    "last_event_id": "H1-R0134"
+  },
+  {
+    "game_id": "H1",
+    "day": 1,
+    "Source": "H1-P11",
+    "Target": "H1-P08",
+    "Type": "Directed",
+    "Weight": 1,
+    "Layer": "support",
+    "last_event_id": "H1-R0137"
+  },
+  {
+    "game_id": "H1",
+    "day": 1,
+    "Source": "H1-P11",
+    "Target": "H1-P10",
+    "Type": "Directed",
+    "Weight": 1,
+    "Layer": "support",
+    "last_event_id": "H1-R0015"
+  },
+  {
+    "game_id": "H1",
+    "day": 1,
+    "Source": "H1-P12",
+    "Target": "H1-P01",
+    "Type": "Directed",
+    "Weight": 1,
+    "Layer": "suspect",
+    "last_event_id": "H1-R0019"
+  },
+  {
+    "game_id": "H1",
+    "day": 1,
+    "Source": "H1-P12",
+    "Target": "H1-P08",
+    "Type": "Directed",
+    "Weight": 1,
+    "Layer": "support",
+    "last_event_id": "H1-R0021"
+  },
+  {
+    "game_id": "H1",
+    "day": 1,
+    "Source": "H1-P12",
+    "Target": "H1-P10",
+    "Type": "Directed",
+    "Weight": 1,
+    "Layer": "support",
+    "last_event_id": "H1-R0020"
+  },
+  {
+    "game_id": "H1",
+    "day": 2,
+    "Source": "H1-P02",
+    "Target": "H1-P08",
+    "Type": "Directed",
+    "Weight": 1,
+    "Layer": "suspect",
+    "last_event_id": "H1-R0200"
+  },
+  {
+    "game_id": "H1",
+    "day": 2,
+    "Source": "H1-P02",
+    "Target": "H1-P09",
+    "Type": "Directed",
+    "Weight": 1,
+    "Layer": "suspect",
+    "last_event_id": "H1-R0201"
+  },
+  {
+    "game_id": "H1",
+    "day": 2,
+    "Source": "H1-P04",
+    "Target": "H1-P05",
+    "Type": "Directed",
+    "Weight": 1,
+    "Layer": "suspect",
+    "last_event_id": "H1-R0195"
+  },
+  {
+    "game_id": "H1",
+    "day": 2,
+    "Source": "H1-P04",
+    "Target": "H1-P08",
+    "Type": "Directed",
+    "Weight": 1,
+    "Layer": "support",
+    "last_event_id": "H1-R0197"
+  },
+  {
+    "game_id": "H1",
+    "day": 2,
+    "Source": "H1-P04",
+    "Target": "H1-P11",
+    "Type": "Directed",
+    "Weight": 1,
+    "Layer": "suspect",
+    "last_event_id": "H1-R0196"
+  },
+  {
+    "game_id": "H1",
+    "day": 2,
+    "Source": "H1-P05",
+    "Target": "H1-P04",
+    "Type": "Directed",
+    "Weight": 1,
+    "Layer": "support",
+    "last_event_id": "H1-R0193"
+  },
+  {
+    "game_id": "H1",
+    "day": 2,
+    "Source": "H1-P05",
+    "Target": "H1-P08",
+    "Type": "Directed",
+    "Weight": 1,
+    "Layer": "suspect",
+    "last_event_id": "H1-R0190"
+  },
+  {
+    "game_id": "H1",
+    "day": 2,
+    "Source": "H1-P05",
+    "Target": "H1-P09",
+    "Type": "Directed",
+    "Weight": 1,
+    "Layer": "suspect",
+    "last_event_id": "H1-R0189"
+  },
+  {
+    "game_id": "H1",
+    "day": 2,
+    "Source": "H1-P05",
+    "Target": "H1-P11",
+    "Type": "Directed",
+    "Weight": 1,
+    "Layer": "support",
+    "last_event_id": "H1-R0194"
+  },
+  {
+    "game_id": "H1",
+    "day": 2,
+    "Source": "H1-P06",
+    "Target": "H1-P02",
+    "Type": "Directed",
+    "Weight": 1,
+    "Layer": "support",
+    "last_event_id": "H1-R0184"
+  },
+  {
+    "game_id": "H1",
+    "day": 2,
+    "Source": "H1-P06",
+    "Target": "H1-P04",
+    "Type": "Directed",
+    "Weight": 1,
+    "Layer": "support",
+    "last_event_id": "H1-R0181"
+  },
+  {
+    "game_id": "H1",
+    "day": 2,
+    "Source": "H1-P06",
+    "Target": "H1-P08",
+    "Type": "Directed",
+    "Weight": 1,
+    "Layer": "suspect",
+    "last_event_id": "H1-R0183"
+  },
+  {
+    "game_id": "H1",
+    "day": 2,
+    "Source": "H1-P06",
+    "Target": "H1-P09",
+    "Type": "Directed",
+    "Weight": 1,
+    "Layer": "suspect",
+    "last_event_id": "H1-R0182"
+  },
+  {
+    "game_id": "H1",
+    "day": 2,
+    "Source": "H1-P06",
+    "Target": "H1-P10",
+    "Type": "Directed",
+    "Weight": 1,
+    "Layer": "support",
+    "last_event_id": "H1-R0185"
+  },
+  {
+    "game_id": "H1",
+    "day": 2,
+    "Source": "H1-P07",
+    "Target": "H1-P09",
+    "Type": "Directed",
+    "Weight": 1,
+    "Layer": "suspect",
+    "last_event_id": "H1-R0178"
+  },
+  {
+    "game_id": "H1",
+    "day": 2,
+    "Source": "H1-P08",
+    "Target": "H1-P04",
+    "Type": "Directed",
+    "Weight": 1,
+    "Layer": "support",
+    "last_event_id": "H1-R0176"
+  },
+  {
+    "game_id": "H1",
+    "day": 2,
+    "Source": "H1-P08",
+    "Target": "H1-P05",
+    "Type": "Directed",
+    "Weight": 1,
+    "Layer": "suspect",
+    "last_event_id": "H1-R0173"
+  },
+  {
+    "game_id": "H1",
+    "day": 2,
+    "Source": "H1-P08",
+    "Target": "H1-P06",
+    "Type": "Directed",
+    "Weight": 1,
+    "Layer": "suspect",
+    "last_event_id": "H1-R0174"
+  },
+  {
+    "game_id": "H1",
+    "day": 2,
+    "Source": "H1-P08",
+    "Target": "H1-P11",
+    "Type": "Directed",
+    "Weight": 1,
+    "Layer": "suspect",
+    "last_event_id": "H1-R0175"
+  },
+  {
+    "game_id": "H1",
+    "day": 2,
+    "Source": "H1-P09",
+    "Target": "H1-P02",
+    "Type": "Directed",
+    "Weight": 1,
+    "Layer": "support",
+    "last_event_id": "H1-R0155"
+  },
+  {
+    "game_id": "H1",
+    "day": 2,
+    "Source": "H1-P09",
+    "Target": "H1-P05",
+    "Type": "Directed",
+    "Weight": 1,
+    "Layer": "suspect",
+    "last_event_id": "H1-R0158"
+  },
+  {
+    "game_id": "H1",
+    "day": 2,
+    "Source": "H1-P09",
+    "Target": "H1-P07",
+    "Type": "Directed",
+    "Weight": 1,
+    "Layer": "suspect",
+    "last_event_id": "H1-R0159"
+  },
+  {
+    "game_id": "H1",
+    "day": 2,
+    "Source": "H1-P09",
+    "Target": "H1-P08",
+    "Type": "Directed",
+    "Weight": 1,
+    "Layer": "support",
+    "last_event_id": "H1-R0163"
+  },
+  {
+    "game_id": "H1",
+    "day": 2,
+    "Source": "H1-P09",
+    "Target": "H1-P11",
+    "Type": "Directed",
+    "Weight": 1,
+    "Layer": "suspect",
+    "last_event_id": "H1-R0160"
+  },
+  {
+    "game_id": "H1",
+    "day": 2,
+    "Source": "H1-P11",
+    "Target": "H1-P02",
+    "Type": "Directed",
+    "Weight": 1,
+    "Layer": "support",
+    "last_event_id": "H1-R0218"
+  },
+  {
+    "game_id": "H1",
+    "day": 2,
+    "Source": "H1-P11",
+    "Target": "H1-P06",
+    "Type": "Directed",
+    "Weight": 1,
+    "Layer": "suspect",
+    "last_event_id": "H1-R0213"
+  },
+  {
+    "game_id": "H1",
+    "day": 2,
+    "Source": "H1-P11",
+    "Target": "H1-P08",
+    "Type": "Directed",
+    "Weight": 1,
+    "Layer": "support",
+    "last_event_id": "H1-R0217"
+  },
+  {
+    "game_id": "H1",
+    "day": 2,
+    "Source": "H1-P11",
+    "Target": "H1-P09",
+    "Type": "Directed",
+    "Weight": 1,
+    "Layer": "suspect",
+    "last_event_id": "H1-R0215"
+  },
+  {
+    "game_id": "H1",
+    "day": 2,
+    "Source": "H1-P12",
+    "Target": "H1-P02",
+    "Type": "Directed",
+    "Weight": 1,
+    "Layer": "support",
+    "last_event_id": "H1-R0207"
+  },
+  {
+    "game_id": "H1",
+    "day": 2,
+    "Source": "H1-P12",
+    "Target": "H1-P05",
+    "Type": "Directed",
+    "Weight": 1,
+    "Layer": "suspect",
+    "last_event_id": "H1-R0209"
+  },
+  {
+    "game_id": "H1",
+    "day": 2,
+    "Source": "H1-P12",
+    "Target": "H1-P08",
+    "Type": "Directed",
+    "Weight": 1,
+    "Layer": "support",
+    "last_event_id": "H1-R0206"
+  },
+  {
+    "game_id": "H1",
+    "day": 2,
+    "Source": "H1-P12",
+    "Target": "H1-P10",
+    "Type": "Directed",
+    "Weight": 1,
+    "Layer": "support",
+    "last_event_id": "H1-R0208"
+  },
+  {
+    "game_id": "H1",
+    "day": 2,
+    "Source": "H1-P12",
+    "Target": "H1-P11",
+    "Type": "Directed",
+    "Weight": 1,
+    "Layer": "suspect",
+    "last_event_id": "H1-R0204"
+  },
+  {
+    "game_id": "H1",
+    "day": 3,
+    "Source": "H1-P05",
+    "Target": "H1-P08",
+    "Type": "Directed",
+    "Weight": 1,
+    "Layer": "suspect",
+    "last_event_id": "H1-R0237"
+  },
+  {
+    "game_id": "H1",
+    "day": 3,
+    "Source": "H1-P06",
+    "Target": "H1-P08",
+    "Type": "Directed",
+    "Weight": 1,
+    "Layer": "suspect",
+    "last_event_id": "H1-R0242"
+  },
+  {
+    "game_id": "H1",
+    "day": 3,
+    "Source": "H1-P08",
+    "Target": "H1-P11",
+    "Type": "Directed",
+    "Weight": 1,
+    "Layer": "suspect",
+    "last_event_id": "H1-R0248"
+  },
+  {
+    "game_id": "H1",
+    "day": 3,
+    "Source": "H1-P10",
+    "Target": "H1-P11",
+    "Type": "Directed",
+    "Weight": 1,
+    "Layer": "support",
+    "last_event_id": "H1-R0249"
+  },
+  {
+    "game_id": "H1",
+    "day": 3,
+    "Source": "H1-P11",
+    "Target": "H1-P02",
+    "Type": "Directed",
+    "Weight": 1,
+    "Layer": "support",
+    "last_event_id": "H1-R0253"
+  },
+  {
+    "game_id": "H1",
+    "day": 3,
+    "Source": "H1-P11",
+    "Target": "H1-P07",
+    "Type": "Directed",
+    "Weight": 1,
+    "Layer": "support",
+    "last_event_id": "H1-R0252"
+  },
+  {
+    "game_id": "H1",
+    "day": 3,
+    "Source": "H1-P11",
+    "Target": "H1-P08",
+    "Type": "Directed",
+    "Weight": 1,
+    "Layer": "suspect",
+    "last_event_id": "H1-R0251"
+  },
+  {
+    "game_id": "H1",
+    "day": 3,
+    "Source": "H1-P11",
+    "Target": "H1-P10",
+    "Type": "Directed",
+    "Weight": 1,
+    "Layer": "support",
+    "last_event_id": "H1-R0254"
+  },
+  {
+    "game_id": "H1",
+    "day": 3,
+    "Source": "H1-P11",
+    "Target": "H1-P12",
+    "Type": "Directed",
+    "Weight": 1,
+    "Layer": "suspect",
+    "last_event_id": "H1-R0255"
+  }
+]
