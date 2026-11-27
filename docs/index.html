@@ -289,8 +289,8 @@ window.NETWORK_DATA={"players": [{"game_id": "H1", "player_id": "H1-P01", "seat"
    nodes.select('.speaker-halo').attr('visibility',p=>p.player_id===current.frame.speaker_id?'visible':'hidden');
    nodes.select('.out-indicator').attr('visibility',p=>current.out.has(p.player_id)?'visible':'hidden');
    nodes.select('.player-name').attr('x',p=>labelPosition(p).x).attr('y',p=>labelPosition(p).y).attr('text-anchor',p=>labelPosition(p).anchor).text(p=>p.display_name);
-   nodes.select('.role-label').attr('x',p=>labelPosition(p).x).attr('y',p=>labelPosition(p).y+15).attr('text-anchor',p=>labelPosition(p).anchor).text(p=>E.roleLabel(p,reveal));
-   nodes.select('.campaign-label').attr('x',p=>labelPosition(p).x).attr('y',p=>labelPosition(p).y-16).attr('text-anchor',p=>labelPosition(p).anchor).text(p=>campaignLabel(p.player_id));
+   nodes.select('.role-label').attr('x',p=>labelPosition(p).x).attr('y',p=>labelPosition(p).y+(labelPosition(p).y>20&&campaignLabel(p.player_id)?35:15)).attr('text-anchor',p=>labelPosition(p).anchor).text(p=>E.roleLabel(p,reveal));
+   nodes.select('.campaign-label').attr('x',p=>labelPosition(p).x).attr('y',p=>labelPosition(p).y+(labelPosition(p).y>20?19:-20)).attr('text-anchor',p=>labelPosition(p).anchor).text(p=>campaignLabel(p.player_id));
    nodes.select('title').text(p=>name(p.player_id)+(campaignLabel(p.player_id)?' · '+campaignLabel(p.player_id):'')+(current.out.has(p.player_id)?' · 已出局':'')+(reveal?'\n'+E.roleLabel(p,true):''));
    center.select('.center-label').text(`第 ${current.day} 天`);
    center.select('.center-subtitle').text(`${12-current.out.size} 人在场`);
@@ -464,7 +464,7 @@ window.NETWORK_DATA={"players": [{"game_id": "H1", "player_id": "H1-P01", "seat"
  });
  render();pause();
  const narrow=window.matchMedia('(max-width:800px)');
- const resizeCanvas=()=>svg.attr('viewBox',narrow.matches?'80 20 700 675':'0 0 860 740');
+ const resizeCanvas=()=>svg.attr('viewBox',narrow.matches?'80 10 700 730':'0 0 860 740');
  narrow.addEventListener('change',resizeCanvas);resizeCanvas();
 })();
 
