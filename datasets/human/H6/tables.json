@@ -144,15 +144,15 @@
       "player_id": "H6-P11",
       "game_id": "H6",
       "seat": 11,
-      "display_name": "09",
-      "aliases": "零九",
-      "name_status": "contextual",
+      "display_name": "酒神",
+      "aliases": "09|零九",
+      "name_status": "user_confirmed",
       "true_role": "villager",
       "role_status": "inferred",
       "true_camp": "good",
       "camp_status": "inferred",
       "role_evidence": "H6-U058|H6-U069|H6-U093",
-      "notes": "U37手滑投票被U49指认11号；U69“没有救09”后立即称“救了十一号”，姓名09映射11。平民身份为后续格局推断，未由主持直接揭示。"
+      "notes": "用户要求11号统一显示为酒神，09、零九保留为别名。U37手滑投票由U49指认11号；U69“没有救09”后称“救了十一号”，支持本局座位映射。平民身份仍为推定。"
     },
     {
       "player_id": "H6-P12",

@@ -18,7 +18,7 @@ for(const [table,sheet] of [['players','玩家'],['review_issues','待核查'],[
  }
 }
 wb.recalculate();
-const preview=await wb.render({sheetName:'玩家',range:'A1:F10',format:'png',scale:1.5});
+const preview=await wb.render({sheetName:'玩家',range:process.argv[3]||'A1:F10',format:'png',scale:1.5});
 await fs.writeFile(path.join(out,'_previews/names-confirmed.png'),new Uint8Array(await preview.arrayBuffer()));
 const exported=await SpreadsheetFile.exportXlsx(wb);await exported.save(file);
 console.log(game,'metadata cells updated:',changed);

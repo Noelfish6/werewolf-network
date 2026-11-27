@@ -36,6 +36,18 @@
       "confirmed_by": "user",
       "confirmed_on": "2026-11-27",
       "source": "本对话用户明确提供座位与昵称"
+    },
+    {
+      "seat": 11,
+      "display_name": "酒神",
+      "aliases": [
+        "09",
+        "零九"
+      ],
+      "normalized_from": "09",
+      "confirmed_by": "user",
+      "confirmed_on": "2026-11-27",
+      "source": "本对话用户明确要求统一显示名并保留09别名"
     }
   ],
   "counts": {
