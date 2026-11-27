@@ -1,0 +1,46 @@
+{
+  "game_id": "H8",
+  "title": "第八期第一局",
+  "category": "human",
+  "day_count": 5,
+  "duration_seconds": 3180,
+  "source_file": "第八期第一局.md",
+  "source_path": "原始资料/人类玩家/第八期第一局/第八期第一局.md",
+  "source_sha256": "4eea4188bebb59233c4f384cc73cb6ff0b7851494ccab0ddda2e3004b6c4bd1f",
+  "coding_status": "AI_first_pass_not_independently_validated",
+  "source_video_reviewed": false,
+  "lifecycle_mode": "events",
+  "snapshot_utterances": {
+    "1": "H8-U042",
+    "2": "H8-U073",
+    "3": "H8-U090",
+    "4": "H8-U095",
+    "5": "H8-U096"
+  },
+  "redactions": [
+    {
+      "utterance_id": "H8-U096",
+      "starts_at": "本轮游戏，狼人配置为"
+    }
+  ],
+  "counts": {
+    "players": 12,
+    "player_status": 60,
+    "utterances": 104,
+    "relation_events": 232,
+    "votes": 24,
+    "key_events": 85,
+    "review_issues": 13,
+    "snapshot_dyads": 720,
+    "network_edges": 69,
+    "data_dictionary": 125
+  },
+  "checks": [
+    "Every source segment preserved",
+    "All quote offsets verified",
+    "All player ids game-scoped",
+    "No inferred missing ballots",
+    "No main self-loops",
+    "Unknown identity statuses retained"
+  ]
+}

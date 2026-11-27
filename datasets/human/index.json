@@ -1,0 +1,54 @@
+[
+  {
+    "game_id": "H1",
+    "category": "human",
+    "title": "第一期第一局",
+    "day_count": 3,
+    "utterances": 110,
+    "relation_events": 255,
+    "snapshot_edges": 94,
+    "ballot_records": 48,
+    "review_issues": 16,
+    "source_sha256": "3bd6d4a6ae8b1cc9722b4b9bccd2da15562f11a499b59b7d0c14549f581100e1",
+    "coding_status": "AI_first_pass_not_independently_validated"
+  },
+  {
+    "game_id": "H3",
+    "category": "human",
+    "title": "第三期第一局",
+    "day_count": 5,
+    "utterances": 135,
+    "relation_events": 304,
+    "snapshot_edges": 64,
+    "ballot_records": 60,
+    "review_issues": 13,
+    "source_sha256": "bfe22153747da1f9828c466ff54f7442c6f57a417aa0993b7e3d153c00fcb9a2",
+    "coding_status": "AI_first_pass_not_independently_validated"
+  },
+  {
+    "game_id": "H6",
+    "category": "human",
+    "title": "第六期第一局",
+    "day_count": 4,
+    "utterances": 97,
+    "relation_events": 178,
+    "snapshot_edges": 45,
+    "ballot_records": 36,
+    "review_issues": 11,
+    "source_sha256": "253c61b2fc3442fd3e6e9e3d92797525541c471c3e1caefb51bc0b1d17856e62",
+    "coding_status": "AI_first_pass_not_independently_validated"
+  },
+  {
+    "game_id": "H8",
+    "category": "human",
+    "title": "第八期第一局",
+    "day_count": 5,
+    "utterances": 104,
+    "relation_events": 232,
+    "snapshot_edges": 69,
+    "ballot_records": 24,
+    "review_issues": 13,
+    "source_sha256": "4eea4188bebb59233c4f384cc73cb6ff0b7851494ccab0ddda2e3004b6c4bd1f",
+    "coding_status": "AI_first_pass_not_independently_validated"
+  }
+]

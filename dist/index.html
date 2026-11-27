@@ -21,7 +21,7 @@
 </defs></svg>
 <header class="site-header">
  <div class="brand"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span><div><h1>狼人杀<span>关系回放</span></h1><p>公开立场如何形成，又如何改变</p></div></div>
- <div class="header-meta"><span class="game-tag">H1</span><span>12 位玩家 · 3 个白天</span><button id="method-button" class="quiet-button"><svg class="icon"><use href="#i-info"/></svg>阅读图示</button></div>
+ <div class="header-meta"><label class="game-picker"><span>人类玩家</span><select id="game-select" aria-label="选择人类玩家对局"></select></label><span id="game-tag" class="game-tag">H1</span><span id="game-meta">12 位玩家 · 3 个白天</span><button id="method-button" class="quiet-button"><svg class="icon"><use href="#i-info"/></svg>阅读图示</button></div>
 </header>
 <main>
  <div class="workspace">
@@ -48,24 +48,24 @@
   </aside>
  </div>
  <section class="timeline-section" aria-label="对局回放时间线">
-  <div class="timeline-top"><div class="timeline-label"><h2>对局时间线</h2><span id="frame-position"></span></div><div class="snapshot-controls"><span>投票前快照</span><button class="day-button" data-day="1">第 1 天</button><button class="day-button" data-day="2">第 2 天</button><button class="day-button" data-day="3">第 3 天</button></div></div>
+  <div class="timeline-top"><div class="timeline-label"><h2>对局时间线</h2><span id="frame-position"></span></div><div id="day-buttons" class="snapshot-controls"></div></div>
   <div class="timeline-jumps" aria-label="警长竞选时间点"><button id="jump-campaign" class="text-button">警长竞选 <time>02:27</time></button><button id="jump-election" class="text-button">选警结果 <time>08:36</time></button></div>
   <div class="timeline-track"><svg id="activity" viewBox="0 0 1200 54" preserveAspectRatio="none" aria-hidden="true"></svg><input id="timeline" type="range" min="0" max="1" value="0" step="1" aria-label="逐条发言时间线"></div>
-  <div class="timeline-bottom"><div class="transport"><button id="previous" class="icon-button" aria-label="上一段发言"><svg class="icon"><use href="#i-prev"/></svg></button><button id="play" class="play-button"><svg class="icon"><use href="#i-play"/></svg><span>播放</span></button><button id="next" class="icon-button" aria-label="下一段发言"><svg class="icon"><use href="#i-next"/></svg></button><div class="time-readout"><strong id="current-time">00:00</strong><span>/ 53:40</span></div><label class="speed-label"><span class="sr-only">播放速度</span><select id="speed" aria-label="播放速度"><option value="0.5">0.5×</option><option value="1" selected>1×</option><option value="2">2×</option><option value="4">4×</option></select></label></div><div class="timeline-right"><button id="restart" class="text-button">从头播放</button><span class="keyboard-hint">空格 播放 / 暂停 · ← → 逐段</span></div></div>
+  <div class="timeline-bottom"><div class="transport"><button id="previous" class="icon-button" aria-label="上一段发言"><svg class="icon"><use href="#i-prev"/></svg></button><button id="play" class="play-button"><svg class="icon"><use href="#i-play"/></svg><span>播放</span></button><button id="next" class="icon-button" aria-label="下一段发言"><svg class="icon"><use href="#i-next"/></svg></button><div class="time-readout"><strong id="current-time">00:00</strong><span id="end-time">/ 53:40</span></div><label class="speed-label"><span class="sr-only">播放速度</span><select id="speed" aria-label="播放速度"><option value="0.5">0.5×</option><option value="1" selected>1×</option><option value="2">2×</option><option value="4">4×</option></select></label></div><div class="timeline-right"><button id="restart" class="text-button">从头播放</button><span class="keyboard-hint">空格 播放 / 暂停 · ← → 逐段</span></div></div>
  </section>
  <footer class="page-footer"><span>AI 辅助首轮编码，保留原文以供核查。</span><button id="download-edges" class="text-button">导出当前边表</button><span>跨白天重置立场；访谈、回放、条件推演不计为明确边。</span></footer>
 </main>
 <dialog id="method-dialog" aria-labelledby="method-title"><div class="dialog-heading"><h2 id="method-title">怎样阅读这张图</h2><button id="close-method" class="icon-button" aria-label="关闭说明"><svg class="icon"><use href="#i-close"/></svg></button></div><div class="method-content">
  <p><strong>圆周是固定座位。</strong>箭头从发言者指向评价对象。绿实线表示认可好人身份，红虚线表示怀疑身份，蓝点线表示实际投票。</p>
  <p><strong>时间线按发言段落推进。</strong>同一天内，每对玩家保留最后一次明确立场；明确未定会移除该对连线。切换白天时，不自动继承前一天关系。</p>
- <p><strong>投票单独成层。</strong>第1天先展示选警票，发生放逐票后替换为放逐票。第2天11号漏报票不补齐；最后8号疑似自投不绘制自环。</p>
- <p><strong>警长竞选随回放揭示。</strong>图上方可展开参选、退水和选警票型，点击时间点核对原话。节点标记参选、退水或当选警长。选警票表示选警行为，不能直接等同于认可好人身份。8号退水以08:36主持汇总为确认时点。</p>
- <p><strong>出局后仍保留座位。</strong>当日图保留已公开形成的立场和票型，后续白天不把出局者计入当日关系。遗言可阅读，但不改写此前投票前快照。</p>
+ <p><strong>投票单独成层。</strong>选警票和放逐票分开，发生新的实际投票后替换。未报告的票保持未知，疑似自投不绘制自环；自爆不会虚构一轮放逐票。</p>
+ <p><strong>警长竞选随回放揭示。</strong>图上方可展开参选、退水和选警票型，点击时间点核对原话。节点标记参选、退水或当选警长。选警票表示选警行为，不能直接等同于认可好人身份。各局按原文证据确认退水及当选时间。</p>
+ <p><strong>出局后仍保留座位。</strong>新增三局按已公开事件更新在场状态，当前在场玩家形成网络；第一期保留原有逐日研究快照。遗言可阅读，但不改写此前投票前快照。</p>
  <p><strong>赛后视角显示身份元数据。</strong>已确认、推定、未知分别标注；该开关不会改变公开关系。原发言中的身份声称仍按原文保留。</p>
- <p>来源：本局逐字稿及同目录社会网络分析方案。所有关系均是AI首轮编码，部分说话人映射和票型仍待人工核查。</p>
+ <p>来源：四局人类玩家逐字稿及社会网络分析方案。所有关系均是AI首轮编码，部分说话人映射和票型仍待人工核查。</p>
  <a href="https://d3js.org/getting-started" target="_blank" rel="noreferrer">使用 D3.js 构建</a>
  </div></dialog>
 <div id="toast" class="toast" role="status"></div>
-<script src="vendor/d3.v7.min.js"></script><script src="data.js"></script><script src="campaign-events.js"></script><script src="engine.js"></script><script src="app.js"></script>
+<script src="vendor/d3.v7.min.js"></script><script src="data.js"></script><script src="campaign-events.js"></script><script src="catalog.js"></script><script src="engine.js"></script><script src="app.js"></script>
 </body>
 </html>

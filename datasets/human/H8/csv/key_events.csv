@@ -1,0 +1,86 @@
+﻿key_event_id,game_id,day,phase,timestamp,utterance_id,event_type,actor,target,value,fact_status,evidence_quote,source_line_start,notes
+H8-K001,H8,0,setup,00:04,H8-U001,rules,,,12人屠边；3狼人+白狼王；4平民；预言家/女巫/猎人/守卫；白狼王白天自爆可带人。,host_confirmed,12 位嘉宾你们好，欢迎来到 Super Lier 现场。本期游戏将采用图编规则，具体规则如下。狼人游戏分为两大阵营，即好人阵营和狼人阵营。狼人击杀掉所有平民或所有神民，则狼人阵营胜利。好人方投出所有狼人，则好人阵营胜利。本次狼人游戏包括 4 名狼人、 4 名普通村民和 4 名神民。狼人包括 3 名狼人和 1 名白狼王，白狼王可以在白天自爆时带走一名好人。神民包括预言家、女巫、猎人和守卫。预言家可以侦测狼人，是平民阵营的领袖。女巫每晚可以使用一瓶解药或毒药，解药一旦被使用，女巫无法知晓被害玩家信息，且女巫只有第一晚可以自救。猎人可以在自己死亡时开枪带走一名狼人，猎人在被女巫毒死的情况下不可以发动技能。守卫可以在每晚守护一位玩家不被狼人杀害，守卫连续两晚不可守同一人。,12,
+H8-K002,H8,0,setup,01:13,H8-U002,rules,,,胜方积分：好人1分、狼人2分；两期累计。,host_confirmed,本期狼人游戏将采用积分制，即获胜阵营方可获得积分奖励，好人阵营获得 1 分，狼人阵营获得 2 分。两期游戏积分累计前三名的嘉宾将分别获得由熊猫 TV 提供的佛跳墙奖励，第一名 66 个，第二名 33 个，第三名 22 个。第一局狼人游戏马上开始，请各位嘉宾看牌。,15,
+H8-K003,H8,1,campaign,01:51,H8-U003,sheriff_candidates,,,1|3|6|7|8|12,host_confirmed,1 号、 3 号、 6 号、 7 号、 8 号、 12 号，共 6 位玩家参与竞选,18,
+H8-K004,H8,1,campaign,02:24,H8-U004,role_claim,H8-P12,H8-P12,seer,player_claim,12 号是预言家。,21,随即否认并改称女巫/平民，戏谑试探，不作真身份。
+H8-K005,H8,1,campaign,02:24,H8-U004,role_claim,H8-P12,H8-P12,witch,player_claim,12 号是女巫,21,同段立刻改口。
+H8-K006,H8,1,campaign,02:24,H8-U004,role_claim,H8-P12,H8-P12,villager,player_claim,12 号是平民。,21,
+H8-K007,H8,1,campaign,02:37,H8-U006,role_claim,H8-P12,H8-P12,seer,player_claim,12 号是预言家,27,
+H8-K008,H8,1,campaign,02:37,H8-U006,inspection_claim,H8-P12,H8-P01,wolf,player_claim,12 号刚才查杀了身边的 1 号,27,12号竞选假跳查杀，不作真实验人。
+H8-K009,H8,1,campaign,02:37,H8-U006,inspection_plan,H8-P12,H8-P06,先验6后验7,player_claim,先验 6 号，再验 7 号,27,
+H8-K010,H8,1,campaign,02:37,H8-U006,inspection_plan,H8-P12,H8-P07,第二验7,player_claim,先验 6 号，再验 7 号,27,
+H8-K011,H8,1,campaign,02:53,H8-U007,role_claim,H8-P01,H8-P01,villager,player_claim,我是一只可怜的小村民,30,
+H8-K012,H8,1,campaign,03:25,H8-U008,role_claim,H8-P03,H8-P03,witch,player_claim,3 号是一张真正的女巫牌,33,同时声称首夜10号被刀但未救、已盲毒、尚有解药；这些都是玩家假声明，非主持夜死或药效事实。
+H8-K013,H8,1,campaign,03:25,H8-U008,save_claim,H8-P03,H8-P10,首夜未救10号，尚持解药,player_claim,昨天晚上死的是少帮主，我没救,33,伪女巫的虚假未救/夜刀声明；真实夜间结算仅用主持公告，10号此时不出局。
+H8-K014,H8,1,campaign,03:25,H8-U008,poison_claim,H8-P03,,声称首夜盲毒未知玩家,player_claim,我盲毒了一个人。,33,没有明确目标；后续平安夜且此人实为白狼王，不能创造中毒死亡。
+H8-K015,H8,1,campaign,04:01,H8-U009,role_claim,H8-P06,H8-P06,villager,player_claim,我是一个阳光小平民,36,
+H8-K016,H8,1,campaign,04:18,H8-U011,role_claim,H8-P06,H8-P06,villager,player_claim,这个 6 号平民带队能力很强,42,
+H8-K017,H8,1,campaign,05:03,H8-U012,role_claim,H8-P07,H8-P07,seer,player_claim,今天我是一个预言家,45,
+H8-K018,H8,1,campaign,05:03,H8-U012,inspection_claim,H8-P07,H8-P03,wolf,player_claim,我昨天晚上查的是 3 号， 3 号是只狼。,45,最终狼阵营同伴之间假报查杀。
+H8-K019,H8,1,campaign,05:03,H8-U012,inspection_plan,H8-P07,H8-P01,暂定验1，后改12/2,player_claim,我先查 1 号。,45,本段后续换为12号，U13最终12后2；保留改流过程。
+H8-K020,H8,1,campaign,05:03,H8-U012,inspection_plan,H8-P07,H8-P12,先验12,player_claim,我先查 12 号，先查 12 号酒神,45,
+H8-K021,H8,1,campaign,05:59,H8-U013,inspection_plan,H8-P07,H8-P12,先12后2,player_claim,先 12 后2,48,
+H8-K022,H8,1,campaign,05:59,H8-U013,inspection_plan,H8-P07,H8-P02,第二验2毛毛,player_claim,那我查毛毛吧，好吧？先 12 后2,48,
+H8-K023,H8,1,campaign,05:59,H8-U013,role_claim,H8-P07,H8-P07,seer,player_claim,我是预言家。,48,
+H8-K024,H8,1,campaign,06:09,H8-U015,role_claim,H8-P08,H8-P08,seer,player_claim,我是一个真的预言家的牌。,54,
+H8-K025,H8,1,campaign,06:09,H8-U015,inspection_claim,H8-P08,H8-P11,wolf,player_claim,昨天晚上的查杀是 11 号。,54,
+H8-K026,H8,1,campaign,06:09,H8-U015,inspection_plan,H8-P08,H8-P06,拟验6/4,player_claim,我就 6 号和 4 号验一下,54,
+H8-K027,H8,1,campaign,06:09,H8-U015,inspection_plan,H8-P08,H8-P04,拟验6/4,player_claim,我就 6 号和 4 号验一下,54,
+H8-K028,H8,1,campaign,06:09,H8-U015,inspection_plan,H8-P08,H8-P03,若双死不验3号JY,player_claim,如果是双死的话， Z Y 就不验他了,54,条件排除验人，非已验3号。
+H8-K029,H8,1,sheriff_ballot,06:53,H8-U016,sheriff_withdrawal,H8-P01,H8-P01,退出警长竞选,host_confirmed,1 号、 6 号、 12 号玩家退水,57,
+H8-K030,H8,1,sheriff_ballot,06:53,H8-U016,sheriff_withdrawal,H8-P06,H8-P06,退出警长竞选,host_confirmed,1 号、 6 号、 12 号玩家退水,57,
+H8-K031,H8,1,sheriff_ballot,06:53,H8-U016,sheriff_withdrawal,H8-P12,H8-P12,退出警长竞选,host_confirmed,1 号、 6 号、 12 号玩家退水,57,
+H8-K032,H8,1,sheriff_ballot,06:53,H8-U016,sheriff_elected,H8-P07,H8-P07,7号当选警长,host_confirmed,7 号玩家当选警长。,57,
+H8-K033,H8,1,sheriff_ballot,06:53,H8-U016,night_death,,,首夜平安夜,host_confirmed,昨晚平安夜,57,无死亡，target=0；此消息在竞选与警长票之后公开。
+H8-K034,H8,1,discussion,07:33,H8-U019,role_claim,H8-P08,H8-P08,seer,player_claim,我是真的一张预言家的牌,66,
+H8-K035,H8,1,discussion,07:33,H8-U019,inspection_claim,H8-P08,H8-P11,wolf,player_claim,11 号确实是我的一张查杀牌。,66,
+H8-K036,H8,1,discussion,08:03,H8-U020,inspection_claim,H8-P08,H8-P11,wolf,player_claim,11 号是我的查杀,69,
+H8-K037,H8,1,discussion,08:31,H8-U021,role_claim,H8-P08,H8-P08,seer,player_claim,我是一个真预言家,72,
+H8-K038,H8,1,discussion,08:31,H8-U021,inspection_claim,H8-P08,H8-P11,wolf,player_claim,11 号是我的查杀,72,
+H8-K039,H8,1,discussion,08:31,H8-U021,inspection_plan,H8-P08,H8-P02,今晚拟验2号,player_claim,我晚上会验 2 号这张牌吧,72,
+H8-K040,H8,1,discussion,08:31,H8-U021,poison_claim,H8-P08,H8-P07,若自己夜死或被白狼王带走，建议女巫毒7号,player_claim,你们可以不救我，但是一定要把 7 号毒掉。,72,条件性毒杀建议，不是已用毒事实，也不是放逐投票提议；不从中生成毒死事件。
+H8-K041,H8,1,discussion,09:16,H8-U022,role_claim,H8-P09,H8-P09,villager,player_claim,我是因为平民嘛,75,
+H8-K042,H8,1,discussion,14:24,H8-U028,role_claim,H8-P12,H8-P12,villager,player_claim,12 号作为这盘的绝对不渝的一个民,93,
+H8-K043,H8,1,discussion,16:35,H8-U032,role_claim,H8-P01,H8-P01,hunter,player_claim,我是猎人,105,仅自己声明，未开枪证明，真实职业只inferred。
+H8-K044,H8,1,discussion,20:40,H8-U038,role_claim,H8-P03,H8-P03,witch,player_claim,这个时候我跳出来女巫,123,与U8改口，现声称首夜救10、仍有毒药；依旧为伪女巫身份声明，不生成真实医疗/死亡记录。
+H8-K045,H8,1,discussion,20:40,H8-U038,save_claim,H8-P03,H8-P10,改口称首夜救10号,player_claim,我第一天确实是救的少帮主。你晚上挨刀了，我救的你,123,3号假女巫改口；并非真女巫5号的救人原话。
+H8-K046,H8,1,discussion,20:40,H8-U038,poison_claim,H8-P03,,改口称毒药尚未使用,player_claim,我现在有毒药还没用,123,与U8“已盲毒”自相矛盾，保留公开声明变化。
+H8-K047,H8,1,discussion,23:09,H8-U042,role_claim,H8-P05,H8-P05,witch,player_claim,因为我是铁定的女巫。,135,声纹标签10，此段实际5号真女巫；其真实性由U96另证。
+H8-K048,H8,1,self_explosion,23:19,H8-U043,self_explosion,H8-P03,H8-P03,宣布自爆带5号,player_announced,爆，带走 5 号。,138,实际白狼王与技能带走在紧随U44获主持确认。
+H8-K049,H8,1,self_explosion,23:24,H8-U044,true_role_revealed,H8-P03,H8-P03,white_wolf_king,host_confirmed,3 号白狼王自爆,141,
+H8-K050,H8,1,self_explosion,23:24,H8-U044,self_explosion,H8-P03,H8-P03,白狼王3号自爆,host_confirmed,3 号白狼王自爆,141,
+H8-K051,H8,1,self_explosion,23:24,H8-U044,skill_death,H8-P03,H8-P05,白狼王带走5号,host_confirmed,带走 5 号玩家。,141,
+H8-K052,H8,2,night_result,23:55,H8-U047,night_death,,H8-P02,第2夜2号被害,host_confirmed,昨晚 2 号玩家被害。,150,
+H8-K053,H8,2,discussion,29:24,H8-U056,role_claim,H8-P11,H8-P11,good,player_claim,我作为一个被他查杀的铁好人,177,11号自己的好人声明，非真身份揭示。
+H8-K054,H8,2,discussion,31:03,H8-U058,role_claim,H8-P10,H8-P10,good,player_claim,我十号是被狼王爆掉女巫发的银水,183,自述银水，尚非真职业确认。
+H8-K055,H8,2,discussion,32:11,H8-U060,role_claim,H8-P10,H8-P10,guard,player_claim,我是守卫牌，我再说一遍，我是守卫加银水。,189,自述第一天空守、首夜被救；未见主持单独证实守卫，职业inferred。
+H8-K056,H8,2,discussion,35:28,H8-U064,inspection_claim,H8-P08,H8-P06,good,player_claim,昨天晚上验了六号是一个金水牌。,201,
+H8-K057,H8,2,discussion,35:28,H8-U064,inspection_plan,H8-P08,H8-P02,取消原先2号验人，实际验6,player_claim,还好我没有验他，现在场上的未知身份又少了一个，我很庆幸我没有去验 2 号，我验了 6 号,201,已完成验人声明与改流说明，非继续验已死2号。
+H8-K058,H8,2,discussion,35:59,H8-U065,inspection_claim,H8-P08,H8-P06,good,player_claim,我昨天晚上验了 6 号是一张金水牌,204,
+H8-K059,H8,2,discussion,35:59,H8-U065,role_claim,H8-P08,H8-P08,seer,player_claim,我真的是一个预言家的牌,204,
+H8-K060,H8,2,discussion,37:32,H8-U066,role_claim,H8-P08,H8-P08,seer,player_claim,我是一个真预言家,207,
+H8-K061,H8,2,discussion,37:47,H8-U067,inspection_claim,H8-P07,H8-P03,wolf,player_claim,JY 是我验的查杀,210,
+H8-K062,H8,2,discussion,38:47,H8-U068,inspection_claim,H8-P07,H8-P10,wolf,player_claim,昨天晚上我验的邵帮主，邵帮主是个狼。,213,假预言家的查杀声明，不能据此设10号真实狼人。
+H8-K063,H8,2,discussion,38:47,H8-U068,inspection_plan,H8-P07,H8-P06,今晚拟验6号,player_claim,今天晚上我会去验 6 号,213,
+H8-K064,H8,2,discussion,39:32,H8-U069,role_claim,H8-P06,H8-P06,werewolf,player_claim,我就是只狼,216,反讽警长验人逻辑，紧接全段反驳自刀并自认好身份；不是有效自认或真实狼人证据。
+H8-K065,H8,2,discussion,39:32,H8-U069,role_claim,H8-P06,H8-P06,good,player_claim,我是一个好身份,216,
+H8-K066,H8,2,discussion,41:56,H8-U071,role_claim,H8-P04,H8-P04,villager,player_claim,我就是一个阳光平民,222,真实狼人假认平民，后由U96揭示。
+H8-K067,H8,2,discussion,42:58,H8-U073,sheriff_nomination,H8-P07,H8-P08,警长归票8号,player_announced,警长归票 8 号。,228,
+H8-K068,H8,2,exile_ballot,43:00,H8-U074,sheriff_nomination,H8-P07,H8-P08,主持重复警长归票8号,host_confirmed,警长归票 8 号,231,
+H8-K069,H8,2,exile_ballot,43:00,H8-U074,exile,,H8-P08,8号放逐出局,host_confirmed,八号玩家出局,231,
+H8-K070,H8,2,last_words,43:24,H8-U075,role_claim,H8-P08,H8-P08,seer,player_claim,作为一个预言家,234,
+H8-K071,H8,3,night_result,44:50,H8-U079,night_death,,H8-P06,第3夜6号被害,host_confirmed,昨晚 6 号玩家被害,246,
+H8-K072,H8,3,self_explosion,50:03,H8-U091,role_claim,H8-P07,H8-P07,werewolf,player_claim,作为一个狼警长,282,紧接主持确认自爆，狼阵营由U96另证。
+H8-K073,H8,3,self_explosion,50:03,H8-U091,self_explosion,H8-P07,H8-P07,宣布自爆,player_announced,我爆了，好吧？作为一个狼警长，我先爆了,282,U93主持确认实际执行，避免与U92抢喊混同。
+H8-K074,H8,3,self_explosion,50:12,H8-U093,self_explosion,H8-P07,H8-P07,7号自爆，警徽作废,host_confirmed,7 号玩家自爆,288,主持虽要求移交，随后宣布警徽作废；未生成新警长。
+H8-K075,H8,3,self_explosion,50:12,H8-U093,sheriff_badge_destroyed,H8-P07,,警徽作废,host_confirmed,警徽作废。,288,没有成功移交，无后继警长。
+H8-K076,H8,4,night_result,50:28,H8-U095,night_death,,H8-P10,第4夜10号被害,host_confirmed,昨晚 10 号玩家被害,294,
+H8-K077,H8,4,night_result,50:28,H8-U095,self_explosion,H8-P11,H8-P11,11号自爆,host_confirmed,11 号玩家自爆。,294,这是11号实际自爆；U92未被执行的抢喊不记为死亡。
+H8-K078,H8,5,night_result,51:12,H8-U096,night_death,,H8-P01,第5夜1号被害,host_confirmed,昨晚 1 号玩家被害,297,
+H8-K079,H8,5,night_result,51:12,H8-U096,game_result,,,wolf_win,host_confirmed,游戏结束，狼人阵营胜利。,297,
+H8-K080,H8,5,night_result,51:12,H8-U096,true_role_revealed,H8-P04,H8-P04,werewolf,narrator_confirmed,本轮游戏，狼人配置为魔兽后羿、鼠大王、王师傅和白狼王JY。,297,全知复盘揭示，仅真实身份表；不得提前进入逐日公开关系。
+H8-K081,H8,5,night_result,51:12,H8-U096,true_role_revealed,H8-P07,H8-P07,werewolf,narrator_confirmed,本轮游戏，狼人配置为魔兽后羿、鼠大王、王师傅和白狼王JY。,297,全知复盘揭示，仅真实身份表；不得提前进入逐日公开关系。
+H8-K082,H8,5,night_result,51:12,H8-U096,true_role_revealed,H8-P11,H8-P11,werewolf,narrator_confirmed,本轮游戏，狼人配置为魔兽后羿、鼠大王、王师傅和白狼王JY。,297,全知复盘揭示，仅真实身份表；不得提前进入逐日公开关系。
+H8-K083,H8,5,night_result,51:12,H8-U096,true_role_revealed,H8-P03,H8-P03,white_wolf_king,narrator_confirmed,本轮游戏，狼人配置为魔兽后羿、鼠大王、王师傅和白狼王JY。,297,全知复盘揭示，仅真实身份表；不得提前进入逐日公开关系。
+H8-K084,H8,5,night_result,51:12,H8-U096,true_role_revealed,H8-P05,H8-P05,witch,narrator_confirmed,在真女巫陈小柏还有一瓶毒药的情况下带走了她,297,
+H8-K085,H8,5,night_result,51:12,H8-U096,true_role_revealed,H8-P08,H8-P08,seer,narrator_confirmed,导致真预言家桃子被逐出,297,

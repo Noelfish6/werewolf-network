@@ -1,16 +1,20 @@
 (() => {
  'use strict';
- const $=s=>document.querySelector(s), data=window.NETWORK_DATA&&{...window.NETWORK_DATA,campaign_events:window.CAMPAIGN_EVENTS||[]}, E=window.NetworkEngine;
+ const $=s=>document.querySelector(s), E=window.NetworkEngine;
+ const games=window.NETWORK_GAMES||[{game_id:'H1',title:'第一期第一局',data:window.NETWORK_DATA&&{...window.NETWORK_DATA,campaign_events:window.CAMPAIGN_EVENTS||[]}}];
+ let data=games[0].data;
  if(!window.d3||!data||!E){$('#inspector-content').textContent='页面资源未完整加载，请重新打开完整页面。';return;}
- const frames=E.buildFrames(data), playerById=new Map(data.players.map(p=>[p.player_id,p]));
- const frameIndex=new Map(frames.map((f,i)=>[f.utterance_id,i]));
- const frameOrder=new Map(data.utterances.map(u=>[u.utterance_id,Number(u.utterance_order)]));
- const phases={campaign:'警长竞选',sheriff_ballot:'警长投票',discussion:'公开讨论',exile_ballot:'放逐投票',last_words:'遗言',night_result:'夜间结果'};
+ let frames=E.buildFrames(data), playerById=new Map(data.players.map(p=>[p.player_id,p]));
+ let frameIndex=new Map(frames.map((f,i)=>[f.utterance_id,i]));
+ let frameOrder=new Map(data.utterances.map(u=>[u.utterance_id,Number(u.utterance_order)]));
+ const phases={campaign:'警长竞选',sheriff_ballot:'警长投票',discussion:'公开讨论',exile_ballot:'放逐投票',last_words:'遗言',night_result:'夜间结果',self_explosion:'自爆与技能事件'};
  const words={support:'支持',suspect:'怀疑',vote:'投票给'};
  const colors={support:'var(--support)',suspect:'var(--suspect)',vote:'var(--vote)'};
- let cursor=E.snapshotIndex(frames,1), current, focus=null, selectedEdge=null, reveal=false, playing=false,timer=null;
+ let cursor=E.snapshotIndex(frames,1,data), current, focus=null, selectedEdge=null, reveal=false, playing=false,timer=null;
  const visible={support:true,suspect:true,vote:true};
- const nodePosition=new Map(data.players.map(p=>{const angle=-Math.PI/2+(Number(p.seat)-1)*Math.PI/6;return[p.player_id,{x:430+263*Math.cos(angle),y:370+263*Math.sin(angle),angle}];}));
+ let nodePosition=new Map();
+ function updatePositions(){nodePosition=new Map(data.players.map(p=>{const angle=-Math.PI/2+(Number(p.seat)-1)*Math.PI/6;return[p.player_id,{x:430+263*Math.cos(angle),y:370+263*Math.sin(angle),angle}];}));}
+ updatePositions();
  const svg=d3.select('#network'), defs=svg.append('defs');
  for(const layer of Object.keys(colors)){
    defs.append('marker').attr('id','arrow-'+layer).attr('viewBox','0 0 10 10').attr('refX',9).attr('refY',5).attr('markerWidth',5.5).attr('markerHeight',5.5).attr('orient','auto')
@@ -30,11 +34,11 @@
  function seat(id){return playerById.get(id)?.seat||'?';}
  function campaignLabel(id){
    const e=current.election;
-   if(id===e.winner)return '警长';
+   if(id===e.sheriff)return '警长';
    if(!e.winner&&e.candidates.includes(id))return e.withdrawn.includes(id)?'已退水':'参选';
    return '';
  }
- function quote(edge){return E.quoteForDisplay(edge.quote,edge.utterance_id,reveal);}
+ function quote(edge){return E.quoteForDisplay(edge.quote,edge.utterance_id,reveal,data);}
  function el(tag,cls,text){const node=document.createElement(tag);if(cls)node.className=cls;if(text!==undefined)node.textContent=text;return node;}
  function toast(text){const n=$('#toast');n.textContent=text;n.classList.add('visible');clearTimeout(toast.timer);toast.timer=setTimeout(()=>n.classList.remove('visible'),2300);}
  function shownEdges(){return current.edges.filter(e=>visible[e.layer]);}
@@ -93,7 +97,9 @@
    const hasVisibleEdges=edges.some(relevant);
    center.attr('visibility',hasVisibleEdges?'visible':'hidden');
    $('#graph-empty').hidden=hasVisibleEdges;
-   if(!$('#graph-empty').hidden)$('#graph-empty .graph-empty-title').textContent=focus?`${seat(focus)}号当前没有可见连线`:'当前没有可见连线';
+   const noDiscussion=data.lifecycle_mode==='events'&&!frames.some(f=>Number(f.day)===current.day&&['campaign','discussion'].includes(f.phase)&&f.speaker_id);
+   if(!$('#graph-empty').hidden)$('#graph-empty .graph-empty-title').textContent=noDiscussion?'本日没有公开讨论':focus?`${seat(focus)}号当前没有可见连线`:'当前没有可见连线';
+   $('#graph-empty .graph-empty-hint').textContent=noDiscussion?'仅记录夜间或终局事件，没有身份立场观测。':'打开关系图层，或拖动时间线查看其他发言。';
    $('#clear-focus').hidden=!focus;
    $('#focus-summary').textContent=focus?`${name(focus)} · ${edges.filter(relevant).length} 条可见关系`:'点击玩家聚焦，点击连线查看原话';
    styleEdges();
@@ -137,9 +143,10 @@
      }
      const abstain=e.votes.filter(v=>v.action==='abstain').map(v=>seat(v.voter));
      if(abstain.length)votes.append(el('span','campaign-muted',`${abstain.join('、')}号弃票`));
-     votes.append(jumpEvidence(e.elected,'08:36 选警原话'));
-     content.append(el('p','campaign-note','参选者（包括已退水者）无投票资格；选警票与身份支持分别记录。8号退水由08:36主持汇总确认。'));
+     votes.append(jumpEvidence(e.elected));
+     content.append(el('p','campaign-note','选警票与身份支持分别记录。参选、退水及投票资格均按本局记录；点击时间核对原话。'));
    }else content.append(el('p','campaign-note','只展示当前已公开的信息；退水名单随发言更新。'));
+   if(e.winner&&e.badgeEvent?.event_type!=='sheriff_elected'){const r=row('警徽');r.append(el('span','',e.sheriff?`现任警长：${name(e.sheriff)}`:'警徽已作废'),jumpEvidence(e.badgeEvent));}
    if(e.nomination){const r=row('本日归票');r.append(el('span','',`${seat(e.nomination.actor)}号警长 → ${seat(e.nomination.target)}号`),jumpEvidence(e.nomination));}
  }
  function listEdges(parent,edges,title){
@@ -180,7 +187,7 @@
      const f=current.frame;
      content.append(speakerCard(f.speaker_id,`${f.timestamp} · ${phases[f.phase]||'公开发言'}`));
      if(!f.speaker_id)content.append(el('p','source-info',`${f.timestamp} · ${f.speaker_kind==='host'?'主持播报':'说话人未确认'}`));
-     content.append(el('div','quote compact',E.quoteForDisplay(f.raw_text,f.utterance_id,reveal)));
+     content.append(el('div','quote compact',E.quoteForDisplay(f.raw_text,f.utterance_id,reveal,data)));
      const si=el('div','source-info',`${f.utterance_id} · 原稿第 ${f.source_line_start} 行`);content.append(si);
      if(f.phase==='last_words')content.append(el('p','notice','遗言可阅读，但不更新此前投票前的关系快照。'));
      const now=shownEdges().filter(e=>e.utterance_id===f.utterance_id);
@@ -191,24 +198,36 @@
    }
    for(const note of current.notices)content.append(el('p','notice',note));
  }
- const activity=d3.select('#activity'),scale=d3.scaleLinear().domain([0,frames.length-1]).range([8,1192]);
+ const activity=d3.select('#activity'),scale=d3.scaleLinear().range([8,1192]);
+ const cursorLine=activity.append('line').attr('y1',0).attr('y2',43).attr('stroke','var(--primary)').attr('stroke-width',1.6);
+ function rebuildTimeline(){
+ scale.domain([0,Math.max(1,frames.length-1)]);
  const segments=d3.groups(frames,f=>Number(f.day));
  activity.selectAll('rect.day-segment').data(segments).join('rect').attr('class','day-segment')
    .attr('x',g=>scale(frames.indexOf(g[1][0]))).attr('y',39)
    .attr('width',g=>Math.max(2,scale(frames.indexOf(g[1].at(-1)))-scale(frames.indexOf(g[1][0])))).attr('height',3).attr('rx',1.5).attr('fill','var(--line)');
- activity.selectAll('text.day-label').data(segments).join('text').attr('class','day-label').attr('x',g=>scale(frames.indexOf(g[1][0]))).attr('y',53).attr('font-size',10).attr('fill','var(--muted)').text(g=>`第 ${g[0]} 天`);
+ activity.selectAll('text.day-label').data(segments.filter(g=>g[1].length>2)).join('text').attr('class','day-label').attr('x',g=>scale(frames.indexOf(g[1][0]))).attr('y',53).attr('font-size',10).attr('fill','var(--muted)').text(g=>`第 ${g[0]} 天`);
  const counts=d3.rollup(data.relation_events.filter(r=>Number(r.main_eligible)===1),rs=>rs.length,r=>r.utterance_id);
  activity.selectAll('line.event-bar').data(frames).join('line').attr('class','event-bar').attr('x1',(f,i)=>scale(i)).attr('x2',(f,i)=>scale(i)).attr('y1',f=>34-Math.min(28,(counts.get(f.utterance_id)||0)*2+3)).attr('y2',34).attr('stroke',f=>f.phase.includes('ballot')?'var(--vote)':'var(--line)').attr('stroke-width',4).attr('stroke-linecap','round');
- const cursorLine=activity.append('line').attr('y1',0).attr('y2',43).attr('stroke','var(--primary)').attr('stroke-width',1.6);
- activity.on('click',event=>{const [x]=d3.pointer(event,activity.node());seek(Math.round(scale.invert(x)));});
+ cursorLine.raise();
  $('#timeline').max=frames.length-1;
+ const controls=$('#day-buttons');controls.replaceChildren(el('span','','每日快照'));
+ for(const [day] of segments){const button=el('button','day-button',`第 ${day} 天`);button.dataset.day=day;button.addEventListener('click',()=>seek(E.snapshotIndex(frames,day,data)));controls.append(button);}
+ $('#end-time').textContent='/ '+frames.at(-1).timestamp;
+ for(const [id,type] of [['jump-campaign','sheriff_candidates'],['jump-election','sheriff_elected']]){
+   const event=data.key_events.find(k=>k.event_type===type),button=$('#'+id);button.disabled=!event;
+   button.querySelector('time').textContent=event?.timestamp||'未记录';button.dataset.utterance=event?.utterance_id||'';
+ }
+ }
+ activity.on('click',event=>{const [x]=d3.pointer(event,activity.node());seek(Math.round(scale.invert(x)));});
  function render(){
    current=E.stateAt(data,frames,cursor);
    if(selectedEdge&&!shownEdges().some(e=>e.id===selectedEdge))selectedEdge=null;
    $('#day-heading').textContent=`第 ${current.day} 天`;
-   const snapshot=cursor===E.snapshotIndex(frames,current.day);
-   $('#phase-label').textContent=snapshot?'投票前快照':phases[current.frame.phase]||'公开发言';
+   const snapshot=cursor===E.snapshotIndex(frames,current.day,data);
+   $('#phase-label').textContent=snapshot?(current.frame.phase==='night_result'?'当日结果快照':'每日快照'):phases[current.frame.phase]||'公开发言';
    $('#graph-caption').textContent=current.ballot?`当天立场与${current.ballot==='sheriff'?'选警':'放逐'}票分别呈现，箭头指向被评价者。`:'累积至当前发言，保留当天每对玩家的最后明确立场。';
+   if(data.lifecycle_mode==='events')$('#graph-caption').textContent='当前在场玩家的最新明确立场；出局状态随公开事件更新。';
    for(const layer of Object.keys(visible))$('#'+layer+'-count').textContent=current.edges.filter(e=>e.layer===layer).length;
    $('#vote-label').textContent=current.ballot==='sheriff'?'选警票':current.ballot==='exile'?'放逐票':'投票';
    $('#frame-position').textContent=`${cursor+1} / ${frames.length} 段`;
@@ -227,11 +246,9 @@
  $('#play').addEventListener('click',()=>playing?pause():start());
  $('#previous').addEventListener('click',()=>seek(cursor-1));$('#next').addEventListener('click',()=>seek(cursor+1));
  $('#timeline').addEventListener('input',event=>seek(event.target.value));
- $('#jump-campaign').addEventListener('click',()=>{focus=null;$('#campaign-details').open=true;seek(frameIndex.get('H1-U003'));});
- $('#jump-election').addEventListener('click',()=>{focus=null;$('#campaign-details').open=true;seek(frameIndex.get('H1-U017'));});
+ for(const id of ['jump-campaign','jump-election'])$('#'+id).addEventListener('click',event=>{focus=null;$('#campaign-details').open=true;seek(frameIndex.get(event.currentTarget.dataset.utterance));});
  $('#speed').addEventListener('change',schedule);
  $('#restart').addEventListener('click',()=>{pause();cursor=0;selectedEdge=null;focus=null;start();});
- document.querySelectorAll('.day-button').forEach(button=>button.addEventListener('click',()=>seek(E.snapshotIndex(frames,Number(button.dataset.day)))));
  for(const layer of Object.keys(visible))$('#layer-'+layer).addEventListener('change',event=>{visible[layer]=event.target.checked;render();});
  $('#reveal-roles').addEventListener('change',event=>{reveal=event.target.checked;render();});
  $('#clear-focus').addEventListener('click',()=>{focus=null;selectedEdge=null;render();});
@@ -252,13 +269,23 @@
    const style=document.createElementNS('http://www.w3.org/2000/svg','style');
    style.textContent=':root{'+Array.from(['--bg','--ink','--muted','--primary','--support','--suspect','--vote','--line','--subtle','--dead','--white','--focus']).map(k=>k+':'+getComputedStyle(document.documentElement).getPropertyValue(k)+';').join('')+'}'+Array.from(document.styleSheets).flatMap(s=>{try{return Array.from(s.cssRules).map(r=>r.cssText);}catch{return[];}}).join('\n');
    clone.insertBefore(style,clone.firstChild);clone.querySelectorAll('.edge-hit').forEach(p=>p.remove());
-   download(`H1_第${current.day}天_${current.frame.timestamp.replace(':','-')}.svg`,new XMLSerializer().serializeToString(clone),'image/svg+xml;charset=utf-8');toast('已下载当前网络图');
+   download(`${data.game_id||'H1'}_第${current.day}天_${current.frame.timestamp.replaceAll(':','-')}.svg`,new XMLSerializer().serializeToString(clone),'image/svg+xml;charset=utf-8');toast('已下载当前网络图');
  });
  $('#download-edges').addEventListener('click',()=>{
-   const rows=[['game_id','day','timestamp','source','target','layer','evidence_id'],...shownEdges().filter(relevant).map(e=>['H1',current.day,current.frame.timestamp,e.source,e.target,e.layer,e.event.event_id||e.event.vote_id])];
-   download(`H1_第${current.day}天_当前边表.csv`,'\uFEFF'+rows.map(r=>r.map(v=>'"'+String(v).replaceAll('"','""')+'"').join(',')).join('\r\n'),'text/csv;charset=utf-8');toast('已下载当前可见关系');
+   const rows=[['game_id','day','timestamp','source','target','layer','evidence_id'],...shownEdges().filter(relevant).map(e=>[data.game_id||'H1',current.day,current.frame.timestamp,e.source,e.target,e.layer,e.event.event_id||e.event.vote_id])];
+   download(`${data.game_id||'H1'}_第${current.day}天_当前边表.csv`,'\uFEFF'+rows.map(r=>r.map(v=>'"'+String(v).replaceAll('"','""')+'"').join(',')).join('\r\n'),'text/csv;charset=utf-8');toast('已下载当前可见关系');
  });
- render();pause();
+ const selector=$('#game-select');
+ for(const game of games){const option=el('option','',game.title);option.value=game.game_id;selector.append(option);}
+ function selectGame(id){
+   const game=games.find(g=>g.game_id===id);if(!game)return;
+   pause();data=game.data;frames=E.buildFrames(data);playerById=new Map(data.players.map(p=>[p.player_id,p]));
+   frameIndex=new Map(frames.map((f,i)=>[f.utterance_id,i]));frameOrder=new Map(data.utterances.map(u=>[u.utterance_id,Number(u.utterance_order)]));
+   cursor=E.snapshotIndex(frames,1,data);focus=null;selectedEdge=null;reveal=false;$('#reveal-roles').checked=false;$('#campaign-details').open=false;
+   selector.value=id;$('#game-tag').textContent=id;$('#game-meta').textContent=`${data.players.length} 位玩家 · ${new Set(frames.map(f=>Number(f.day))).size} 个白天`;
+   updatePositions();svg.call(zoom.transform,d3.zoomIdentity);rebuildTimeline();render();
+ }
+ selector.addEventListener('change',event=>selectGame(event.target.value));selectGame(games[0].game_id);
  const narrow=window.matchMedia('(max-width:800px)');
  const resizeCanvas=()=>svg.attr('viewBox',narrow.matches?'80 10 700 730':'0 0 860 740');
  narrow.addEventListener('change',resizeCanvas);resizeCanvas();

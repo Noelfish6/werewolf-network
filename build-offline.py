@@ -10,4 +10,10 @@ def inline(match):
 html=re.sub(r'<script src="([^"]+)"></script>',inline,html)
 html=html.replace('<head>','<head>\n<!-- D3.js license\n'+(dist/'vendor/D3-LICENSE.txt').read_text()+'\n-->')
 (P/'H1_狼人杀互动关系图.html').write_text(html,encoding='utf-8')
+if (dist/'catalog.js').exists():
+    (P/'狼人杀_人类玩家关系回放.html').write_text(html,encoding='utf-8')
+(P/'docs/index.html').write_text(html,encoding='utf-8')
+if (P.parent/'outputs').is_dir():
+    for name in ['H1_狼人杀互动关系图.html','狼人杀_人类玩家关系回放.html']:
+        (P.parent/'outputs'/name).write_text(html,encoding='utf-8')
 print('Offline HTML:',len(html.encode('utf-8')),'bytes')

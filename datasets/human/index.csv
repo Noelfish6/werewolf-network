@@ -1,0 +1,5 @@
+﻿game_id,category,title,day_count,utterances,relation_events,snapshot_edges,ballot_records,review_issues,source_sha256,coding_status
+H1,human,第一期第一局,3,110,255,94,48,16,3bd6d4a6ae8b1cc9722b4b9bccd2da15562f11a499b59b7d0c14549f581100e1,AI_first_pass_not_independently_validated
+H3,human,第三期第一局,5,135,304,64,60,13,bfe22153747da1f9828c466ff54f7442c6f57a417aa0993b7e3d153c00fcb9a2,AI_first_pass_not_independently_validated
+H6,human,第六期第一局,4,97,178,45,36,11,253c61b2fc3442fd3e6e9e3d92797525541c471c3e1caefb51bc0b1d17856e62,AI_first_pass_not_independently_validated
+H8,human,第八期第一局,5,104,232,69,24,13,4eea4188bebb59233c4f384cc73cb6ff0b7851494ccab0ddda2e3004b6c4bd1f,AI_first_pass_not_independently_validated

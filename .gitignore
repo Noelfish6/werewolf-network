@@ -2,3 +2,10 @@ node_modules/
 *.log
 .DS_Store
 _qa/
+
+__pycache__/
+_previews/
+*.mp4
+*.mov
+*.mkv
+*.webm

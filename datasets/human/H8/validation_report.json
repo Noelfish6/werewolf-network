@@ -1,0 +1,32 @@
+{
+  "game_id": "H8",
+  "result": "PASS",
+  "counts": {
+    "players": 12,
+    "player_status": 60,
+    "utterances": 104,
+    "relation_events": 232,
+    "votes": 24,
+    "key_events": 85,
+    "review_issues": 13,
+    "snapshot_dyads": 720,
+    "network_edges": 69,
+    "data_dictionary": 125
+  },
+  "source_sha256": "4eea4188bebb59233c4f384cc73cb6ff0b7851494ccab0ddda2e3004b6c4bd1f",
+  "xlsx_cells_compared_to_csv": 19985,
+  "checks": [
+    "unchanged original/source copy",
+    "all CSV and JSON fields identical",
+    "exact evidence offsets",
+    "valid game-scoped foreign keys",
+    "unobserved NA cells retained",
+    "GraphML matches daily edges",
+    "all saved workbook data cells match source tables"
+  ],
+  "limits": [
+    "AI-assisted first-pass semantic coding; no independent human reliability certification",
+    "No source video reviewed for these new games",
+    "Ambiguous names, speakers, votes and identities retained in review issues"
+  ]
+}

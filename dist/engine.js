@@ -9,7 +9,9 @@
     return data.utterances.filter(u=>Number(u.day)>0&&!exclude.has(u.phase))
       .sort((a,b)=>Number(a.utterance_order)-Number(b.utterance_order));
   }
-  function snapshotIndex(frames,day){
+  function snapshotIndex(frames,day,data){
+    const explicit=data?.snapshot_utterances?.[day];
+    if(explicit){const i=frames.findIndex(f=>f.utterance_id===explicit);if(i>=0)return i;}
     const ballot=frames.find(f=>Number(f.day)===Number(day)&&f.phase==='exile_ballot');
     let result=0;
     frames.forEach((f,i)=>{if(Number(f.day)===Number(day)&&(!ballot||Number(f.utterance_order)<Number(ballot.utterance_order)))result=i;});
@@ -18,7 +20,10 @@
   function stateAt(data,frames,index){
     index=Math.max(0,Math.min(frames.length-1,Math.round(Number(index)||0)));
     const frame=frames[index],day=Number(frame.day),order=Number(frame.utterance_order);
-    const alive=new Set(data.player_status.filter(s=>Number(s.day)===day&&Number(s.alive_at_prevote)===1).map(s=>s.player_id));
+    const frameOrder=new Map(data.utterances.map(u=>[u.utterance_id,Number(u.utterance_order)]));
+    const deaths=data.key_events.filter(k=>['exile','night_death','self_explosion','skill_death'].includes(k.event_type)&&k.target);
+    const alive=new Set(data.player_status.filter(s=>Number(s.day)===day&&Number(data.lifecycle_mode==='events'?(s.alive_at_day_start??s.alive_at_discussion_start):s.alive_at_prevote)===1).map(s=>s.player_id));
+    if(data.lifecycle_mode==='events')for(const k of deaths)if(frameOrder.get(k.utterance_id)<=order)alive.delete(k.target);
     const latest=new Map(),edges=[],notices=[];
     const rows=data.relation_events.filter(r=>Number(r.day)===day&&Number(r.utterance_order)<=order&&Number(r.main_eligible)===1)
       .sort((a,b)=>Number(a.utterance_order)-Number(b.utterance_order)||Number(a.evidence_char_start)-Number(b.evidence_char_start));
@@ -33,7 +38,6 @@
       if(!['support','suspect'].includes(r.relation))continue;
       edges.push({id:r.relation+'|'+r.source+'|'+r.target,source:r.source,target:r.target,layer:r.relation,event:r,utterance_id:r.utterance_id,quote:r.evidence_quote,timestamp:r.timestamp});
     }
-    const frameOrder=new Map(data.utterances.map(u=>[u.utterance_id,Number(u.utterance_order)]));
     const ballots=data.votes.filter(v=>Number(v.day)===day&&frameOrder.get(v.utterance_id)<=order);
     let ballot='';
     if(ballots.length){
@@ -47,30 +51,36 @@
       }
     }
     const out=new Set(data.players.filter(p=>!alive.has(p.player_id)).map(p=>p.player_id));
-    for(const k of data.key_events){
-      if(['exile','night_death'].includes(k.event_type)&&frameOrder.get(k.utterance_id)<=order&&k.target)out.add(k.target);
+    for(const k of deaths){
+      if(frameOrder.get(k.utterance_id)<=order)out.add(k.target);
     }
     const observed=k=>frameOrder.get(k.utterance_id)<=order;
     const registration=data.key_events.find(k=>k.event_type==='sheriff_candidates'&&observed(k));
     const elected=data.key_events.find(k=>k.event_type==='sheriff_elected'&&observed(k));
-    const candidates=registration?registration.value.split('|').map(n=>'H1-P'+n.padStart(2,'0')):[];
+    const candidates=registration?registration.value.split('|').map(n=>data.players.find(p=>Number(p.seat)===Number(n))?.player_id).filter(Boolean):[];
     const withdrawals=(data.campaign_events||[]).filter(k=>k.event_type==='sheriff_withdrawal'&&observed(k)&&candidates.includes(k.actor));
     const withdrawn=candidates.filter(id=>withdrawals.some(k=>k.actor===id));
     const nomination=data.key_events.filter(k=>k.event_type==='sheriff_nomination'&&Number(k.day)===day&&observed(k)).at(-1)||null;
-    const election={candidates,withdrawn,remaining:candidates.filter(id=>!withdrawn.includes(id)),winner:elected?.actor||null,
+    const badgeEvents=data.key_events.filter(k=>['sheriff_elected','sheriff_transfer','sheriff_badge_destroyed'].includes(k.event_type)&&observed(k)).sort((a,b)=>frameOrder.get(a.utterance_id)-frameOrder.get(b.utterance_id));
+    let sheriff=null;
+    for(const k of badgeEvents)sheriff=k.event_type==='sheriff_badge_destroyed'?null:k.event_type==='sheriff_transfer'?k.target:k.actor;
+    const election={candidates,withdrawn,remaining:candidates.filter(id=>!withdrawn.includes(id)),winner:elected?.actor||null,sheriff,badgeEvent:badgeEvents.at(-1)||null,
       votes:data.votes.filter(v=>v.ballot_type==='sheriff'&&observed(v)),registration:registration||null,elected:elected||null,withdrawals,nomination};
     return {frame,index,day,edges,out,alive,ballot,notices,latest,election};
   }
   function roleLabel(player,reveal){
     if(!reveal)return '';
-    const labels={seer:'预言家',witch:'女巫',hunter:'猎人',idiot:'白痴',werewolf:'狼人',villager:'平民'};
+    const labels={seer:'预言家',witch:'女巫',hunter:'猎人',idiot:'白痴',guard:'守卫',white_wolf_king:'白狼王',werewolf:'狼人',villager:'平民'};
     if(player.true_role){return (labels[player.true_role]||player.true_role)+' · '+(player.role_status==='confirmed'?'已确认':'推定');}
     if(player.true_camp)return (player.true_camp==='wolf'?'狼人阵营':'好人阵营')+' · '+(player.camp_status==='confirmed'?'已确认':'推定');
     return '身份未知';
   }
-  function quoteForDisplay(text,utteranceId,reveal){
-    if(reveal||utteranceId!=='H1-U097')return text;
-    const boundary=text.indexOf('在本轮游戏中');
+  function quoteForDisplay(text,utteranceId,reveal,data){
+    if(reveal)return text;
+    const redaction=data?.redactions?.find(r=>r.utterance_id===utteranceId);
+    const starts=redaction?.starts_at||(utteranceId==='H1-U097'?'在本轮游戏中':'');
+    if(!starts)return text;
+    const boundary=text.indexOf(starts);
     return boundary<0?text:text.slice(0,boundary).trim()+'\n\n〔赛后解说已隐藏，开启赛后视角查看。〕';
   }
   return {buildFrames,snapshotIndex,stateAt,roleLabel,quoteForDisplay};

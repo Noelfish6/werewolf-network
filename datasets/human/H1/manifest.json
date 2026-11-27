@@ -1,0 +1,52 @@
+{
+  "game_id": "H1",
+  "source_file": "第一期第一局_逐字稿.md",
+  "source_sha256": "3bd6d4a6ae8b1cc9722b4b9bccd2da15562f11a499b59b7d0c14549f581100e1",
+  "source_recording_date": "unknown",
+  "transcript_export_timestamp": "2026-10-22 17:39:38 CST (metadata, not game date)",
+  "day_count": 3,
+  "counts": {
+    "players": 12,
+    "player_status": 36,
+    "utterances": 110,
+    "relation_events": 255,
+    "votes": 48,
+    "key_events": 51,
+    "review_issues": 16,
+    "snapshot_dyads": 432,
+    "network_edges": 94
+  },
+  "coding_status": "AI_first_pass_not_independently_validated",
+  "source_video_reviewed": false,
+  "source_pdf": "1022狼人杀社会网络项目方案.pdf",
+  "checks": [
+    "all 110 utterances preserved",
+    "all relation quotes match source offsets",
+    "foreign keys valid",
+    "no main self loops",
+    "48 ballot-status rows",
+    "one unreported ballot retained",
+    "432 directed dyad-day cells",
+    "unknowns not coerced to zero"
+  ],
+  "reviewer_decisions_recorded": 0,
+  "source_video_review_scope": "仅抽帧核对7号、12号昵称；未完成全局视频复核。",
+  "nickname_verifications": [
+    {
+      "player_id": "H1-P07",
+      "display_name": "LOT29",
+      "timestamp": "04:25",
+      "evidence_frame": "evidence/frame_04-25.png",
+      "verified_on": "2026-11-27"
+    },
+    {
+      "player_id": "H1-P12",
+      "display_name": "魔兽后裔",
+      "timestamp": "40:30",
+      "evidence_frame": "evidence/frame_40-30.png",
+      "verified_on": "2026-11-27"
+    }
+  ],
+  "original_source_file": "13437134953549679.md",
+  "source_path": "原始资料/人类玩家/第一期第一局/第一期第一局_逐字稿.md"
+}

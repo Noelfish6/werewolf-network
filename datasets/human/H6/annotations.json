@@ -1,0 +1,3186 @@
+{
+  "game_id": "H6",
+  "title": "第六期第一局",
+  "source_path": "原始资料/人类玩家/第六期第一局/第六期第一局.md",
+  "duration_seconds": 2922,
+  "players": [
+    {
+      "seat": 1,
+      "display_name": "囚徒",
+      "aliases": [],
+      "name_status": "contextual",
+      "true_role": "witch",
+      "role_status": "inferred",
+      "true_camp": "good",
+      "camp_status": "inferred",
+      "role_evidence": [
+        32,
+        33,
+        69
+      ],
+      "notes": "U32-34自称女巫；U69由JY说明其真实女巫身份及未救11号。主持只宣布夜死，故真实角色保留inferred。"
+    },
+    {
+      "seat": 2,
+      "display_name": "毛毛",
+      "aliases": [],
+      "name_status": "contextual",
+      "true_role": "villager",
+      "role_status": "inferred",
+      "true_camp": "good",
+      "camp_status": "inferred",
+      "role_evidence": [
+        33,
+        58,
+        87,
+        93
+      ],
+      "notes": "警上穿女巫衣服，不能据此认女巫或狼人。U70将2号认狼是9号当时推断，与四名实际狼的自爆及终局证据不合；按后续局势推断好人平民。"
+    },
+    {
+      "seat": 3,
+      "display_name": "3号玩家",
+      "aliases": [
+        "王"
+      ],
+      "name_status": "unresolved",
+      "true_role": "",
+      "role_status": "unknown",
+      "true_camp": "good",
+      "camp_status": "inferred",
+      "role_evidence": [
+        87
+      ],
+      "notes": "U87仅称“3号王”；不沿用他局昵称。强神发言与最后隐藏猎人的格局不足以直接确认猎人，真实角色留空。"
+    },
+    {
+      "seat": 4,
+      "display_name": "少帮主",
+      "aliases": [
+        "邵帮主",
+        "商帮主",
+        "尚帮主",
+        "少班主",
+        "卢西奥",
+        "陆笑"
+      ],
+      "name_status": "contextual",
+      "true_role": "seer",
+      "role_status": "confirmed",
+      "true_camp": "good",
+      "camp_status": "confirmed",
+      "role_evidence": [
+        93
+      ],
+      "notes": "自称卢西奥是开场玩笑别名；终局旁白明确称真预言家少帮主。"
+    },
+    {
+      "seat": 5,
+      "display_name": "王师傅",
+      "aliases": [],
+      "name_status": "contextual",
+      "true_role": "",
+      "role_status": "unknown",
+      "true_camp": "wolf",
+      "camp_status": "confirmed",
+      "role_evidence": [
+        62,
+        93
+      ],
+      "notes": "主持确认自爆且旁白点名王师傅自爆；白狼王子类型未能可靠定位，角色留空，仅狼阵营confirmed。"
+    },
+    {
+      "seat": 6,
+      "display_name": "魔兽后羿",
+      "aliases": [
+        "魔兽",
+        "小魔兽"
+      ],
+      "name_status": "contextual",
+      "true_role": "villager",
+      "role_status": "inferred",
+      "true_camp": "good",
+      "camp_status": "inferred",
+      "role_evidence": [
+        86,
+        87,
+        93
+      ],
+      "notes": "U10明确6号魔兽后羿；验人金水属预言家玩家报告。平民为后续角色格局推断。"
+    },
+    {
+      "seat": 7,
+      "display_name": "桃子",
+      "aliases": [],
+      "name_status": "contextual",
+      "true_role": "",
+      "role_status": "unknown",
+      "true_camp": "wolf",
+      "camp_status": "confirmed",
+      "role_evidence": [
+        93
+      ],
+      "notes": "U24称7号桃子，U93旁白明确桃子悍跳；白狼王子类型未明。"
+    },
+    {
+      "seat": 8,
+      "display_name": "8号玩家",
+      "aliases": [],
+      "name_status": "unresolved",
+      "true_role": "villager",
+      "role_status": "inferred",
+      "true_camp": "good",
+      "camp_status": "inferred",
+      "role_evidence": [
+        46,
+        72,
+        93
+      ],
+      "notes": "U46轮序及其自述警长票投4号对应8号；U72-73称9号JY为第三人，U76呼应8号发言。U19转录“强”可能指8号，但与12号强神混淆，不强行归昵称。"
+    },
+    {
+      "seat": 9,
+      "display_name": "JY",
+      "aliases": [],
+      "name_status": "contextual",
+      "true_role": "guard",
+      "role_status": "confirmed",
+      "true_camp": "good",
+      "camp_status": "confirmed",
+      "role_evidence": [
+        93
+      ],
+      "notes": "U73明确9号JY；U93旁白确认守卫。U41-45先自称猎人，U68才认守卫。"
+    },
+    {
+      "seat": 10,
+      "display_name": "鼠大王",
+      "aliases": [],
+      "name_status": "contextual",
+      "true_role": "",
+      "role_status": "unknown",
+      "true_camp": "wolf",
+      "camp_status": "confirmed",
+      "role_evidence": [
+        81,
+        82
+      ],
+      "notes": "U24明确10号鼠大王，U65自报10号；U81确认自爆。U24猜测白狼王不是终局证据。"
+    },
+    {
+      "seat": 11,
+      "display_name": "09",
+      "aliases": [
+        "零九"
+      ],
+      "name_status": "contextual",
+      "true_role": "villager",
+      "role_status": "inferred",
+      "true_camp": "good",
+      "camp_status": "inferred",
+      "role_evidence": [
+        58,
+        69,
+        93
+      ],
+      "notes": "U37手滑投票被U49指认11号；U69“没有救09”后立即称“救了十一号”，姓名09映射11。平民身份为后续格局推断，未由主持直接揭示。"
+    },
+    {
+      "seat": 12,
+      "display_name": "强神",
+      "aliases": [
+        "小强强神"
+      ],
+      "name_status": "contextual",
+      "true_role": "",
+      "role_status": "unknown",
+      "true_camp": "wolf",
+      "camp_status": "confirmed",
+      "role_evidence": [
+        93
+      ],
+      "notes": "U93最后一狼强神对应刚被放逐12号。U35-36及64由发言顺序、本人首轮投7号和主持指定12号确立。"
+    }
+  ],
+  "utterances": [
+    {
+      "u": 1,
+      "day": 0,
+      "phase": "setup",
+      "speaker": 0,
+      "speaker_kind": "host"
+    },
+    {
+      "u": 2,
+      "day": 0,
+      "phase": "setup",
+      "speaker": 0,
+      "speaker_kind": "host"
+    },
+    {
+      "u": 3,
+      "day": 0,
+      "phase": "setup",
+      "speaker": 0,
+      "speaker_kind": "host"
+    },
+    {
+      "u": 4,
+      "day": 1,
+      "phase": "campaign",
+      "speaker": 0,
+      "speaker_kind": "host",
+      "notes": "首次天亮先警长竞选；首夜结果直到U14才公布。"
+    },
+    {
+      "u": 5,
+      "day": 1,
+      "phase": "campaign",
+      "speaker": 6,
+      "speaker_kind": "player"
+    },
+    {
+      "u": 6,
+      "day": 1,
+      "phase": "campaign",
+      "speaker": 7,
+      "speaker_kind": "player"
+    },
+    {
+      "u": 7,
+      "day": 1,
+      "phase": "campaign",
+      "speaker": 1,
+      "speaker_kind": "player"
+    },
+    {
+      "u": 8,
+      "day": 1,
+      "phase": "campaign",
+      "speaker": 2,
+      "speaker_kind": "player"
+    },
+    {
+      "u": 9,
+      "day": 1,
+      "phase": "campaign",
+      "speaker": 3,
+      "speaker_kind": "player"
+    },
+    {
+      "u": 10,
+      "day": 1,
+      "phase": "campaign",
+      "speaker": 4,
+      "speaker_kind": "player"
+    },
+    {
+      "u": 11,
+      "day": 1,
+      "phase": "campaign",
+      "speaker": 4,
+      "speaker_kind": "player"
+    },
+    {
+      "u": 12,
+      "day": 1,
+      "phase": "campaign",
+      "speaker": 5,
+      "speaker_kind": "player"
+    },
+    {
+      "u": 13,
+      "day": 1,
+      "phase": "campaign",
+      "speaker": 5,
+      "speaker_kind": "player"
+    },
+    {
+      "u": 14,
+      "day": 1,
+      "phase": "sheriff_ballot",
+      "speaker": 0,
+      "speaker_kind": "host",
+      "notes": "同段合并退水、警长投票与首夜平安夜，主phase按投票。主持“其余”按未竞选8-12号解释；未将退水1/5擅加选民。"
+    },
+    {
+      "u": 15,
+      "day": 1,
+      "phase": "discussion",
+      "speaker": 7,
+      "speaker_kind": "player"
+    },
+    {
+      "u": 16,
+      "day": 1,
+      "phase": "discussion",
+      "speaker": 0,
+      "speaker_kind": "host"
+    },
+    {
+      "u": 17,
+      "day": 1,
+      "phase": "discussion",
+      "speaker": 6,
+      "speaker_kind": "player"
+    },
+    {
+      "u": 18,
+      "day": 1,
+      "phase": "discussion",
+      "speaker": 6,
+      "speaker_kind": "player"
+    },
+    {
+      "u": 19,
+      "day": 1,
+      "phase": "discussion",
+      "speaker": 5,
+      "speaker_kind": "player"
+    },
+    {
+      "u": 20,
+      "day": 1,
+      "phase": "discussion",
+      "speaker": 5,
+      "speaker_kind": "player"
+    },
+    {
+      "u": 21,
+      "day": 1,
+      "phase": "discussion",
+      "speaker": 4,
+      "speaker_kind": "player"
+    },
+    {
+      "u": 22,
+      "day": 1,
+      "phase": "discussion",
+      "speaker": 5,
+      "speaker_kind": "player"
+    },
+    {
+      "u": 23,
+      "day": 1,
+      "phase": "discussion",
+      "speaker": 4,
+      "speaker_kind": "player"
+    },
+    {
+      "u": 24,
+      "day": 1,
+      "phase": "discussion",
+      "speaker": 4,
+      "speaker_kind": "player"
+    },
+    {
+      "u": 25,
+      "day": 1,
+      "phase": "discussion",
+      "speaker": 4,
+      "speaker_kind": "player"
+    },
+    {
+      "u": 26,
+      "day": 1,
+      "phase": "discussion",
+      "speaker": 4,
+      "speaker_kind": "player"
+    },
+    {
+      "u": 27,
+      "day": 1,
+      "phase": "discussion",
+      "speaker": 3,
+      "speaker_kind": "player"
+    },
+    {
+      "u": 28,
+      "day": 1,
+      "phase": "discussion",
+      "speaker": 2,
+      "speaker_kind": "player"
+    },
+    {
+      "u": 29,
+      "day": 1,
+      "phase": "discussion",
+      "speaker": 2,
+      "speaker_kind": "player"
+    },
+    {
+      "u": 30,
+      "day": 1,
+      "phase": "discussion",
+      "speaker": 2,
+      "speaker_kind": "player"
+    },
+    {
+      "u": 31,
+      "day": 1,
+      "phase": "discussion",
+      "speaker": 2,
+      "speaker_kind": "player"
+    },
+    {
+      "u": 32,
+      "day": 1,
+      "phase": "discussion",
+      "speaker": 1,
+      "speaker_kind": "player"
+    },
+    {
+      "u": 33,
+      "day": 1,
+      "phase": "discussion",
+      "speaker": 1,
+      "speaker_kind": "player"
+    },
+    {
+      "u": 34,
+      "day": 1,
+      "phase": "discussion",
+      "speaker": 1,
+      "speaker_kind": "player"
+    },
+    {
+      "u": 35,
+      "day": 1,
+      "phase": "discussion",
+      "speaker": 12,
+      "speaker_kind": "player",
+      "notes": "发言人9并非固定座位；此段在1号后、11号前，对应12号。"
+    },
+    {
+      "u": 36,
+      "day": 1,
+      "phase": "discussion",
+      "speaker": 12,
+      "speaker_kind": "player",
+      "notes": "承U35为12号；他自述首轮投7号，与8号投4号不符，不能当8号。"
+    },
+    {
+      "u": 37,
+      "day": 1,
+      "phase": "discussion",
+      "speaker": 11,
+      "speaker_kind": "player"
+    },
+    {
+      "u": 38,
+      "day": 1,
+      "phase": "discussion",
+      "speaker": 11,
+      "speaker_kind": "player"
+    },
+    {
+      "u": 39,
+      "day": 1,
+      "phase": "discussion",
+      "speaker": 10,
+      "speaker_kind": "player"
+    },
+    {
+      "u": 40,
+      "day": 1,
+      "phase": "discussion",
+      "speaker": 10,
+      "speaker_kind": "player"
+    },
+    {
+      "u": 41,
+      "day": 1,
+      "phase": "discussion",
+      "speaker": 9,
+      "speaker_kind": "player"
+    },
+    {
+      "u": 42,
+      "day": 1,
+      "phase": "discussion",
+      "speaker": 9,
+      "speaker_kind": "player"
+    },
+    {
+      "u": 43,
+      "day": 1,
+      "phase": "discussion",
+      "speaker": 9,
+      "speaker_kind": "player"
+    },
+    {
+      "u": 44,
+      "day": 1,
+      "phase": "discussion",
+      "speaker": 9,
+      "speaker_kind": "player"
+    },
+    {
+      "u": 45,
+      "day": 1,
+      "phase": "discussion",
+      "speaker": 9,
+      "speaker_kind": "player"
+    },
+    {
+      "u": 46,
+      "day": 1,
+      "phase": "discussion",
+      "speaker": 8,
+      "speaker_kind": "player",
+      "notes": "发言人9此段在9号后、7号前，对应8号，自述警长投4号。"
+    },
+    {
+      "u": 47,
+      "day": 1,
+      "phase": "discussion",
+      "speaker": 7,
+      "speaker_kind": "player"
+    },
+    {
+      "u": 48,
+      "day": 1,
+      "phase": "discussion",
+      "speaker": 7,
+      "speaker_kind": "player"
+    },
+    {
+      "u": 49,
+      "day": 1,
+      "phase": "discussion",
+      "speaker": 7,
+      "speaker_kind": "player"
+    },
+    {
+      "u": 50,
+      "day": 1,
+      "phase": "discussion",
+      "speaker": 7,
+      "speaker_kind": "player"
+    },
+    {
+      "u": 51,
+      "day": 1,
+      "phase": "discussion",
+      "speaker": 0,
+      "speaker_kind": "host"
+    },
+    {
+      "u": 52,
+      "day": 1,
+      "phase": "discussion",
+      "speaker": 7,
+      "speaker_kind": "player"
+    },
+    {
+      "u": 53,
+      "day": 1,
+      "phase": "exile_ballot",
+      "speaker": 0,
+      "speaker_kind": "host",
+      "notes": "首日完整放逐票；警长7号也有一票，票权另由规则处理。"
+    },
+    {
+      "u": 54,
+      "day": 1,
+      "phase": "last_words",
+      "speaker": 7,
+      "speaker_kind": "player"
+    },
+    {
+      "u": 55,
+      "day": 1,
+      "phase": "last_words",
+      "speaker": 4,
+      "speaker_kind": "player"
+    },
+    {
+      "u": 56,
+      "day": 1,
+      "phase": "last_words",
+      "speaker": 7,
+      "speaker_kind": "player"
+    },
+    {
+      "u": 57,
+      "day": 1,
+      "phase": "setup",
+      "speaker": 0,
+      "speaker_kind": "host"
+    },
+    {
+      "u": 58,
+      "day": 2,
+      "phase": "night_result",
+      "speaker": 0,
+      "speaker_kind": "host"
+    },
+    {
+      "u": 59,
+      "day": 2,
+      "phase": "interview",
+      "speaker": 11,
+      "speaker_kind": "player",
+      "notes": "11号死后独白，疑剪辑采访；非公开讨论且无关系边。"
+    },
+    {
+      "u": 60,
+      "day": 2,
+      "phase": "discussion",
+      "speaker": 0,
+      "speaker_kind": "host"
+    },
+    {
+      "u": 61,
+      "day": 2,
+      "phase": "self_explosion",
+      "speaker": 5,
+      "speaker_kind": "player",
+      "notes": "原发言人12通常为9号，但主持紧接U62明确5号自爆，依动作关联定5号。"
+    },
+    {
+      "u": 62,
+      "day": 2,
+      "phase": "self_explosion",
+      "speaker": 0,
+      "speaker_kind": "host",
+      "notes": "5号自爆后直接入夜；无放逐投票、无带人死亡的主持公告。"
+    },
+    {
+      "u": 63,
+      "day": 3,
+      "phase": "night_result",
+      "speaker": 0,
+      "speaker_kind": "host"
+    },
+    {
+      "u": 64,
+      "day": 3,
+      "phase": "discussion",
+      "speaker": 12,
+      "speaker_kind": "player",
+      "notes": "主持U63指定12号首先发言，据此确认。"
+    },
+    {
+      "u": 65,
+      "day": 3,
+      "phase": "discussion",
+      "speaker": 10,
+      "speaker_kind": "player"
+    },
+    {
+      "u": 66,
+      "day": 3,
+      "phase": "discussion",
+      "speaker": 10,
+      "speaker_kind": "player"
+    },
+    {
+      "u": 67,
+      "day": 3,
+      "phase": "discussion",
+      "speaker": 10,
+      "speaker_kind": "player"
+    },
+    {
+      "u": 68,
+      "day": 3,
+      "phase": "discussion",
+      "speaker": 9,
+      "speaker_kind": "player"
+    },
+    {
+      "u": 69,
+      "day": 3,
+      "phase": "discussion",
+      "speaker": 9,
+      "speaker_kind": "player"
+    },
+    {
+      "u": 70,
+      "day": 3,
+      "phase": "discussion",
+      "speaker": 9,
+      "speaker_kind": "player"
+    },
+    {
+      "u": 71,
+      "day": 3,
+      "phase": "discussion",
+      "speaker": 9,
+      "speaker_kind": "player"
+    },
+    {
+      "u": 72,
+      "day": 3,
+      "phase": "discussion",
+      "speaker": 8,
+      "speaker_kind": "player",
+      "notes": "原发言人9，此段以9号JY为第三人，结合轮序及U76评价8号定位8号。"
+    },
+    {
+      "u": 73,
+      "day": 3,
+      "phase": "discussion",
+      "speaker": 8,
+      "speaker_kind": "player"
+    },
+    {
+      "u": 74,
+      "day": 3,
+      "phase": "discussion",
+      "speaker": 6,
+      "speaker_kind": "player"
+    },
+    {
+      "u": 75,
+      "day": 3,
+      "phase": "discussion",
+      "speaker": 6,
+      "speaker_kind": "player"
+    },
+    {
+      "u": 76,
+      "day": 3,
+      "phase": "discussion",
+      "speaker": 4,
+      "speaker_kind": "player"
+    },
+    {
+      "u": 77,
+      "day": 3,
+      "phase": "discussion",
+      "speaker": 4,
+      "speaker_kind": "player",
+      "notes": "尾句“爆了”混入10号插话可能；整段主说话人4号，未给尾句主边。"
+    },
+    {
+      "u": 78,
+      "day": 3,
+      "phase": "self_explosion",
+      "speaker": 0,
+      "speaker_kind": "unresolved",
+      "notes": "极短插话，疑10号，但无法逐字确认；保留speaker0，不产主边。"
+    },
+    {
+      "u": 79,
+      "day": 3,
+      "phase": "discussion",
+      "speaker": 4,
+      "speaker_kind": "player"
+    },
+    {
+      "u": 80,
+      "day": 3,
+      "phase": "self_explosion",
+      "speaker": 0,
+      "speaker_kind": "unresolved",
+      "notes": "与10号随后自爆相邻，但短声原发言人13，无独立自报座位，保留speaker0。"
+    },
+    {
+      "u": 81,
+      "day": 3,
+      "phase": "self_explosion",
+      "speaker": 0,
+      "speaker_kind": "host",
+      "notes": "主持确认10号自爆，无带人死亡公告；当日无放逐票。"
+    },
+    {
+      "u": 82,
+      "day": 3,
+      "phase": "interview",
+      "speaker": 10,
+      "speaker_kind": "player",
+      "notes": "自爆后解释当时行为的剪辑采访，非下一次公开发言。"
+    },
+    {
+      "u": 83,
+      "day": 3,
+      "phase": "setup",
+      "speaker": 0,
+      "speaker_kind": "host"
+    },
+    {
+      "u": 84,
+      "day": 4,
+      "phase": "night_result",
+      "speaker": 0,
+      "speaker_kind": "host"
+    },
+    {
+      "u": 85,
+      "day": 4,
+      "phase": "discussion",
+      "speaker": 3,
+      "speaker_kind": "player"
+    },
+    {
+      "u": 86,
+      "day": 4,
+      "phase": "discussion",
+      "speaker": 4,
+      "speaker_kind": "player"
+    },
+    {
+      "u": 87,
+      "day": 4,
+      "phase": "discussion",
+      "speaker": 4,
+      "speaker_kind": "player"
+    },
+    {
+      "u": 88,
+      "day": 4,
+      "phase": "discussion",
+      "speaker": 4,
+      "speaker_kind": "player"
+    },
+    {
+      "u": 89,
+      "day": 4,
+      "phase": "discussion",
+      "speaker": 6,
+      "speaker_kind": "player",
+      "notes": "“三号组”转录有误，刚接4号验人发言、“信你”语义指4号，不改原文。"
+    },
+    {
+      "u": 90,
+      "day": 4,
+      "phase": "discussion",
+      "speaker": 8,
+      "speaker_kind": "player",
+      "notes": "原发言人9此处紧随6号，后为9号/12号，轮序判8号。"
+    },
+    {
+      "u": 91,
+      "day": 4,
+      "phase": "discussion",
+      "speaker": 9,
+      "speaker_kind": "player",
+      "notes": "“邵帮主出刀了”疑“吃刀了”转录，不据此将9号对4号认狼；仅保留守护报告和出12提案。"
+    },
+    {
+      "u": 92,
+      "day": 4,
+      "phase": "discussion",
+      "speaker": 12,
+      "speaker_kind": "player",
+      "notes": "此段为最后发言12号，U93确认12号投8号；与U90的8号同用发言人9。"
+    },
+    {
+      "u": 93,
+      "day": 4,
+      "phase": "exile_ballot",
+      "speaker": 0,
+      "speaker_kind": "host",
+      "notes": "“12号玩家出局，游戏结束，平民胜利。”之前是实局放逐与结束；“本轮游戏”起为终局解说，真身份揭示单列事件，不回灌为当时玩家证据。旁白“报出…查杀”与U87实际原话存在矛盾。"
+    },
+    {
+      "u": 94,
+      "day": 4,
+      "phase": "postgame",
+      "speaker": 9,
+      "speaker_kind": "player",
+      "notes": "沿原发言人12通常9号暂归9号；赛后问答可能交叉剪辑，不产生主边。"
+    },
+    {
+      "u": 95,
+      "day": 4,
+      "phase": "postgame",
+      "speaker": 0,
+      "speaker_kind": "unresolved",
+      "notes": "原发言人5通常2号，但“我为什么自爆”与2号夜死冲突；不盲从声纹标签，保留speaker0。"
+    },
+    {
+      "u": 96,
+      "day": 4,
+      "phase": "postgame",
+      "speaker": 5,
+      "speaker_kind": "player",
+      "notes": "沿原发言人8通常5号；谈“你爆了带走囚徒”为赛后战术反事实，不能据此定位白狼王。"
+    },
+    {
+      "u": 97,
+      "day": 4,
+      "phase": "postgame",
+      "speaker": 0,
+      "speaker_kind": "unresolved",
+      "notes": "与U95同声纹但赛后座位不明，短句保留speaker0。"
+    }
+  ],
+  "relations": [
+    {
+      "u": 6,
+      "targets": [
+        4
+      ],
+      "relation": "suspect",
+      "quote": "我昨天晚上验人是 4 号查杀。",
+      "mode": "asserted"
+    },
+    {
+      "u": 7,
+      "targets": [
+        7
+      ],
+      "relation": "support",
+      "quote": "我强神软站队 7 号",
+      "mode": "asserted"
+    },
+    {
+      "u": 8,
+      "targets": [
+        7
+      ],
+      "relation": "support",
+      "quote": "我认 7 号是一张真的预言家牌",
+      "mode": "asserted"
+    },
+    {
+      "u": 9,
+      "targets": [
+        7
+      ],
+      "relation": "support",
+      "quote": "没人跳的话，只有一个预言家，那我就暂时暂定认 7 号是预言家。",
+      "mode": "conditional"
+    },
+    {
+      "u": 10,
+      "targets": [
+        5
+      ],
+      "relation": "suspect",
+      "quote": "所以 5 号是我一张查杀牌。",
+      "mode": "asserted"
+    },
+    {
+      "u": 11,
+      "targets": [
+        7
+      ],
+      "relation": "support",
+      "quote": "你如果退水，我可以暂保你一轮到两轮",
+      "mode": "conditional"
+    },
+    {
+      "u": 11,
+      "targets": [
+        7
+      ],
+      "relation": "suspect",
+      "quote": "你如果不退水跟我悍跳到底，那么你一定是张狼人牌。",
+      "mode": "conditional"
+    },
+    {
+      "u": 11,
+      "targets": [
+        1
+      ],
+      "relation": "suspect",
+      "quote": "1 号你软站边，所以我才要查你。",
+      "mode": "ambiguous",
+      "notes": "查验意向和反常行为评价，未明确判断坏身份；按保守口径不进主网络。"
+    },
+    {
+      "u": 11,
+      "targets": [
+        1
+      ],
+      "relation": "support",
+      "quote": "平时我不需要查囚徒，因为我听他发言就能，他是好人，他会帮好人玩的，我还是很支持他的。",
+      "mode": "historical"
+    },
+    {
+      "u": 12,
+      "targets": [
+        4
+      ],
+      "relation": "suspect",
+      "quote": "你说你从阿根廷来，为什么你中文那么好？这就是你最大的疑点，OK？",
+      "mode": "joke"
+    },
+    {
+      "u": 12,
+      "targets": [
+        4
+      ],
+      "relation": "support",
+      "quote": "我想跟他一起软站个边",
+      "mode": "historical",
+      "notes": "原先欲站边，紧接被查杀后放弃；非当前支持。"
+    },
+    {
+      "u": 12,
+      "targets": [
+        7
+      ],
+      "relation": "support",
+      "quote": "7 号就预言家",
+      "mode": "asserted"
+    },
+    {
+      "u": 13,
+      "targets": [
+        4
+      ],
+      "relation": "logic_agreement",
+      "quote": "商帮主发言是挺好的",
+      "mode": "logic_only"
+    },
+    {
+      "u": 13,
+      "targets": [
+        7
+      ],
+      "relation": "support",
+      "quote": "那我现在只能跟 7 号站边了",
+      "mode": "asserted"
+    },
+    {
+      "u": 13,
+      "targets": [
+        4
+      ],
+      "relation": "propose_vote",
+      "quote": "我之后会无脑上票给 4 号",
+      "mode": "proposal"
+    },
+    {
+      "u": 17,
+      "targets": [
+        4,
+        5
+      ],
+      "relation": "undetermined",
+      "quote": "他跟少班主肯定不是一个狼踩狼的。",
+      "mode": "alternative_set",
+      "notes": "否定二人同狼，不是无条件认好任一人。"
+    },
+    {
+      "u": 17,
+      "targets": [
+        5
+      ],
+      "relation": "support",
+      "quote": "我旁边这位警长假如说是一个预言家的话，我那么 5 号的话肯定是一个金水。",
+      "mode": "conditional"
+    },
+    {
+      "u": 18,
+      "targets": [
+        4
+      ],
+      "relation": "logic_agreement",
+      "quote": "我觉得 4 号的一个验人稍微有一点点问题",
+      "mode": "logic_only",
+      "notes": "只评查验安排不合理，尚未明确据此认4号身份坏；不纳支持/怀疑主边。"
+    },
+    {
+      "u": 19,
+      "targets": [
+        7
+      ],
+      "relation": "support",
+      "quote": "那我现在肯定是跟 7 号站边的。",
+      "mode": "asserted"
+    },
+    {
+      "u": 19,
+      "targets": [
+        4
+      ],
+      "relation": "suspect",
+      "quote": "我说下尚帮主有什么问题吧",
+      "mode": "asserted",
+      "notes": "整段依据查杀自身好身份解释其起跳不合理。"
+    },
+    {
+      "u": 20,
+      "targets": [
+        4
+      ],
+      "relation": "suspect",
+      "quote": "我肯定不是跟他站在同一个阵营的，我肯定是在他的对立面",
+      "mode": "asserted",
+      "notes": "“他”指查杀自己的4号；“魔兽”为被对话者6号，不能误当怀疑6号。"
+    },
+    {
+      "u": 20,
+      "targets": [
+        9,
+        8,
+        4
+      ],
+      "relation": "suspect",
+      "quote": "就JY、强和邵帮主是一个阵营的",
+      "mode": "ambiguous",
+      "notes": "确有拉狼团队意图，但“强”转录与强神12号冲突；只作复核记录，不将此集合扩为确定主边。"
+    },
+    {
+      "u": 20,
+      "targets": [
+        4
+      ],
+      "relation": "propose_vote",
+      "quote": "反正我就无脑举票给 4 号",
+      "mode": "proposal"
+    },
+    {
+      "u": 21,
+      "targets": [
+        5
+      ],
+      "relation": "suspect",
+      "quote": "井上我查杀他，就是行为发言当中有比较大的明显的漏洞啊。",
+      "mode": "asserted"
+    },
+    {
+      "u": 21,
+      "targets": [
+        7
+      ],
+      "relation": "support",
+      "quote": "但是我无脑站边 7 号。",
+      "mode": "reported",
+      "notes": "4号转述5号所说。"
+    },
+    {
+      "u": 22,
+      "targets": [
+        4
+      ],
+      "relation": "logic_agreement",
+      "quote": "但邵帮主发言是挺好的",
+      "mode": "logic_only"
+    },
+    {
+      "u": 22,
+      "targets": [
+        7
+      ],
+      "relation": "support",
+      "quote": "那我现在只能跟 7 号站边了。",
+      "mode": "asserted"
+    },
+    {
+      "u": 24,
+      "targets": [
+        7
+      ],
+      "relation": "suspect",
+      "quote": "我读出来的狼，分别是 7 号，桃子",
+      "mode": "asserted"
+    },
+    {
+      "u": 24,
+      "targets": [
+        5
+      ],
+      "relation": "suspect",
+      "quote": "还有 5 号我的查杀。",
+      "mode": "asserted"
+    },
+    {
+      "u": 24,
+      "targets": [
+        10
+      ],
+      "relation": "suspect",
+      "quote": "10 号鼠大王不出意外是白狼王",
+      "mode": "asserted"
+    },
+    {
+      "u": 25,
+      "targets": [
+        10
+      ],
+      "relation": "suspect",
+      "quote": "那三个里面我觉得鼠大王像一匹狼",
+      "mode": "asserted"
+    },
+    {
+      "u": 25,
+      "targets": [
+        7
+      ],
+      "relation": "suspect",
+      "quote": "那是 7 号就一定是一张铁狼",
+      "mode": "asserted"
+    },
+    {
+      "u": 26,
+      "targets": [
+        5
+      ],
+      "relation": "suspect",
+      "quote": "5 号查杀第二天走",
+      "mode": "asserted"
+    },
+    {
+      "u": 26,
+      "targets": [
+        7
+      ],
+      "relation": "suspect",
+      "quote": "7 号做的行为一定是狼，绝对不是好人。",
+      "mode": "asserted"
+    },
+    {
+      "u": 26,
+      "targets": [
+        7
+      ],
+      "relation": "propose_vote",
+      "quote": "今天全票撕 7 号，谁也不许改，只出 7 号",
+      "mode": "proposal"
+    },
+    {
+      "u": 27,
+      "targets": [
+        4,
+        7
+      ],
+      "relation": "undetermined",
+      "quote": "反正这两个我都保留意见",
+      "mode": "asserted"
+    },
+    {
+      "u": 27,
+      "targets": [
+        2
+      ],
+      "relation": "support",
+      "quote": "我其实现在我觉得能带队的女巫能带队",
+      "mode": "asserted",
+      "notes": "本段女巫指2号；认其女巫信息、建议带队。"
+    },
+    {
+      "u": 28,
+      "targets": [
+        7
+      ],
+      "relation": "support",
+      "quote": "其实现在我们拿到警长的，我认为是一张真的预言家牌。",
+      "mode": "asserted"
+    },
+    {
+      "u": 29,
+      "targets": [
+        4
+      ],
+      "relation": "suspect",
+      "quote": "我觉得这句话就是你是一张狼的心态",
+      "mode": "asserted"
+    },
+    {
+      "u": 30,
+      "targets": [
+        4
+      ],
+      "relation": "suspect",
+      "quote": "这是我觉得为什么 4 号一定做不成张预言家的原因。",
+      "mode": "asserted"
+    },
+    {
+      "u": 31,
+      "targets": [
+        7
+      ],
+      "relation": "support",
+      "quote": "我觉得 7 号是真的预言家",
+      "mode": "asserted"
+    },
+    {
+      "u": 31,
+      "targets": [
+        4
+      ],
+      "relation": "propose_vote",
+      "quote": "我会把 4 号出掉",
+      "mode": "proposal"
+    },
+    {
+      "u": 31,
+      "targets": [
+        5
+      ],
+      "relation": "undetermined",
+      "quote": "王师傅的发言我觉得偏好，也不能说偏好",
+      "mode": "asserted",
+      "notes": "刚说偏好立即收回并建议查验，不硬编码支持。"
+    },
+    {
+      "u": 32,
+      "targets": [
+        2
+      ],
+      "relation": "propose_vote",
+      "quote": "2 号出局。",
+      "mode": "proposal"
+    },
+    {
+      "u": 33,
+      "targets": [
+        2
+      ],
+      "relation": "support",
+      "quote": "你是一个平民，我认你是张平民的情况下",
+      "mode": "conditional",
+      "notes": "用于反问其平民抢徽心态，非最终无条件认好。"
+    },
+    {
+      "u": 33,
+      "targets": [
+        4
+      ],
+      "relation": "support",
+      "quote": "我现在站 4 号",
+      "mode": "asserted"
+    },
+    {
+      "u": 33,
+      "targets": [
+        9
+      ],
+      "relation": "support",
+      "quote": "JY 你是守卫",
+      "mode": "asserted"
+    },
+    {
+      "u": 33,
+      "targets": [
+        9
+      ],
+      "relation": "support",
+      "quote": "JY 是个好身份。",
+      "mode": "asserted"
+    },
+    {
+      "u": 34,
+      "targets": [
+        7,
+        5,
+        2
+      ],
+      "relation": "suspect",
+      "quote": "7 号要撕， 5 号要撕， 2 号要撕，这三个里边我不知道，目前怀疑的",
+      "mode": "asserted",
+      "notes": "“这三个”逐个已明确点出可撕并怀疑，均为直接疑心。"
+    },
+    {
+      "u": 34,
+      "targets": [
+        2
+      ],
+      "relation": "suspect",
+      "quote": "我觉得你对警徽的欲望非常强，是一个狼的心态",
+      "mode": "asserted"
+    },
+    {
+      "u": 35,
+      "targets": [
+        7
+      ],
+      "relation": "support",
+      "quote": "我是当时是比较相信 7 号的",
+      "mode": "historical"
+    },
+    {
+      "u": 36,
+      "targets": [
+        2
+      ],
+      "relation": "support",
+      "quote": "本来我是比较相信二号的身份的",
+      "mode": "historical"
+    },
+    {
+      "u": 36,
+      "targets": [
+        1
+      ],
+      "relation": "logic_agreement",
+      "quote": "我感觉一号说的也挺有理的",
+      "mode": "logic_only"
+    },
+    {
+      "u": 36,
+      "targets": [
+        7
+      ],
+      "relation": "undetermined",
+      "quote": "所以我现在可能又暂时又对七号的身份",
+      "mode": "asserted",
+      "notes": "句子未完成，语境转为犹疑；不补成确定认狼。"
+    },
+    {
+      "u": 36,
+      "targets": [
+        4
+      ],
+      "relation": "support",
+      "quote": "我感觉他也不像一个假的预言家，也不像个狼人的心态",
+      "mode": "asserted"
+    },
+    {
+      "u": 37,
+      "targets": [
+        4
+      ],
+      "relation": "support",
+      "quote": "我是站边 4 号",
+      "mode": "asserted"
+    },
+    {
+      "u": 37,
+      "targets": [
+        5
+      ],
+      "relation": "suspect",
+      "quote": "所以我认为 5 号身份做坏",
+      "mode": "asserted"
+    },
+    {
+      "u": 38,
+      "targets": [
+        2
+      ],
+      "relation": "suspect",
+      "quote": "我觉得 2 号的这个行为也是不做好。",
+      "mode": "asserted"
+    },
+    {
+      "u": 38,
+      "targets": [
+        4,
+        7,
+        12,
+        10
+      ],
+      "relation": "suspect",
+      "quote": "这 4 个人里面肯定出 2 到 3 只狼吧，我觉得 3 到 4 只都是有可能的。",
+      "mode": "alternative_set",
+      "notes": "原话名单含支持中的4号，可能口误；保留4人集合不展开个人必狼。"
+    },
+    {
+      "u": 38,
+      "targets": [
+        7
+      ],
+      "relation": "propose_vote",
+      "quote": "这轮我会跟着撕 7 号",
+      "mode": "proposal"
+    },
+    {
+      "u": 39,
+      "targets": [
+        7
+      ],
+      "relation": "support",
+      "quote": "我是肯定是无条件无条件坚信的",
+      "mode": "asserted"
+    },
+    {
+      "u": 39,
+      "targets": [
+        4
+      ],
+      "relation": "suspect",
+      "quote": "我肯定他在我的心中他就是一匹铁狼。",
+      "mode": "asserted"
+    },
+    {
+      "u": 40,
+      "targets": [
+        7
+      ],
+      "relation": "support",
+      "quote": "我永远站边 7 号",
+      "mode": "asserted"
+    },
+    {
+      "u": 40,
+      "targets": [
+        4
+      ],
+      "relation": "suspect",
+      "quote": "我也不愿意站边这个 4 号",
+      "mode": "asserted",
+      "notes": "承上段明确铁狼判断；无先前支持4号可撤回。"
+    },
+    {
+      "u": 41,
+      "targets": [
+        2,
+        5,
+        7,
+        10
+      ],
+      "relation": "suspect",
+      "quote": "4 狼都找着了，2、5、7、10。",
+      "mode": "asserted"
+    },
+    {
+      "u": 41,
+      "targets": [
+        1
+      ],
+      "relation": "logic_agreement",
+      "quote": "你想法很高端",
+      "mode": "logic_only"
+    },
+    {
+      "u": 42,
+      "targets": [
+        10
+      ],
+      "relation": "suspect",
+      "quote": "10 号的作用呢，在于他跳一个猎人，把真的猎人炸出来。",
+      "mode": "asserted"
+    },
+    {
+      "u": 42,
+      "targets": [
+        1
+      ],
+      "relation": "support",
+      "quote": "我信你女巫身份。",
+      "mode": "asserted"
+    },
+    {
+      "u": 43,
+      "targets": [
+        7
+      ],
+      "relation": "suspect",
+      "quote": "7 号你应该是狼王吧？",
+      "mode": "asserted"
+    },
+    {
+      "u": 43,
+      "targets": [
+        7
+      ],
+      "relation": "propose_vote",
+      "quote": "我这轮肯定出你",
+      "mode": "proposal"
+    },
+    {
+      "u": 44,
+      "targets": [
+        5
+      ],
+      "relation": "suspect",
+      "quote": "王师傅的发言其实我觉得特别不好",
+      "mode": "asserted"
+    },
+    {
+      "u": 44,
+      "targets": [
+        1
+      ],
+      "relation": "support",
+      "quote": "这轮肯定我信囚徒 1 号真女巫身份。",
+      "mode": "asserted"
+    },
+    {
+      "u": 44,
+      "targets": [
+        5,
+        7
+      ],
+      "relation": "suspect",
+      "quote": "狼，这两只狼已经很明了",
+      "mode": "asserted",
+      "notes": "上文明确5号查杀与7号警徽。"
+    },
+    {
+      "u": 44,
+      "targets": [
+        7
+      ],
+      "relation": "propose_vote",
+      "quote": "我今天晚上肯定会跟帮主一起去撕 7 号警徽",
+      "mode": "proposal"
+    },
+    {
+      "u": 45,
+      "targets": [
+        10
+      ],
+      "relation": "suspect",
+      "quote": "这边的 10 号是假猎人，他跳猎人就是为了找场上真猎人。",
+      "mode": "asserted"
+    },
+    {
+      "u": 45,
+      "targets": [
+        2,
+        5,
+        7,
+        10
+      ],
+      "relation": "suspect",
+      "quote": "应该是2、5、7、10， 4 匹狼",
+      "mode": "asserted"
+    },
+    {
+      "u": 45,
+      "targets": [
+        7
+      ],
+      "relation": "propose_vote",
+      "quote": "所以这轮我直接会出7",
+      "mode": "proposal"
+    },
+    {
+      "u": 46,
+      "targets": [
+        2
+      ],
+      "relation": "suspect",
+      "quote": "觉得毛毛这个假女巫应该是假的吧？",
+      "mode": "asserted"
+    },
+    {
+      "u": 46,
+      "targets": [
+        4
+      ],
+      "relation": "propose_vote",
+      "quote": "你就直接把 4 号给毒了嘛",
+      "mode": "conditional"
+    },
+    {
+      "u": 46,
+      "targets": [
+        7
+      ],
+      "relation": "propose_vote",
+      "quote": "我现在目前肯定是归，跟局外说的一样，归 7 号。",
+      "mode": "proposal"
+    },
+    {
+      "u": 47,
+      "targets": [
+        4
+      ],
+      "relation": "suspect",
+      "quote": "我 4 号是被我炸出来的一匹狼。",
+      "mode": "asserted"
+    },
+    {
+      "u": 48,
+      "targets": [
+        1
+      ],
+      "relation": "support",
+      "quote": "1 号是我第一天晚上的金水牌",
+      "mode": "asserted"
+    },
+    {
+      "u": 48,
+      "targets": [
+        4
+      ],
+      "relation": "suspect",
+      "quote": "所以 4 号是被我炸出来一张狼牌。",
+      "mode": "asserted"
+    },
+    {
+      "u": 49,
+      "targets": [
+        11
+      ],
+      "relation": "suspect",
+      "quote": "我现在看来，我觉得 11 号是一张狼人牌。",
+      "mode": "asserted"
+    },
+    {
+      "u": 49,
+      "targets": [
+        1
+      ],
+      "relation": "support",
+      "quote": "所以在我验了 1 号是一个好人的情况下",
+      "mode": "asserted"
+    },
+    {
+      "u": 50,
+      "targets": [
+        4,
+        9,
+        11
+      ],
+      "relation": "suspect",
+      "quote": "少帮主 JY 加09，这是我目前看到的三匹狼。",
+      "mode": "asserted"
+    },
+    {
+      "u": 50,
+      "targets": [
+        12
+      ],
+      "relation": "suspect",
+      "quote": "还有 12 号上票给 4 号的。我觉得他也是，可能是一个引狼位。",
+      "mode": "asserted",
+      "notes": "对12的投票归因与主持票型相反，保留玩家原话而不改目标。"
+    },
+    {
+      "u": 50,
+      "targets": [
+        11,
+        8
+      ],
+      "relation": "suspect",
+      "quote": "我猜测的狼位是 11 号跟 8 号",
+      "mode": "asserted"
+    },
+    {
+      "u": 50,
+      "targets": [
+        9,
+        4
+      ],
+      "relation": "suspect",
+      "quote": "9 号跟 4 号是铁狼",
+      "mode": "asserted"
+    },
+    {
+      "u": 50,
+      "targets": [
+        10
+      ],
+      "relation": "undetermined",
+      "quote": "10 号我不认识的",
+      "mode": "asserted"
+    },
+    {
+      "u": 50,
+      "targets": [
+        1
+      ],
+      "relation": "support",
+      "quote": "我 1 号昨天晚上验的金水",
+      "mode": "asserted"
+    },
+    {
+      "u": 50,
+      "targets": [
+        4
+      ],
+      "relation": "propose_vote",
+      "quote": "今天我肯定要出 4 号",
+      "mode": "proposal"
+    },
+    {
+      "u": 52,
+      "targets": [
+        4
+      ],
+      "relation": "propose_vote",
+      "quote": "警长归票 4 号。",
+      "mode": "proposal"
+    },
+    {
+      "u": 54,
+      "targets": [
+        1,
+        3,
+        4,
+        8,
+        9,
+        11
+      ],
+      "relation": "suspect",
+      "quote": "上票给我的人我都不认识的，没有一个，我觉得没有一个是好身份。",
+      "mode": "asserted",
+      "notes": "依据U53明确投给7号的六人解析，遗言不纳主图。"
+    },
+    {
+      "u": 54,
+      "targets": [
+        4
+      ],
+      "relation": "propose_vote",
+      "quote": "不倒在夜里明天要出的。",
+      "mode": "conditional"
+    },
+    {
+      "u": 64,
+      "targets": [
+        1
+      ],
+      "relation": "support",
+      "quote": "肯定 1 号是做个好身份了",
+      "mode": "asserted"
+    },
+    {
+      "u": 64,
+      "targets": [
+        1,
+        9
+      ],
+      "relation": "logic_agreement",
+      "quote": "我这把可能我是自己是比较相信 1 号和 9 号的判断了",
+      "mode": "logic_only",
+      "notes": "仅认可判断；本段对1号的好身份另有明确原话，对9号不能据此补身份支持。"
+    },
+    {
+      "u": 64,
+      "targets": [
+        7
+      ],
+      "relation": "support",
+      "quote": "所以我是相信了一票 7 号",
+      "mode": "historical"
+    },
+    {
+      "u": 64,
+      "targets": [
+        4
+      ],
+      "relation": "support",
+      "quote": "我反而感觉更相信 4 号预言家这个身份。",
+      "mode": "asserted"
+    },
+    {
+      "u": 65,
+      "targets": [
+        9
+      ],
+      "relation": "suspect",
+      "quote": "JY 他不是一个猎人，他穿不起我的衣服。",
+      "mode": "asserted"
+    },
+    {
+      "u": 65,
+      "targets": [
+        9
+      ],
+      "relation": "propose_vote",
+      "quote": "可以这轮出我，我带走他",
+      "mode": "proposal"
+    },
+    {
+      "u": 66,
+      "targets": [
+        4
+      ],
+      "relation": "suspect",
+      "quote": "那说明这个预言家他就是一个假的，他就是一个狼。",
+      "mode": "asserted"
+    },
+    {
+      "u": 66,
+      "targets": [
+        4
+      ],
+      "relation": "propose_vote",
+      "quote": "一定要出 4 号",
+      "mode": "proposal"
+    },
+    {
+      "u": 66,
+      "targets": [
+        5
+      ],
+      "relation": "suspect",
+      "quote": "5 号爆掉的是一只狼",
+      "mode": "asserted",
+      "notes": "已出局狼的现时认定，不产生在场网络节点。"
+    },
+    {
+      "u": 67,
+      "targets": [
+        9
+      ],
+      "relation": "suspect",
+      "quote": "JY 是一只狼",
+      "mode": "asserted"
+    },
+    {
+      "u": 67,
+      "targets": [
+        12
+      ],
+      "relation": "suspect",
+      "quote": "还有一只狼我觉得可能在 12 号这个点上",
+      "mode": "asserted"
+    },
+    {
+      "u": 68,
+      "targets": [
+        10
+      ],
+      "relation": "propose_vote",
+      "quote": "直接出 10 号就完了",
+      "mode": "proposal"
+    },
+    {
+      "u": 68,
+      "targets": [
+        12
+      ],
+      "relation": "undetermined",
+      "quote": "应该 12 号不是猎人",
+      "mode": "asserted",
+      "notes": "仅排除一个神身份，非必然认好/狼，保留不定。"
+    },
+    {
+      "u": 69,
+      "targets": [
+        4
+      ],
+      "relation": "support",
+      "quote": "为什么邵帮主这个真预言家会一直活到现在？",
+      "mode": "asserted"
+    },
+    {
+      "u": 69,
+      "targets": [
+        1
+      ],
+      "relation": "support",
+      "quote": "囚徒呢，他身为真女巫",
+      "mode": "asserted"
+    },
+    {
+      "u": 70,
+      "targets": [
+        7
+      ],
+      "relation": "suspect",
+      "quote": "那他出去的是狼吧？",
+      "mode": "asserted"
+    },
+    {
+      "u": 70,
+      "targets": [
+        2
+      ],
+      "relation": "suspect",
+      "quote": "2 号狼吧？",
+      "mode": "asserted"
+    },
+    {
+      "u": 70,
+      "targets": [
+        5
+      ],
+      "relation": "suspect",
+      "quote": "那 5 号自爆的狼吧？",
+      "mode": "asserted"
+    },
+    {
+      "u": 71,
+      "targets": [
+        10
+      ],
+      "relation": "suspect",
+      "quote": "我觉得你开不出这枪。",
+      "mode": "asserted"
+    },
+    {
+      "u": 71,
+      "targets": [
+        10
+      ],
+      "relation": "propose_vote",
+      "quote": "所以这轮直接出十号。",
+      "mode": "proposal"
+    },
+    {
+      "u": 72,
+      "targets": [
+        10
+      ],
+      "relation": "suspect",
+      "quote": "我觉得十号肯定不是猎人",
+      "mode": "asserted"
+    },
+    {
+      "u": 72,
+      "targets": [
+        9
+      ],
+      "relation": "support",
+      "quote": "人家一号女巫这么保九号的守卫",
+      "mode": "asserted",
+      "notes": "以9号守卫成立为其驳斥10号的当前前提，非单纯转述。"
+    },
+    {
+      "u": 72,
+      "targets": [
+        10
+      ],
+      "relation": "propose_vote",
+      "quote": "这一轮，我也觉得就归 10 号。",
+      "mode": "proposal"
+    },
+    {
+      "u": 72,
+      "targets": [
+        12
+      ],
+      "relation": "propose_vote",
+      "quote": "如果 10 号做游戏还在的话，建议归 12 号。",
+      "mode": "conditional",
+      "notes": "转录不清，条件性后续归票，不推断12号身份。"
+    },
+    {
+      "u": 73,
+      "targets": [
+        9
+      ],
+      "relation": "support",
+      "quote": "9 号这个位置是我们，可以说可以带领我们好人走向胜利的一个位置吧",
+      "mode": "asserted"
+    },
+    {
+      "u": 73,
+      "targets": [
+        4
+      ],
+      "relation": "undetermined",
+      "quote": "先不管 4 号是不是真的预言家",
+      "mode": "asserted"
+    },
+    {
+      "u": 73,
+      "targets": [
+        10
+      ],
+      "relation": "propose_vote",
+      "quote": "我这波肯定是归 10 号的",
+      "mode": "proposal"
+    },
+    {
+      "u": 74,
+      "targets": [
+        4
+      ],
+      "relation": "suspect",
+      "quote": "4 号就是一匹狼",
+      "mode": "asserted"
+    },
+    {
+      "u": 74,
+      "targets": [
+        5
+      ],
+      "relation": "suspect",
+      "quote": "5 号就是一匹狼。",
+      "mode": "asserted"
+    },
+    {
+      "u": 74,
+      "targets": [
+        10
+      ],
+      "relation": "support",
+      "quote": "我认 10 号是一个猎人",
+      "mode": "asserted"
+    },
+    {
+      "u": 74,
+      "targets": [
+        4
+      ],
+      "relation": "propose_vote",
+      "quote": "这轮一定要撕 4 号，一定要撕 4 号",
+      "mode": "proposal"
+    },
+    {
+      "u": 75,
+      "targets": [
+        4
+      ],
+      "relation": "undetermined",
+      "quote": "4 号身份是未知的",
+      "mode": "asserted",
+      "notes": "与前段明确打狼并存，此处讨论7号撤回查杀后缺验人保证，不擅改全段站边。"
+    },
+    {
+      "u": 75,
+      "targets": [
+        10
+      ],
+      "relation": "propose_vote",
+      "quote": "你跳猎人，好，我抽 10 号",
+      "mode": "conditional",
+      "notes": "对后置位王若跳猎人的条件票提案。"
+    },
+    {
+      "u": 75,
+      "targets": [
+        4
+      ],
+      "relation": "propose_vote",
+      "quote": "假如说王不跳猎人的情况下，我一定把我的票举在 4 号身上",
+      "mode": "conditional"
+    },
+    {
+      "u": 76,
+      "targets": [
+        8
+      ],
+      "relation": "logic_agreement",
+      "quote": "八号玩家真的发言超级好，几乎每个点都点到对，点到点上了",
+      "mode": "logic_only"
+    },
+    {
+      "u": 76,
+      "targets": [
+        9
+      ],
+      "relation": "logic_agreement",
+      "quote": "九号玩家是他应有的水平",
+      "mode": "logic_only"
+    },
+    {
+      "u": 76,
+      "targets": [
+        10
+      ],
+      "relation": "support",
+      "quote": "十号这么这么阳光大猎人",
+      "mode": "joke",
+      "notes": "故意调侃已被指狼的10号，下一句先等会再捞；非真认猎人。"
+    },
+    {
+      "u": 77,
+      "targets": [
+        6
+      ],
+      "relation": "logic_agreement",
+      "quote": "我也给 6 号玩家点个赞啊",
+      "mode": "logic_only"
+    },
+    {
+      "u": 85,
+      "targets": [
+        4
+      ],
+      "relation": "support",
+      "quote": "这是我认为帮主能坐实的。",
+      "mode": "asserted"
+    },
+    {
+      "u": 85,
+      "targets": [
+        7
+      ],
+      "relation": "suspect",
+      "quote": "再就是另外一个预言家，铁狼走",
+      "mode": "asserted"
+    },
+    {
+      "u": 85,
+      "targets": [
+        1
+      ],
+      "relation": "support",
+      "quote": "而且这个金水这么阳光的一个女巫。",
+      "mode": "asserted"
+    },
+    {
+      "u": 86,
+      "targets": [
+        6
+      ],
+      "relation": "support",
+      "quote": "第二天金水是魔兽",
+      "mode": "asserted"
+    },
+    {
+      "u": 87,
+      "targets": [
+        1
+      ],
+      "relation": "support",
+      "quote": "1 号是一个女巫牌",
+      "mode": "asserted"
+    },
+    {
+      "u": 87,
+      "targets": [
+        6
+      ],
+      "relation": "support",
+      "quote": "给小魔兽听，你是我金水。",
+      "mode": "asserted"
+    },
+    {
+      "u": 87,
+      "targets": [
+        3
+      ],
+      "relation": "support",
+      "quote": "王是我的金水。",
+      "mode": "asserted"
+    },
+    {
+      "u": 87,
+      "targets": [
+        12
+      ],
+      "relation": "suspect",
+      "quote": "所以你是最后一批狼。",
+      "mode": "asserted"
+    },
+    {
+      "u": 87,
+      "targets": [
+        12
+      ],
+      "relation": "propose_vote",
+      "quote": "12 号我我觉得可以爆了",
+      "mode": "proposal"
+    },
+    {
+      "u": 89,
+      "targets": [
+        4
+      ],
+      "relation": "support",
+      "quote": "我信你，我跟着警长走",
+      "mode": "asserted",
+      "notes": "承接4号的验人发言，虽其并无有效警徽，代称“警长”指4号。"
+    },
+    {
+      "u": 89,
+      "targets": [
+        4
+      ],
+      "relation": "suspect",
+      "quote": "我本来还是想吃你的",
+      "mode": "historical"
+    },
+    {
+      "u": 89,
+      "targets": [
+        12
+      ],
+      "relation": "propose_vote",
+      "quote": "我投12",
+      "mode": "proposal"
+    },
+    {
+      "u": 90,
+      "targets": [
+        12
+      ],
+      "relation": "propose_vote",
+      "quote": "我也投12",
+      "mode": "proposal"
+    },
+    {
+      "u": 91,
+      "targets": [
+        12
+      ],
+      "relation": "propose_vote",
+      "quote": "出 12 吧，出 12 吧",
+      "mode": "proposal"
+    },
+    {
+      "u": 92,
+      "targets": [
+        8
+      ],
+      "relation": "propose_vote",
+      "quote": "我反正出 8 号吧",
+      "mode": "proposal"
+    },
+    {
+      "u": 92,
+      "targets": [
+        3,
+        4,
+        6,
+        9
+      ],
+      "relation": "support",
+      "quote": "因为其他人发言我感觉都挺好的",
+      "mode": "ambiguous",
+      "notes": "最后求生发言泛称其他人好，没有明确逐一身份判断，不扩成主边。"
+    }
+  ],
+  "key_events": [
+    {
+      "u": 1,
+      "event_type": "rules",
+      "actor": 0,
+      "target": 0,
+      "value": "12人：4狼（含1白狼王）、4民、预言家/女巫/猎人/守卫；屠边；白狼王白天自爆可带走一人。",
+      "fact_status": "host_confirmed"
+    },
+    {
+      "u": 4,
+      "event_type": "sheriff_candidates",
+      "actor": 0,
+      "target": 0,
+      "value": "1-7号参选",
+      "fact_status": "host_confirmed",
+      "candidates": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "u": 5,
+      "event_type": "role_claim",
+      "actor": 6,
+      "target": 6,
+      "value": "强神（未说明具体角色）",
+      "fact_status": "player_claim"
+    },
+    {
+      "u": 6,
+      "event_type": "role_claim",
+      "actor": 7,
+      "target": 7,
+      "value": "seer",
+      "fact_status": "player_claim",
+      "quote": "7 号拿到了一张预言家牌"
+    },
+    {
+      "u": 6,
+      "event_type": "inspection_claim",
+      "actor": 7,
+      "target": 4,
+      "value": "wolf（第一晚，后U47撤回）",
+      "fact_status": "player_claim",
+      "quote": "我昨天晚上验人是 4 号查杀。"
+    },
+    {
+      "u": 6,
+      "event_type": "inspection_plan",
+      "actor": 7,
+      "target": 1,
+      "value": "先验1号，听身份后可调整",
+      "fact_status": "player_claim",
+      "quote": "在我没有听到后面发言之前，我暂定 1 号吧"
+    },
+    {
+      "u": 6,
+      "event_type": "inspection_plan",
+      "actor": 7,
+      "target": 11,
+      "value": "后验11号",
+      "fact_status": "player_claim",
+      "quote": "那么井下这边验一下 11 号"
+    },
+    {
+      "u": 7,
+      "event_type": "role_claim",
+      "actor": 1,
+      "target": 1,
+      "value": "强神（未说明具体角色）",
+      "fact_status": "player_claim"
+    },
+    {
+      "u": 8,
+      "event_type": "role_claim",
+      "actor": 2,
+      "target": 2,
+      "value": "witch",
+      "fact_status": "player_claim"
+    },
+    {
+      "u": 9,
+      "event_type": "role_claim",
+      "actor": 3,
+      "target": 3,
+      "value": "强神（未说明具体角色）",
+      "fact_status": "player_claim"
+    },
+    {
+      "u": 10,
+      "event_type": "role_claim",
+      "actor": 4,
+      "target": 4,
+      "value": "seer",
+      "fact_status": "player_claim"
+    },
+    {
+      "u": 10,
+      "event_type": "inspection_claim",
+      "actor": 4,
+      "target": 5,
+      "value": "wolf，第一晚",
+      "fact_status": "player_claim",
+      "quote": "所以 5 号是我一张查杀牌。"
+    },
+    {
+      "u": 10,
+      "event_type": "inspection_plan",
+      "actor": 4,
+      "target": 1,
+      "value": "先验1号",
+      "fact_status": "player_claim",
+      "quote": "我先验井上 1 号囚徒"
+    },
+    {
+      "u": 10,
+      "event_type": "inspection_plan",
+      "actor": 4,
+      "target": 6,
+      "value": "后验6号",
+      "fact_status": "player_claim",
+      "quote": "再验 6 号魔兽后羿"
+    },
+    {
+      "u": 12,
+      "event_type": "role_claim",
+      "actor": 5,
+      "target": 5,
+      "value": "民及民以上（自认好人）",
+      "fact_status": "player_claim",
+      "quote": "我是一个好人身份，我是一个民及民以上"
+    },
+    {
+      "u": 13,
+      "event_type": "sheriff_withdrawal",
+      "actor": 5,
+      "target": 5,
+      "value": "退水",
+      "fact_status": "player_announced",
+      "quote": "我退水"
+    },
+    {
+      "u": 14,
+      "event_type": "sheriff_withdrawal",
+      "actor": 1,
+      "target": 1,
+      "value": "退出警长竞选",
+      "fact_status": "host_confirmed",
+      "quote": "1 号、 5 号玩家退水。"
+    },
+    {
+      "u": 14,
+      "event_type": "sheriff_withdrawal",
+      "actor": 5,
+      "target": 5,
+      "value": "退出警长竞选",
+      "fact_status": "host_confirmed",
+      "quote": "1 号、 5 号玩家退水。"
+    },
+    {
+      "u": 14,
+      "event_type": "sheriff_elected",
+      "actor": 7,
+      "target": 7,
+      "value": "当选警长",
+      "fact_status": "host_confirmed",
+      "quote": "7 号玩家当选警长。"
+    },
+    {
+      "u": 14,
+      "event_type": "night_death",
+      "actor": 0,
+      "target": 0,
+      "value": "首夜平安夜；无人死亡",
+      "fact_status": "host_confirmed",
+      "quote": "昨晚平安夜"
+    },
+    {
+      "u": 25,
+      "event_type": "inspection_plan",
+      "actor": 4,
+      "target": 1,
+      "value": "今夜验1号",
+      "fact_status": "player_claim",
+      "quote": "我去验我的 1 号"
+    },
+    {
+      "u": 31,
+      "event_type": "role_claim",
+      "actor": 2,
+      "target": 2,
+      "value": "女巫身份暂不承认也不否认",
+      "fact_status": "player_claim",
+      "quote": "至于我是不是张女巫牌，你们自己猜"
+    },
+    {
+      "u": 32,
+      "event_type": "role_claim",
+      "actor": 1,
+      "target": 1,
+      "value": "witch",
+      "fact_status": "player_claim",
+      "quote": "1 号阳光小女巫"
+    },
+    {
+      "u": 33,
+      "event_type": "role_claim",
+      "actor": 1,
+      "target": 9,
+      "value": "guard（他称JY守卫，非本人认领）",
+      "fact_status": "player_claim",
+      "quote": "JY 你是守卫",
+      "notes": "只是1号对9号的身份断言。"
+    },
+    {
+      "u": 33,
+      "event_type": "save_claim",
+      "actor": 1,
+      "target": 0,
+      "value": "女巫首夜没有使用解药",
+      "fact_status": "player_claim",
+      "quote": "我没有开解药。"
+    },
+    {
+      "u": 33,
+      "event_type": "save_claim",
+      "actor": 1,
+      "target": 9,
+      "value": "1号称9号第一晚自守挡刀",
+      "fact_status": "player_claim",
+      "quote": "第一天你救的自己。",
+      "notes": "守卫自守说法，非1号对9号使用女巫解药。"
+    },
+    {
+      "u": 34,
+      "event_type": "poison_claim",
+      "actor": 1,
+      "target": 2,
+      "value": "计划可能毒2号；非已经执行",
+      "fact_status": "player_claim",
+      "quote": "我觉得我把毒了吧",
+      "notes": "此时仍白天讨论毒法，并以救药使用情况为条件，不能当夜2号已中毒。"
+    },
+    {
+      "u": 36,
+      "event_type": "role_claim",
+      "actor": 12,
+      "target": 12,
+      "value": "villager",
+      "fact_status": "player_claim",
+      "quote": "我是个平民，又拿了平民"
+    },
+    {
+      "u": 39,
+      "event_type": "role_claim",
+      "actor": 10,
+      "target": 10,
+      "value": "hunter",
+      "fact_status": "player_claim",
+      "quote": "因为我是一个猎人"
+    },
+    {
+      "u": 41,
+      "event_type": "role_claim",
+      "actor": 9,
+      "target": 9,
+      "value": "hunter；否认guard",
+      "fact_status": "player_claim",
+      "quote": "我不是守卫，我是猎人。"
+    },
+    {
+      "u": 42,
+      "event_type": "role_claim",
+      "actor": 9,
+      "target": 9,
+      "value": "hunter",
+      "fact_status": "player_claim",
+      "quote": "我是真的猎人，我不是守卫"
+    },
+    {
+      "u": 43,
+      "event_type": "role_claim",
+      "actor": 9,
+      "target": 9,
+      "value": "hunter",
+      "fact_status": "player_claim",
+      "quote": "我是猎人"
+    },
+    {
+      "u": 46,
+      "event_type": "role_claim",
+      "actor": 8,
+      "target": 8,
+      "value": "villager",
+      "fact_status": "player_claim",
+      "quote": "我是一个平民，没有什么能力的"
+    },
+    {
+      "u": 47,
+      "event_type": "inspection_claim",
+      "actor": 7,
+      "target": 4,
+      "value": "撤回第一晚验4号：仅炸身份",
+      "fact_status": "player_claim",
+      "quote": "我昨天晚上并没有验 4 号"
+    },
+    {
+      "u": 47,
+      "event_type": "inspection_claim",
+      "actor": 7,
+      "target": 1,
+      "value": "good，改称首夜验1号",
+      "fact_status": "player_claim",
+      "quote": "我确实是验的一号"
+    },
+    {
+      "u": 48,
+      "event_type": "inspection_claim",
+      "actor": 7,
+      "target": 1,
+      "value": "good，第一晚",
+      "fact_status": "player_claim",
+      "quote": "1 号是我第一天晚上的金水牌"
+    },
+    {
+      "u": 52,
+      "event_type": "sheriff_nomination",
+      "actor": 7,
+      "target": 4,
+      "value": "警长归票4号",
+      "fact_status": "player_announced"
+    },
+    {
+      "u": 53,
+      "event_type": "sheriff_nomination",
+      "actor": 7,
+      "target": 4,
+      "value": "主持复述警长归票4号",
+      "fact_status": "host_confirmed",
+      "quote": "警长归票 4 号"
+    },
+    {
+      "u": 53,
+      "event_type": "exile",
+      "actor": 0,
+      "target": 7,
+      "value": "首日投票放逐7号",
+      "fact_status": "host_confirmed",
+      "quote": "7 号玩家出局"
+    },
+    {
+      "u": 56,
+      "event_type": "sheriff_badge_destroyed",
+      "actor": 7,
+      "target": 0,
+      "value": "7号宣布撕毁警徽、不移交",
+      "fact_status": "player_announced",
+      "quote": "撕了。"
+    },
+    {
+      "u": 57,
+      "event_type": "sheriff_badge_destroyed",
+      "actor": 7,
+      "target": 0,
+      "value": "主持确认警徽作废，之后无警长",
+      "fact_status": "host_confirmed",
+      "quote": "警徽作废"
+    },
+    {
+      "u": 58,
+      "event_type": "night_death",
+      "actor": 0,
+      "target": 2,
+      "value": "第二夜死亡；死因主持未区分",
+      "fact_status": "host_confirmed",
+      "quote": "昨晚 2 号、 11 号玩家被害"
+    },
+    {
+      "u": 58,
+      "event_type": "night_death",
+      "actor": 0,
+      "target": 11,
+      "value": "第二夜死亡；死因主持未区分",
+      "fact_status": "host_confirmed",
+      "quote": "昨晚 2 号、 11 号玩家被害"
+    },
+    {
+      "u": 61,
+      "event_type": "self_explosion",
+      "actor": 5,
+      "target": 5,
+      "value": "主动宣布自爆",
+      "fact_status": "player_announced"
+    },
+    {
+      "u": 62,
+      "event_type": "self_explosion",
+      "actor": 5,
+      "target": 5,
+      "value": "自爆，未公开带人",
+      "fact_status": "host_confirmed",
+      "quote": "5 号玩家自爆。"
+    },
+    {
+      "u": 63,
+      "event_type": "night_death",
+      "actor": 0,
+      "target": 1,
+      "value": "第三夜死亡",
+      "fact_status": "host_confirmed",
+      "quote": "昨晚 1 号玩家被害"
+    },
+    {
+      "u": 64,
+      "event_type": "role_claim",
+      "actor": 12,
+      "target": 12,
+      "value": "villager",
+      "fact_status": "player_claim",
+      "quote": "我是个平民"
+    },
+    {
+      "u": 65,
+      "event_type": "role_claim",
+      "actor": 10,
+      "target": 10,
+      "value": "hunter",
+      "fact_status": "player_claim",
+      "quote": "我还是一个猎人"
+    },
+    {
+      "u": 68,
+      "event_type": "role_claim",
+      "actor": 9,
+      "target": 9,
+      "value": "guard；撤回先前hunter",
+      "fact_status": "player_claim",
+      "quote": "我明着玩吧，我就是守卫"
+    },
+    {
+      "u": 69,
+      "event_type": "role_claim",
+      "actor": 9,
+      "target": 1,
+      "value": "witch（9号叙述）",
+      "fact_status": "player_claim",
+      "quote": "囚徒呢，他身为真女巫"
+    },
+    {
+      "u": 69,
+      "event_type": "save_claim",
+      "actor": 9,
+      "target": 11,
+      "value": "9号称女巫1号上夜没有救11号09",
+      "fact_status": "player_claim",
+      "quote": "上一轮没有救09"
+    },
+    {
+      "u": 70,
+      "event_type": "poison_claim",
+      "actor": 9,
+      "target": 2,
+      "value": "9号称2号遭女巫毒杀",
+      "fact_status": "player_claim",
+      "quote": "2 号被毒了",
+      "notes": "非主持确认死因；U58只确认2/11同夜死。"
+    },
+    {
+      "u": 81,
+      "event_type": "self_explosion",
+      "actor": 10,
+      "target": 10,
+      "value": "自爆，未公开带人",
+      "fact_status": "host_confirmed"
+    },
+    {
+      "u": 84,
+      "event_type": "night_death",
+      "actor": 0,
+      "target": 0,
+      "value": "第四夜平安夜；无人死亡",
+      "fact_status": "host_confirmed",
+      "quote": "昨晚平安夜"
+    },
+    {
+      "u": 86,
+      "event_type": "inspection_claim",
+      "actor": 4,
+      "target": 6,
+      "value": "good，第二晚",
+      "fact_status": "player_claim",
+      "quote": "第二天金水是魔兽"
+    },
+    {
+      "u": 87,
+      "event_type": "inspection_claim",
+      "actor": 4,
+      "target": 3,
+      "value": "good，第三晚",
+      "fact_status": "player_claim",
+      "quote": "然后再一晚上我验的是 3 号王，王是我的金水。"
+    },
+    {
+      "u": 87,
+      "event_type": "inspection_plan",
+      "actor": 4,
+      "target": 0,
+      "value": "计划/反事实二选一查验，未清晰报告当夜12号实际查杀",
+      "fact_status": "player_claim",
+      "quote": "那最后剩下两个大哥，我只验他，验他查杀就 12 号走了嘛",
+      "notes": "不能把此口语条件句直接改成12号实际查杀。U93解说声称报查杀，矛盾保留。"
+    },
+    {
+      "u": 91,
+      "event_type": "role_claim",
+      "actor": 9,
+      "target": 9,
+      "value": "guard：昨晚守4号",
+      "fact_status": "player_claim",
+      "quote": "我昨天晚上守的是邵帮主"
+    },
+    {
+      "u": 91,
+      "event_type": "save_claim",
+      "actor": 9,
+      "target": 4,
+      "value": "守卫称第四晚守4号，随后平安夜",
+      "fact_status": "player_claim",
+      "quote": "我昨天晚上守的是邵帮主，平安夜"
+    },
+    {
+      "u": 92,
+      "event_type": "role_claim",
+      "actor": 12,
+      "target": 12,
+      "value": "villager",
+      "fact_status": "player_claim",
+      "quote": "我作为一个平民角度来说"
+    },
+    {
+      "u": 93,
+      "event_type": "exile",
+      "actor": 0,
+      "target": 12,
+      "value": "第四日放逐12号",
+      "fact_status": "host_confirmed",
+      "quote": "12 号玩家出局"
+    },
+    {
+      "u": 93,
+      "event_type": "game_result",
+      "actor": 0,
+      "target": 0,
+      "value": "good_win，平民阵营胜利",
+      "fact_status": "host_confirmed",
+      "quote": "游戏结束，平民胜利。"
+    },
+    {
+      "u": 93,
+      "event_type": "true_role_revealed",
+      "actor": 0,
+      "target": 9,
+      "value": "guard",
+      "fact_status": "narrator_confirmed",
+      "quote": "首夜守卫 JY 自首，狼人刀中 JY 导致平安夜。"
+    },
+    {
+      "u": 93,
+      "event_type": "true_role_revealed",
+      "actor": 0,
+      "target": 7,
+      "value": "wolf（桃子悍跳）",
+      "fact_status": "narrator_confirmed",
+      "quote": "警上虽然桃子悍跳预言家拿到警徽"
+    },
+    {
+      "u": 93,
+      "event_type": "true_role_revealed",
+      "actor": 0,
+      "target": 4,
+      "value": "seer",
+      "fact_status": "narrator_confirmed",
+      "quote": "真预言家少帮主"
+    },
+    {
+      "u": 93,
+      "event_type": "true_role_revealed",
+      "actor": 0,
+      "target": 5,
+      "value": "wolf（王师傅自爆）",
+      "fact_status": "narrator_confirmed",
+      "quote": "狼人试图通过改变狼刀和王师傅自爆的战术"
+    },
+    {
+      "u": 93,
+      "event_type": "true_role_revealed",
+      "actor": 0,
+      "target": 12,
+      "value": "wolf（最后一狼强神）",
+      "fact_status": "narrator_confirmed",
+      "quote": "帮主报出场上最后一狼强神的查杀"
+    }
+  ],
+  "ballots": [
+    {
+      "u": 14,
+      "day": 1,
+      "ballot_type": "sheriff",
+      "eligible": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "votes": {
+        "8": 4,
+        "9": 4,
+        "10": 7,
+        "11": 7,
+        "12": 7
+      },
+      "abstain": [],
+      "notes": "1至7号报名；仅主持称未竞选玩家投票。1、5虽退水，不因此推定取得选票；U19也只列8至12五票。"
+    },
+    {
+      "u": 53,
+      "day": 1,
+      "ballot_type": "exile",
+      "eligible": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "votes": {
+        "1": 7,
+        "2": 4,
+        "3": 7,
+        "4": 7,
+        "5": 4,
+        "6": 5,
+        "7": 4,
+        "8": 7,
+        "9": 7,
+        "10": 4,
+        "11": 7
+      },
+      "abstain": [
+        12
+      ],
+      "notes": "“其余”根据全体在场玩家及明确列出票排除计算，非按角色填票。"
+    },
+    {
+      "u": 93,
+      "day": 4,
+      "ballot_type": "exile",
+      "eligible": [
+        3,
+        4,
+        6,
+        8,
+        9,
+        12
+      ],
+      "votes": {
+        "3": 12,
+        "4": 12,
+        "8": 12,
+        "9": 12,
+        "12": 8
+      },
+      "abstain": [
+        6
+      ],
+      "notes": "D2 5号自爆、D3 10号自爆均无放逐投票。U93其余按6名存活玩家扣除12、6。"
+    }
+  ],
+  "days": [
+    {
+      "day": 1,
+      "out_before": [],
+      "snapshot_u": 52,
+      "notes": "out_before指首帧之前已公开出局；首夜平安夜在U14公布。snapshot为放逐投票前最后公开发言U52。"
+    },
+    {
+      "day": 2,
+      "out_before": [
+        7
+      ],
+      "snapshot_u": 60,
+      "notes": "本日首帧U58公布2/11夜死，作为本日key_events更新，不重复纳out_before。U60后5号立即自爆，本日无放逐票。"
+    },
+    {
+      "day": 3,
+      "out_before": [
+        2,
+        5,
+        7,
+        11
+      ],
+      "snapshot_u": 80,
+      "notes": "首帧U63新公布1号夜死；该死讯作为本日key_event。snapshot为主持U81确认10号自爆前最后插话U80；无放逐票。"
+    },
+    {
+      "day": 4,
+      "out_before": [
+        1,
+        2,
+        5,
+        7,
+        10,
+        11
+      ],
+      "snapshot_u": 92,
+      "notes": "首帧U84第四夜平安；snapshot为12号放逐前最后发言。"
+    }
+  ],
+  "redactions": [
+    {
+      "u": 93,
+      "starts_at": "本轮游戏，首夜守卫 JY 自首"
+    }
+  ],
+  "review_issues": [
+    {
+      "category": "mixed_diarization",
+      "us": [
+        35,
+        36,
+        46,
+        61,
+        64,
+        72,
+        73,
+        78,
+        80,
+        90,
+        92
+      ],
+      "description": "发言人9混合8、12；发言人12在U61实际自爆者5号；发言人13短声无法唯一确认。",
+      "handling": "依主持报位、轮序和自指逐段还原；U78/80保留speaker0。"
+    },
+    {
+      "category": "name_ambiguity",
+      "us": [
+        19,
+        24,
+        33,
+        87,
+        93
+      ],
+      "description": "8号可能被转录为“强”；12号旁白明确强神；3号仅“王”，不能当5号王师傅。",
+      "handling": "3、8显示座位名并标unresolved；不跨局复制姓名。"
+    },
+    {
+      "category": "wolf_subtype_unknown",
+      "us": [
+        24,
+        43,
+        62,
+        81,
+        94,
+        95,
+        96
+      ],
+      "description": "4猜10白狼王、9猜7狼王，均为玩家猜测；两次自爆未见主持宣布带走任何玩家，赛后反事实说“你爆了带走囚徒”无可靠指向。",
+      "handling": "7/5/10/12狼阵营各有证据，但白狼王具体归属不明，true_role留空；不虚构技能死亡。"
+    },
+    {
+      "category": "role_claim_not_truth",
+      "us": [
+        8,
+        33,
+        41,
+        65,
+        68,
+        70,
+        87
+      ],
+      "description": "2穿女巫衣服，9先猎人后守卫，10假猎人；U70认2号狼与终局/两连爆实际狼人数不合。",
+      "handling": "角色自称逐条记录；2为推断好人平民，3具体神身份未知；真实角色字段标明inferred/unknown。"
+    },
+    {
+      "category": "ballot_conflicts",
+      "us": [
+        13,
+        19,
+        33,
+        35,
+        38,
+        46,
+        50
+      ],
+      "description": "5称站7但警上说之后票4（其已退水无票）；1将8/12口误后自纠；11狼坑名单包含当时支持4；7称12警长票4与主持相反。",
+      "handling": "投票仅以主持U14/53/93为准；语义关系保留原话及歧义，不修正文句、不按狼坑补投票。"
+    },
+    {
+      "category": "postgame_boundary",
+      "us": [
+        93,
+        94,
+        95,
+        96,
+        97
+      ],
+      "description": "U93同时含实局票型与赛后身份解说；U94-97赛后说话人标签与已知行为有矛盾。",
+      "handling": "U93从“本轮游戏”划为旁白，真身份事件标narrator_confirmed；赛后不产局内主边。"
+    },
+    {
+      "category": "sheriff_destroyed",
+      "us": [
+        56,
+        57
+      ],
+      "description": "7号遗言后说撕警徽，主持确认警徽作废，未移交新警长。",
+      "handling": "依主任务扩展枚举，记录U56玩家宣布及U57主持确认sheriff_badge_destroyed，actor7、target0。没有sheriff_transfer事件。"
+    },
+    {
+      "category": "inspection_ambiguity",
+      "us": [
+        47,
+        48,
+        86,
+        87,
+        93
+      ],
+      "description": "7撤回4查杀，改称1金水；4最后只明确报告6/3金水，下一句“验他查杀就12号走”不像明报12查杀；旁白却称最后报出强神查杀。",
+      "handling": "保留实际玩家说法与旁白叙述，不从旁白伪造U87 inspection_claim给12。"
+    },
+    {
+      "category": "interview_vs_live",
+      "us": [
+        59,
+        82
+      ],
+      "description": "死者/自爆者事后独白嵌入实局时间线；82明确回顾当时决定。",
+      "handling": "标interview，沿其发生的日序，但不当成公开讨论或次日发言。"
+    },
+    {
+      "category": "transcription_uncertainty",
+      "us": [
+        75,
+        76,
+        77,
+        89,
+        91
+      ],
+      "description": "J8、三号组、邵帮主出刀了及尾句插话疑转录错误。",
+      "handling": "不改原文；89按对话邻接将信你指4号，91不把疑“吃刀”误作认狼，77不为混入爆了建边。"
+    },
+    {
+      "category": "semantic_boundary",
+      "us": [
+        11,
+        64
+      ],
+      "description": "AI交叉检查发现发言评价、判断认可或查验计划与身份立场边界需人工复核。",
+      "handling": "已按H1保守口径降级为逻辑认可或歧义候选，不进入明确关系网络；原话保留。"
+    }
+  ]
+}

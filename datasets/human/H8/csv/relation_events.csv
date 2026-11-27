@@ -1,0 +1,233 @@
+﻿event_id,game_id,day,phase,utterance_id,utterance_order,timestamp,time_seconds,source,target,relation,assertion_mode,evidence_quote,evidence_char_start,evidence_char_end,source_line_start,main_eligible,needs_review,coding_status,reviewer_decision,notes
+H8-R0001,H8,1,campaign,H8-U006,6,02:37,157,H8-P12,H8-P01,suspect,asserted,12 号刚才查杀了身边的 1 号，你举手了吗？举了。他是一只狼,10,41,27,1,0,AI_first_pass,,
+H8-R0002,H8,1,campaign,H8-U007,7,02:53,173,H8-P01,H8-P12,suspect,asserted,你查杀我，你肯定就是狼。,25,37,30,1,0,AI_first_pass,,
+H8-R0003,H8,1,campaign,H8-U007,7,02:53,173,H8-P01,H8-P12,propose_vote,conditional,如果你不退水，我等会就干死你。,49,64,30,0,1,AI_first_pass,,以不退水为条件，未形成固定放逐目标。
+H8-R0004,H8,1,campaign,H8-U009,9,04:01,241,H8-P06,H8-P03,undetermined,asserted,JY 的身份，他场下宣布死讯的时候能自证。,0,21,36,1,0,AI_first_pass,,
+H8-R0005,H8,1,campaign,H8-U009,9,04:01,241,H8-P06,H8-P01,support,asserted,1 号现在有难，我要挺 1 号。,50,66,36,1,0,AI_first_pass,,
+H8-R0006,H8,1,campaign,H8-U011,11,04:18,258,H8-P06,H8-P01,support,asserted,另外一个井上的小平民。,46,57,42,1,0,AI_first_pass,,
+H8-R0007,H8,1,campaign,H8-U011,11,04:18,258,H8-P06,H8-P01,support,asserted,我觉得 1 号小平民,156,166,42,1,0,AI_first_pass,,
+H8-R0008,H8,1,campaign,H8-U011,11,04:18,258,H8-P06,H8-P01,support,historical,我刚才挺你了,14,20,42,0,1,AI_first_pass,,回顾本轮早前支持，非新增当前边。
+H8-R0009,H8,1,campaign,H8-U012,12,05:03,303,H8-P07,H8-P03,suspect,asserted,3 号不是女巫， 3 号是个狼，昨天是我的查杀。,92,116,45,1,0,AI_first_pass,,
+H8-R0010,H8,1,campaign,H8-U012,12,05:03,303,H8-P07,H8-P01,support,asserted,PDD 前面的话特别隐晦，我感觉他有身份,128,148,45,1,0,AI_first_pass,,
+H8-R0011,H8,1,campaign,H8-U012,12,05:03,303,H8-P07,H8-P01,support,conditional,如果他退水的话，我就暂时把他当神看,149,166,45,0,0,AI_first_pass,,
+H8-R0012,H8,1,campaign,H8-U012,12,05:03,303,H8-P07,H8-P01,support,asserted,PDD 在我这暂定好身份,199,211,45,1,0,AI_first_pass,,
+H8-R0013,H8,1,campaign,H8-U012,12,05:03,303,H8-P07,H8-P12,suspect,asserted,酒神这个动机很差，他那个动机很坏,226,242,45,1,0,AI_first_pass,,
+H8-R0014,H8,1,campaign,H8-U015,15,06:09,369,H8-P08,H8-P11,suspect,asserted,昨天晚上的查杀是 11 号。,46,60,54,1,0,AI_first_pass,,
+H8-R0015,H8,1,campaign,H8-U015,15,06:09,369,H8-P08,H8-P07,suspect,asserted,这个 7 号一定是一匹狼,189,201,54,1,0,AI_first_pass,,
+H8-R0016,H8,1,campaign,H8-U015,15,06:09,369,H8-P08,H8-P03,undetermined,asserted,其实我没太明白JY，他说直接开毒是什么意思啊？,60,83,54,1,0,AI_first_pass,,
+H8-R0017,H8,1,campaign,H8-U015,15,06:09,369,H8-P08,H8-P03,support,conditional,如果是双死的话， Z Y 就不验他了,152,170,54,0,1,AI_first_pass,,双死条件未满足，不能当作认好JY。
+H8-R0018,H8,1,discussion,H8-U019,19,07:33,453,H8-P08,H8-P11,suspect,asserted,11 号确实是我的一张查杀牌。,12,27,66,1,0,AI_first_pass,,
+H8-R0019,H8,1,discussion,H8-U019,19,07:33,453,H8-P08,H8-P07,undetermined,asserted,我不明白为什么你们会认识 7 号是一张预言家,42,64,66,1,1,AI_first_pass,,质疑别人认7号的依据；不把反问升级为直指狼人。
+H8-R0020,H8,1,discussion,H8-U020,20,08:03,483,H8-P08,H8-P11,suspect,asserted,11 号是我查杀的狼,17,27,69,1,0,AI_first_pass,,
+H8-R0021,H8,1,discussion,H8-U020,20,08:03,483,H8-P08,H8-P02,suspect,alternative_set,2 号、 5 号，你们是被动被打入狼堆的,29,49,69,0,1,AI_first_pass,,票型被动狼坑；紧接允许其中混民，不拆成两条确定狼边。
+H8-R0022,H8,1,discussion,H8-U020,20,08:03,483,H8-P08,H8-P05,suspect,alternative_set,2 号、 5 号，你们是被动被打入狼堆的,29,49,69,0,1,AI_first_pass,,票型被动狼坑；紧接允许其中混民，不拆成两条确定狼边。
+H8-R0023,H8,1,discussion,H8-U020,20,08:03,483,H8-P08,H8-P07,suspect,asserted,这个是一匹悍跳的狼，因为 11 号也上票给他了。,119,143,69,1,1,AI_first_pass,,“这个/他”指7号对跳预言家。
+H8-R0024,H8,1,discussion,H8-U021,21,08:31,511,H8-P08,H8-P11,suspect,asserted,11 号是我的查杀,171,180,72,1,0,AI_first_pass,,
+H8-R0025,H8,1,discussion,H8-U021,21,08:31,511,H8-P08,H8-P11,propose_vote,proposal,今天我走我的查杀,181,189,72,0,0,AI_first_pass,,
+H8-R0026,H8,1,discussion,H8-U021,21,08:31,511,H8-P08,H8-P02,undetermined,asserted,2 号、 5 号，我不想有民站进狼队，所以你投票了，我必须要验你,208,240,72,1,0,AI_first_pass,,
+H8-R0027,H8,1,discussion,H8-U021,21,08:31,511,H8-P08,H8-P05,undetermined,asserted,2 号、 5 号，我不想有民站进狼队，所以你投票了，我必须要验你,208,240,72,1,0,AI_first_pass,,
+H8-R0028,H8,1,discussion,H8-U022,22,09:16,556,H8-P09,H8-P08,support,asserted,我现在认了这个预言家的话,167,179,75,1,1,AI_first_pass,,当前承认8号的承接句，“的话”非独立假设。
+H8-R0029,H8,1,discussion,H8-U022,22,09:16,556,H8-P09,H8-P11,propose_vote,proposal,11 号就走查杀。,181,190,75,0,0,AI_first_pass,,
+H8-R0030,H8,1,discussion,H8-U022,22,09:16,556,H8-P09,H8-P02,undetermined,asserted,2 号、 5 号这个票上的，我就有点看不懂了。,144,167,75,1,0,AI_first_pass,,
+H8-R0031,H8,1,discussion,H8-U022,22,09:16,556,H8-P09,H8-P05,undetermined,asserted,2 号、 5 号这个票上的，我就有点看不懂了。,144,167,75,1,0,AI_first_pass,,
+H8-R0032,H8,1,discussion,H8-U022,22,09:16,556,H8-P09,H8-P11,undetermined,logic_only,11 号上票，我是清楚他的意思的，因为他是 8 号的一张查杀牌，所以他给 7 号上票挺正常。,97,143,75,0,1,AI_first_pass,,解释对立查杀的投票动机，不能当作11号好人认证。
+H8-R0033,H8,1,discussion,H8-U022,22,09:16,556,H8-P09,H8-P03,undetermined,asserted,3 号解释一下。你的毒怎么这么劣质，都没毒死人呢？,216,241,75,1,0,AI_first_pass,,
+H8-R0034,H8,1,discussion,H8-U023,23,10:10,610,H8-P10,H8-P08,support,asserted,十号玩家是站队八号预言家的，好吧？八号在我这现在是预言家,66,94,78,1,0,AI_first_pass,,
+H8-R0035,H8,1,discussion,H8-U024,24,10:49,649,H8-P10,H8-P03,support,asserted,我觉得他的心态不可能做成一张狼人牌,191,208,81,1,0,AI_first_pass,,
+H8-R0036,H8,1,discussion,H8-U024,24,10:49,649,H8-P10,H8-P07,suspect,asserted,应该鼠大王这个查杀不太可靠。,245,259,81,1,0,AI_first_pass,,
+H8-R0037,H8,1,discussion,H8-U024,24,10:49,649,H8-P10,H8-P08,support,ambiguous,所以我站边这个 9 号，再一个就是 9 号确实没有吃到票。,259,288,81,0,1,AI_first_pass,,原文9号并非竞选预言家，疑似8号误转写；保留歧义不进入主边。
+H8-R0038,H8,1,discussion,H8-U024,24,10:49,649,H8-P10,H8-P09,support,ambiguous,所以我站边这个 9 号，再一个就是 9 号确实没有吃到票。,259,288,81,0,1,AI_first_pass,,原文9号并非竞选预言家，疑似8号误转写；保留歧义不进入主边。
+H8-R0039,H8,1,discussion,H8-U025,25,11:42,702,H8-P10,H8-P05,suspect,asserted,所以我觉得 5 号是一匹狼。,110,124,84,1,0,AI_first_pass,,
+H8-R0040,H8,1,discussion,H8-U025,25,11:42,702,H8-P10,H8-P06,suspect,asserted,反正觉得囚徒有点强力，因为他知道身份太多了，他能把 12 跟 1 直接聊退了。哇，好强力，金面具你也不能这么强，好吧？我就踩你一脚,335,400,84,1,0,AI_first_pass,,
+H8-R0041,H8,1,discussion,H8-U025,25,11:42,702,H8-P10,H8-P08,support,asserted,我因为已经硬站边 8 号了,442,455,84,1,0,AI_first_pass,,
+H8-R0042,H8,1,discussion,H8-U025,25,11:42,702,H8-P10,H8-P09,support,asserted,所以我还是觉得王应该身份不错的。,456,472,84,1,0,AI_first_pass,,
+H8-R0043,H8,1,discussion,H8-U026,26,13:05,785,H8-P11,H8-P08,suspect,asserted,这是我觉得你在别人眼里做不成一个预言家的点,282,303,87,1,0,AI_first_pass,,
+H8-R0044,H8,1,discussion,H8-U026,26,13:05,785,H8-P11,H8-P08,propose_vote,proposal,我肯定是无脑投这个 8 号的,179,193,87,0,0,AI_first_pass,,
+H8-R0045,H8,1,discussion,H8-U026,26,13:05,785,H8-P11,H8-P03,support,reported,我觉得你 JY 是个好身份,98,111,87,0,1,AI_first_pass,,复述10号此前的认好，不归为11号当前立场。
+H8-R0046,H8,1,discussion,H8-U027,27,13:55,835,H8-P11,H8-P08,suspect,asserted,我现在心目中的狼就是假预言家，8、9、10， 3 号，这是我心目中的狼。,100,136,90,1,0,AI_first_pass,,
+H8-R0047,H8,1,discussion,H8-U027,27,13:55,835,H8-P11,H8-P09,suspect,asserted,我现在心目中的狼就是假预言家，8、9、10， 3 号，这是我心目中的狼。,100,136,90,1,0,AI_first_pass,,
+H8-R0048,H8,1,discussion,H8-U027,27,13:55,835,H8-P11,H8-P10,suspect,asserted,我现在心目中的狼就是假预言家，8、9、10， 3 号，这是我心目中的狼。,100,136,90,1,0,AI_first_pass,,
+H8-R0049,H8,1,discussion,H8-U027,27,13:55,835,H8-P11,H8-P03,suspect,asserted,我现在心目中的狼就是假预言家，8、9、10， 3 号，这是我心目中的狼。,100,136,90,1,0,AI_first_pass,,
+H8-R0050,H8,1,discussion,H8-U027,27,13:55,835,H8-P11,H8-P08,propose_vote,proposal,这轮我肯定举票，不管预言家怎么归票，我都举票给你，就是茶茶我的,136,167,90,0,0,AI_first_pass,,
+H8-R0051,H8,1,discussion,H8-U028,28,14:24,864,H8-P12,H8-P08,support,asserted,现在目前倾向于 8 号吧，要不站一下 8 号吧，站一下 8 号吧，站先站一下 8 号,59,101,93,1,0,AI_first_pass,,
+H8-R0052,H8,1,discussion,H8-U028,28,14:24,864,H8-P12,H8-P03,undetermined,asserted,我这一盘还是要着重听一下 3 号的发言。,114,134,93,1,0,AI_first_pass,,
+H8-R0053,H8,1,discussion,H8-U029,29,14:47,887,H8-P01,H8-P10,support,asserted,我觉得他这个行为是做好的，他这个行为是一个好人,118,141,96,1,0,AI_first_pass,,
+H8-R0054,H8,1,discussion,H8-U029,29,14:47,887,H8-P01,H8-P03,support,reported,他依然说 JY 是一个好人,87,100,96,0,1,AI_first_pass,,1号转述10号对JY判断，不是1号亲自认JY。
+H8-R0055,H8,1,discussion,H8-U030,30,15:23,923,H8-P01,H8-P10,support,asserted,我会觉得帮主像是一个好人,3,15,99,1,0,AI_first_pass,,
+H8-R0056,H8,1,discussion,H8-U030,30,15:23,923,H8-P01,H8-P11,suspect,asserted,我觉得你是一匹弱狼，一匹气势很弱的一匹狼,93,113,99,1,0,AI_first_pass,,
+H8-R0057,H8,1,discussion,H8-U031,31,15:46,946,H8-P01,H8-P11,suspect,asserted,我觉得你在这点上面气势比较弱。,108,123,102,1,0,AI_first_pass,,
+H8-R0058,H8,1,discussion,H8-U031,31,15:46,946,H8-P01,H8-P07,suspect,asserted,为什么让我觉得老鼠是狼的,131,143,102,1,0,AI_first_pass,,
+H8-R0059,H8,1,discussion,H8-U032,32,16:35,995,H8-P01,H8-P08,support,asserted,我跟 8 号抱团,7,15,105,1,0,AI_first_pass,,
+H8-R0060,H8,1,discussion,H8-U032,32,16:35,995,H8-P01,H8-P08,support,asserted,我觉得 8 号更像是一个真预言家。,126,143,105,1,0,AI_first_pass,,
+H8-R0061,H8,1,discussion,H8-U033,33,16:59,1019,H8-P01,H8-P11,propose_vote,proposal,今天我的票是出在 11 号身上,45,60,108,0,0,AI_first_pass,,
+H8-R0062,H8,1,discussion,H8-U033,33,16:59,1019,H8-P01,H8-P11,suspect,asserted,因为 11 号的发言也不好,21,34,108,1,0,AI_first_pass,,
+H8-R0063,H8,1,discussion,H8-U033,33,16:59,1019,H8-P01,H8-P03,undetermined,asserted,JY，我搞不清楚你第一轮的动机,134,149,108,1,0,AI_first_pass,,
+H8-R0064,H8,1,discussion,H8-U033,33,16:59,1019,H8-P01,H8-P03,suspect,conditional,如果你聊不出个所以然，我是会把你归到狼队里的。,224,247,108,0,0,AI_first_pass,,
+H8-R0065,H8,1,discussion,H8-U033,33,16:59,1019,H8-P01,H8-P09,logic_agreement,logic_only,前面的王，预言家跟少帮主加我加酒神，我们已经很多票了，我觉得是看得很清楚的,293,330,108,0,1,AI_first_pass,,声明同一投票团队及判断清楚；不由抱团反推逐个身份认证。
+H8-R0066,H8,1,discussion,H8-U033,33,16:59,1019,H8-P01,H8-P08,logic_agreement,logic_only,前面的王，预言家跟少帮主加我加酒神，我们已经很多票了，我觉得是看得很清楚的,293,330,108,0,1,AI_first_pass,,声明同一投票团队及判断清楚；不由抱团反推逐个身份认证。
+H8-R0067,H8,1,discussion,H8-U033,33,16:59,1019,H8-P01,H8-P10,logic_agreement,logic_only,前面的王，预言家跟少帮主加我加酒神，我们已经很多票了，我觉得是看得很清楚的,293,330,108,0,1,AI_first_pass,,声明同一投票团队及判断清楚；不由抱团反推逐个身份认证。
+H8-R0068,H8,1,discussion,H8-U033,33,16:59,1019,H8-P01,H8-P12,logic_agreement,logic_only,前面的王，预言家跟少帮主加我加酒神，我们已经很多票了，我觉得是看得很清楚的,293,330,108,0,1,AI_first_pass,,声明同一投票团队及判断清楚；不由抱团反推逐个身份认证。
+H8-R0069,H8,1,discussion,H8-U034,34,17:59,1079,H8-P02,H8-P07,support,asserted,我觉得 7 号更像是一个真的预言家。,59,77,111,1,0,AI_first_pass,,
+H8-R0070,H8,1,discussion,H8-U034,34,17:59,1079,H8-P02,H8-P11,suspect,conditional,如果鼠大王是狼，那他的狼队友就是王师傅，囚徒，小博，还有小魔兽,155,186,111,0,1,AI_first_pass,,原文条件推演且称“三个人里面出两狼”，不能按四条确定边。
+H8-R0071,H8,1,discussion,H8-U034,34,17:59,1079,H8-P02,H8-P06,suspect,conditional,如果鼠大王是狼，那他的狼队友就是王师傅，囚徒，小博，还有小魔兽,155,186,111,0,1,AI_first_pass,,原文条件推演且称“三个人里面出两狼”，不能按四条确定边。
+H8-R0072,H8,1,discussion,H8-U034,34,17:59,1079,H8-P02,H8-P05,suspect,conditional,如果鼠大王是狼，那他的狼队友就是王师傅，囚徒，小博，还有小魔兽,155,186,111,0,1,AI_first_pass,,原文条件推演且称“三个人里面出两狼”，不能按四条确定边。
+H8-R0073,H8,1,discussion,H8-U034,34,17:59,1079,H8-P02,H8-P04,suspect,conditional,如果鼠大王是狼，那他的狼队友就是王师傅，囚徒，小博，还有小魔兽,155,186,111,0,1,AI_first_pass,,原文条件推演且称“三个人里面出两狼”，不能按四条确定边。
+H8-R0074,H8,1,discussion,H8-U034,34,17:59,1079,H8-P02,H8-P05,suspect,conditional,那小博应该算是他的狼队友了,211,224,111,0,1,AI_first_pass,,承接假设鼠大王为狼，不当作当前确定查杀。
+H8-R0075,H8,1,discussion,H8-U034,34,17:59,1079,H8-P02,H8-P06,support,asserted,我觉得囚徒这个身份，我觉得偏向于一个好身份，很阳光,258,283,111,1,0,AI_first_pass,,
+H8-R0076,H8,1,discussion,H8-U034,34,17:59,1079,H8-P02,H8-P02,suspect,ambiguous,他的狼队友就是就是 2 号、 3 号、 4 号和 5 号， 4 号、 5 号、 10 号和 7 号,284,333,111,0,1,AI_first_pass,,含说话人自身2号与其明确认好7号，连续自我修正，不能把所有报号拆成当前狼坑。
+H8-R0077,H8,1,discussion,H8-U034,34,17:59,1079,H8-P02,H8-P03,suspect,ambiguous,他的狼队友就是就是 2 号、 3 号、 4 号和 5 号， 4 号、 5 号、 10 号和 7 号,284,333,111,0,1,AI_first_pass,,含说话人自身2号与其明确认好7号，连续自我修正，不能把所有报号拆成当前狼坑。
+H8-R0078,H8,1,discussion,H8-U034,34,17:59,1079,H8-P02,H8-P04,suspect,ambiguous,他的狼队友就是就是 2 号、 3 号、 4 号和 5 号， 4 号、 5 号、 10 号和 7 号,284,333,111,0,1,AI_first_pass,,含说话人自身2号与其明确认好7号，连续自我修正，不能把所有报号拆成当前狼坑。
+H8-R0079,H8,1,discussion,H8-U034,34,17:59,1079,H8-P02,H8-P05,suspect,ambiguous,他的狼队友就是就是 2 号、 3 号、 4 号和 5 号， 4 号、 5 号、 10 号和 7 号,284,333,111,0,1,AI_first_pass,,含说话人自身2号与其明确认好7号，连续自我修正，不能把所有报号拆成当前狼坑。
+H8-R0080,H8,1,discussion,H8-U034,34,17:59,1079,H8-P02,H8-P10,suspect,ambiguous,他的狼队友就是就是 2 号、 3 号、 4 号和 5 号， 4 号、 5 号、 10 号和 7 号,284,333,111,0,1,AI_first_pass,,含说话人自身2号与其明确认好7号，连续自我修正，不能把所有报号拆成当前狼坑。
+H8-R0081,H8,1,discussion,H8-U034,34,17:59,1079,H8-P02,H8-P07,suspect,ambiguous,他的狼队友就是就是 2 号、 3 号、 4 号和 5 号， 4 号、 5 号、 10 号和 7 号,284,333,111,0,1,AI_first_pass,,含说话人自身2号与其明确认好7号，连续自我修正，不能把所有报号拆成当前狼坑。
+H8-R0082,H8,1,discussion,H8-U035,35,19:00,1140,H8-P02,H8-P03,suspect,logic_only,JY 这行为我觉得并不做好,23,36,114,0,1,AI_first_pass,,紧接“不管你是个好人，我觉得这个行为不做好”，此句仅行为评价；本段后文明确共狼另记。
+H8-R0083,H8,1,discussion,H8-U035,35,19:00,1140,H8-P02,H8-P08,suspect,asserted,所以这个牌一定是你的队友，所以你给这个牌找一个台阶下,256,282,114,1,1,AI_first_pass,,对8号说3号是其狼队友，后文明确“你们狼队”。
+H8-R0084,H8,1,discussion,H8-U035,35,19:00,1140,H8-P02,H8-P03,suspect,asserted,所以这个牌一定是你的队友，所以你给这个牌找一个台阶下,256,282,114,1,1,AI_first_pass,,对8号说3号是其狼队友，后文明确“你们狼队”。
+H8-R0085,H8,1,discussion,H8-U035,35,19:00,1140,H8-P02,H8-P03,suspect,reported,桃子对于你这张牌的定位很模糊，她认为你可能是张狼人牌。,85,112,114,0,0,AI_first_pass,,
+H8-R0086,H8,1,discussion,H8-U036,36,19:46,1186,H8-P02,H8-P08,undetermined,logic_only,我一直在听 8 号发言哪里好了？,36,52,117,0,1,AI_first_pass,,质疑好评依据；直接狼队判断见U35。
+H8-R0087,H8,1,discussion,H8-U036,36,19:46,1186,H8-P02,H8-P11,support,asserted,我觉得王师傅发言没有问题，我觉得是一个正常的平民的心态。,131,159,117,1,0,AI_first_pass,,
+H8-R0088,H8,1,discussion,H8-U037,37,20:08,1208,H8-P02,H8-P12,support,asserted,我觉得酒神更像是一个比较晕的民,6,21,120,1,0,AI_first_pass,,
+H8-R0089,H8,1,discussion,H8-U037,37,20:08,1208,H8-P02,H8-P01,support,asserted,我觉得你像是一张好人牌，你这个发言，我觉得你也是一个晕的民,116,145,120,1,0,AI_first_pass,,
+H8-R0090,H8,1,discussion,H8-U037,37,20:08,1208,H8-P02,H8-P07,support,asserted,所以我现在还是站边 7 号，我觉得 7 号像是一张真的预言家牌,197,228,120,1,0,AI_first_pass,,
+H8-R0091,H8,1,discussion,H8-U037,37,20:08,1208,H8-P02,H8-P03,suspect,asserted,我觉得 3 号像是一张狼牌,234,247,120,1,0,AI_first_pass,,
+H8-R0092,H8,1,discussion,H8-U037,37,20:08,1208,H8-P02,H8-P08,support,reported,所以我也暂时站边 8 号吧，但是我保留意见。,73,95,120,0,1,AI_first_pass,,2号模拟12号心理，不是2号倒向8号。
+H8-R0093,H8,1,discussion,H8-U038,38,20:40,1240,H8-P03,H8-P07,propose_vote,proposal,这一盘最终肯定要把警徽撕掉，不要分票给其他人身上,30,54,123,0,0,AI_first_pass,,
+H8-R0094,H8,1,discussion,H8-U038,38,20:40,1240,H8-P03,H8-P07,suspect,asserted,现在警长就突然出来查杀我了，他就是一匹铁狼,142,163,123,1,0,AI_first_pass,,
+H8-R0095,H8,1,discussion,H8-U038,38,20:40,1240,H8-P03,H8-P10,support,asserted,我第一天确实是救的少帮主。你晚上挨刀了，我救的你,164,188,123,1,1,AI_first_pass,,伪女巫救人声明，仅编码其公开支持，不当作真实夜间事实。
+H8-R0096,H8,1,discussion,H8-U039,39,21:36,1296,H8-P03,H8-P02,suspect,asserted,我觉着 2 号是一匹狼， 5 号是一匹狼，警长是一匹狼。,3,31,126,1,0,AI_first_pass,,
+H8-R0097,H8,1,discussion,H8-U039,39,21:36,1296,H8-P03,H8-P05,suspect,asserted,我觉着 2 号是一匹狼， 5 号是一匹狼，警长是一匹狼。,3,31,126,1,0,AI_first_pass,,
+H8-R0098,H8,1,discussion,H8-U039,39,21:36,1296,H8-P03,H8-P07,suspect,asserted,我觉着 2 号是一匹狼， 5 号是一匹狼，警长是一匹狼。,3,31,126,1,0,AI_first_pass,,
+H8-R0099,H8,1,discussion,H8-U039,39,21:36,1296,H8-P03,H8-P05,suspect,asserted,我觉得他是一个狼人心态,122,133,126,1,0,AI_first_pass,,
+H8-R0100,H8,1,discussion,H8-U040,40,22:02,1322,H8-P03,H8-P08,undetermined,logic_only,所以我觉得你这样发言不好,116,128,129,0,1,AI_first_pass,,批评警徽流安排，未明确断言8号狼。
+H8-R0101,H8,1,discussion,H8-U040,40,22:02,1322,H8-P03,H8-P07,propose_vote,proposal,所以今天一定把警徽撕了,193,204,129,0,0,AI_first_pass,,
+H8-R0102,H8,1,discussion,H8-U041,41,22:45,1365,H8-P04,H8-P07,logic_agreement,logic_only,我就轻轻的赞一下 7 号好不好？轻轻的赞一下。,12,35,132,0,1,AI_first_pass,,仅赞扬发言，不构成明确身份认可。
+H8-R0103,H8,1,discussion,H8-U041,41,22:45,1365,H8-P04,H8-P02,logic_agreement,logic_only,我觉得 2 号跟一个 12 号的发言略显好，他们在分析局势,45,74,132,0,1,AI_first_pass,,仅评价分析和发言，不构成明确身份认可。
+H8-R0104,H8,1,discussion,H8-U041,41,22:45,1365,H8-P04,H8-P12,logic_agreement,logic_only,我觉得 2 号跟一个 12 号的发言略显好，他们在分析局势,45,74,132,0,1,AI_first_pass,,仅评价分析和发言，不构成明确身份认可。
+H8-R0105,H8,1,discussion,H8-U042,42,23:09,1389,H8-P05,H8-P10,support,asserted,首先少帮主是一个铁定的好人,15,28,135,1,0,AI_first_pass,,
+H8-R0106,H8,1,interview,H8-U046,46,23:40,1420,H8-P03,H8-P02,support,asserted,我 2 号我觉得有可能像护卫，如果不是护卫， 2 号也是个猎人。,40,72,147,0,1,AI_first_pass,,离场采访的神职推测，仅旁表，不进入主网络。
+H8-R0107,H8,2,interview,H8-U048,48,24:17,1457,H8-P02,H8-P03,suspect,historical,因为我觉得 JY 是狼,8,19,153,0,1,AI_first_pass,,2号离场复盘先前站边原因。
+H8-R0108,H8,2,interview,H8-U048,48,24:17,1457,H8-P02,H8-P07,support,historical,所以我认他的查杀,20,28,153,0,0,AI_first_pass,,
+H8-R0109,H8,2,interview,H8-U048,48,24:17,1457,H8-P02,H8-P07,retract_support,historical,好像站错边了我,0,7,153,0,1,AI_first_pass,,2号夜死后的离场反思；撤回此前站7，排除主网络。
+H8-R0110,H8,2,discussion,H8-U050,50,24:34,1474,H8-P01,H8-P11,suspect,ambiguous,我觉得王师傅上轮的发言真的不好。,260,276,159,0,1,AI_first_pass,,仅负面评价发言，后文明确狼判断针对7号，不能跨白天继承对11号的身份怀疑。
+H8-R0111,H8,2,discussion,H8-U050,50,24:34,1474,H8-P01,H8-P07,suspect,asserted,我还是比较偏向于。鼠大王是狼,276,290,159,1,0,AI_first_pass,,
+H8-R0112,H8,2,discussion,H8-U050,50,24:34,1474,H8-P01,H8-P02,support,conditional,他应该是个神什么之类的。,437,449,159,0,1,AI_first_pass,,承接相信7号是狼且站8的逻辑分支，不确认为2号真神。
+H8-R0113,H8,2,discussion,H8-U050,50,24:34,1474,H8-P01,H8-P07,undetermined,asserted,一个是 7 号，一个是 8 号，两个军团，我现在很难做出一个特别特别准确的判断。,550,590,159,1,0,AI_first_pass,,
+H8-R0114,H8,2,discussion,H8-U050,50,24:34,1474,H8-P01,H8-P08,undetermined,asserted,一个是 7 号，一个是 8 号，两个军团，我现在很难做出一个特别特别准确的判断。,550,590,159,1,0,AI_first_pass,,
+H8-R0115,H8,2,discussion,H8-U051,51,26:28,1588,H8-P01,H8-P08,support,asserted,目前我稍微偏向一点这个 8 号的团队,94,112,162,1,0,AI_first_pass,,
+H8-R0116,H8,2,discussion,H8-U052,52,26:48,1608,H8-P12,H8-P01,support,asserted,我觉得你是一个民,13,21,165,1,0,AI_first_pass,,
+H8-R0117,H8,2,discussion,H8-U052,52,26:48,1608,H8-P12,H8-P01,support,asserted,我现在认你是个渔民，我不认你是狼,286,302,165,1,0,AI_first_pass,,
+H8-R0118,H8,2,discussion,H8-U052,52,26:48,1608,H8-P12,H8-P07,support,asserted,他就是预言家。,320,327,165,1,0,AI_first_pass,,
+H8-R0119,H8,2,discussion,H8-U053,53,27:53,1673,H8-P12,H8-P08,suspect,asserted,这 8 号和 JY 是狼,0,12,168,1,0,AI_first_pass,,
+H8-R0120,H8,2,discussion,H8-U053,53,27:53,1673,H8-P12,H8-P03,suspect,asserted,这 8 号和 JY 是狼,0,12,168,0,1,AI_first_pass,,；所指玩家在该段已公开出局，不进入在场玩家网络。
+H8-R0121,H8,2,discussion,H8-U053,53,27:53,1673,H8-P12,H8-P04,support,asserted,我觉得这盘小魔兽特别像是个民,60,74,168,1,0,AI_first_pass,,
+H8-R0122,H8,2,discussion,H8-U053,53,27:53,1673,H8-P12,H8-P10,suspect,alternative_set,少帮主、王、囚徒三选一，对吧？三选二,75,93,168,0,1,AI_first_pass,,三人中取两狼，不拆作三条确定怀疑。
+H8-R0123,H8,2,discussion,H8-U053,53,27:53,1673,H8-P12,H8-P09,suspect,alternative_set,少帮主、王、囚徒三选一，对吧？三选二,75,93,168,0,1,AI_first_pass,,三人中取两狼，不拆作三条确定怀疑。
+H8-R0124,H8,2,discussion,H8-U053,53,27:53,1673,H8-P12,H8-P06,suspect,alternative_set,少帮主、王、囚徒三选一，对吧？三选二,75,93,168,0,1,AI_first_pass,,三人中取两狼，不拆作三条确定怀疑。
+H8-R0125,H8,2,discussion,H8-U053,53,27:53,1673,H8-P12,H8-P02,support,asserted,毛毛是好人吧？ 5 号被他爆死的女巫， 5 号是好人吧？这两个人投的是谁？投的是 7 号。,140,185,168,0,1,AI_first_pass,,；所指玩家在该段已公开出局，不进入在场玩家网络。
+H8-R0126,H8,2,discussion,H8-U053,53,27:53,1673,H8-P12,H8-P05,support,asserted,毛毛是好人吧？ 5 号被他爆死的女巫， 5 号是好人吧？这两个人投的是谁？投的是 7 号。,140,185,168,0,1,AI_first_pass,,；所指玩家在该段已公开出局，不进入在场玩家网络。
+H8-R0127,H8,2,discussion,H8-U054,54,28:30,1710,H8-P12,H8-P07,support,asserted,七号预言家不用质疑,0,9,171,1,0,AI_first_pass,,
+H8-R0128,H8,2,discussion,H8-U054,54,28:30,1710,H8-P12,H8-P01,support,asserted,我觉得你应该是一个比较想玩出高端玩法的一个民,34,56,171,1,0,AI_first_pass,,
+H8-R0129,H8,2,discussion,H8-U054,54,28:30,1710,H8-P12,H8-P08,propose_vote,proposal,我觉得这一轮全票出8,68,78,171,0,0,AI_first_pass,,
+H8-R0130,H8,2,discussion,H8-U054,54,28:30,1710,H8-P12,H8-P08,propose_vote,proposal,你归8，我跟8。,193,201,171,0,0,AI_first_pass,,
+H8-R0131,H8,2,discussion,H8-U055,55,29:04,1744,H8-P12,H8-P04,support,asserted,我觉得 4 号是好身份，我觉得 1 号是好身份， 11 号是 8 号的查杀， 11 号应该是好身份。,29,79,174,1,0,AI_first_pass,,
+H8-R0132,H8,2,discussion,H8-U055,55,29:04,1744,H8-P12,H8-P01,support,asserted,我觉得 4 号是好身份，我觉得 1 号是好身份， 11 号是 8 号的查杀， 11 号应该是好身份。,29,79,174,1,0,AI_first_pass,,
+H8-R0133,H8,2,discussion,H8-U055,55,29:04,1744,H8-P12,H8-P11,support,asserted,我觉得 4 号是好身份，我觉得 1 号是好身份， 11 号是 8 号的查杀， 11 号应该是好身份。,29,79,174,1,0,AI_first_pass,,
+H8-R0134,H8,2,discussion,H8-U055,55,29:04,1744,H8-P12,H8-P06,suspect,alternative_set,三个狼坑里面出两个,7,16,174,0,1,AI_first_pass,,与紧接枚举的囚徒/少帮主/王及U53连读。
+H8-R0135,H8,2,discussion,H8-U055,55,29:04,1744,H8-P12,H8-P10,suspect,alternative_set,三个狼坑里面出两个,7,16,174,0,1,AI_first_pass,,与紧接枚举的囚徒/少帮主/王及U53连读。
+H8-R0136,H8,2,discussion,H8-U055,55,29:04,1744,H8-P12,H8-P09,suspect,alternative_set,三个狼坑里面出两个,7,16,174,0,1,AI_first_pass,,与紧接枚举的囚徒/少帮主/王及U53连读。
+H8-R0137,H8,2,discussion,H8-U055,55,29:04,1744,H8-P12,H8-P10,suspect,asserted,邵帮主的狼面很大,86,94,174,1,0,AI_first_pass,,
+H8-R0138,H8,2,discussion,H8-U055,55,29:04,1744,H8-P12,H8-P09,suspect,asserted,王的狼面也比较大,113,121,174,1,0,AI_first_pass,,
+H8-R0139,H8,2,discussion,H8-U056,56,29:24,1764,H8-P11,H8-P07,support,asserted,我肯定无脑站边老鼠,200,209,177,1,0,AI_first_pass,,
+H8-R0140,H8,2,discussion,H8-U056,56,29:24,1764,H8-P11,H8-P08,suspect,asserted,这是他做不成预言家的一个点,174,187,177,1,0,AI_first_pass,,
+H8-R0141,H8,2,discussion,H8-U057,57,30:04,1804,H8-P11,H8-P09,suspect,asserted,为什么你在两个预言家发完言之后，你就能那么确信的去站边 8 号？这是我觉得你的狼面。,134,176,180,1,0,AI_first_pass,,
+H8-R0142,H8,2,discussion,H8-U057,57,30:04,1804,H8-P11,H8-P10,suspect,asserted,邵帮主的狼面其实跟上轮是一样的,176,191,180,1,0,AI_first_pass,,
+H8-R0143,H8,2,discussion,H8-U057,57,30:04,1804,H8-P11,H8-P06,undetermined,asserted,囚徒没有发言，所以我没法聊他,236,250,180,1,0,AI_first_pass,,
+H8-R0144,H8,2,discussion,H8-U057,57,30:04,1804,H8-P11,H8-P08,suspect,ambiguous,因为这个是铁狼,284,291,180,0,1,AI_first_pass,,指示语可能指8号假预言家，单句不独立落主边；U56有明确身份批判。
+H8-R0145,H8,2,discussion,H8-U057,57,30:04,1804,H8-P11,H8-P08,propose_vote,proposal,这轮我还是举票给这个假预言家,323,337,180,0,0,AI_first_pass,,
+H8-R0146,H8,2,discussion,H8-U058,58,31:03,1863,H8-P10,H8-P11,suspect,asserted,十一号你不是狼你是什么？,146,158,183,1,0,AI_first_pass,,
+H8-R0147,H8,2,discussion,H8-U058,58,31:03,1863,H8-P10,H8-P07,suspect,asserted,警长必是狼,158,163,183,1,0,AI_first_pass,,
+H8-R0148,H8,2,discussion,H8-U059,59,31:35,1895,H8-P10,H8-P03,suspect,asserted,因为他夜里沟通了，让 7 号查杀他。,37,55,186,0,1,AI_first_pass,,明确断言3号与7号夜间沟通，即共狼判断。；所指玩家在该段已公开出局，不进入在场玩家网络。
+H8-R0149,H8,2,discussion,H8-U059,59,31:35,1895,H8-P10,H8-P07,suspect,asserted,因为他夜里沟通了，让 7 号查杀他。,37,55,186,1,1,AI_first_pass,,明确断言3号与7号夜间沟通，即共狼判断。
+H8-R0150,H8,2,discussion,H8-U059,59,31:35,1895,H8-P10,H8-P01,logic_agreement,logic_only,这就是 PDD 这个说法成立的原因。,170,188,186,0,1,AI_first_pass,,认可战术解释，不自动认定PDD好人。
+H8-R0151,H8,2,discussion,H8-U060,60,32:11,1931,H8-P10,H8-P07,propose_vote,proposal,今天必须跟我撕警徽。,107,117,189,0,0,AI_first_pass,,
+H8-R0152,H8,2,discussion,H8-U060,60,32:11,1931,H8-P10,H8-P07,suspect,asserted,他知，明显知道后面有人要查杀他，那查杀是谁？ 7 号。,242,269,189,1,0,AI_first_pass,,
+H8-R0153,H8,2,discussion,H8-U061,61,33:01,1981,H8-P10,H8-P11,suspect,asserted,这就是 11 号狼的发言。,76,89,192,1,0,AI_first_pass,,
+H8-R0154,H8,2,discussion,H8-U061,61,33:01,1981,H8-P10,H8-P07,propose_vote,proposal,好人请不要弃票，跟我撕 7 号警徽,211,228,192,0,0,AI_first_pass,,
+H8-R0155,H8,2,discussion,H8-U061,61,33:01,1981,H8-P10,H8-P05,support,asserted,被狼王爆刀带走的 5 号女巫发的好身份,185,204,192,0,1,AI_first_pass,,承认出局5号真女巫，已出局目标不作在场节点。；所指玩家在该段已公开出局，不进入在场玩家网络。
+H8-R0156,H8,2,discussion,H8-U061,61,33:01,1981,H8-P10,H8-P09,suspect,reported,还在踩 9 号，还在踩 10 号。,23,40,192,0,1,AI_first_pass,,10号转述11号攻击，非10号自己的狼坑。
+H8-R0157,H8,2,discussion,H8-U061,61,33:01,1981,H8-P10,H8-P10,suspect,reported,还在踩 9 号，还在踩 10 号。,23,40,192,0,1,AI_first_pass,,10号转述11号攻击，非10号自己的狼坑。
+H8-R0158,H8,2,discussion,H8-U062,62,33:53,2033,H8-P09,H8-P10,suspect,asserted,邵帮主你接个银水，我觉得代表不了什么,81,99,195,1,1,AI_first_pass,,提出10号自刀骗解药的当前怀疑，非仅一般自刀规则。
+H8-R0159,H8,2,discussion,H8-U062,62,33:53,2033,H8-P09,H8-P10,suspect,conditional,只有在一换一的情况下还骗了。一个要解，而且救的是狼队友的情况下,127,158,195,0,1,AI_first_pass,,以3号爆5的收益推论为条件，独立保留条件解释。
+H8-R0160,H8,2,discussion,H8-U063,63,34:30,2070,H8-P09,H8-P08,suspect,conditional,如果说 8 号是你们说的狼，那么就是8、10、11，这两个我看不出来。,13,48,198,0,1,AI_first_pass,,转写与当前站7、11被8查杀的关系存在冲突，不强改目标。
+H8-R0161,H8,2,discussion,H8-U063,63,34:30,2070,H8-P09,H8-P10,suspect,conditional,如果说 8 号是你们说的狼，那么就是8、10、11，这两个我看不出来。,13,48,198,0,1,AI_first_pass,,转写与当前站7、11被8查杀的关系存在冲突，不强改目标。
+H8-R0162,H8,2,discussion,H8-U063,63,34:30,2070,H8-P09,H8-P11,suspect,conditional,如果说 8 号是你们说的狼，那么就是8、10、11，这两个我看不出来。,13,48,198,0,1,AI_first_pass,,转写与当前站7、11被8查杀的关系存在冲突，不强改目标。
+H8-R0163,H8,2,discussion,H8-U063,63,34:30,2070,H8-P09,H8-P07,support,asserted,现在我是站 7 号边的,53,64,198,1,0,AI_first_pass,,
+H8-R0164,H8,2,discussion,H8-U063,63,34:30,2070,H8-P09,H8-P01,suspect,asserted,PDD 很可疑,116,123,198,1,0,AI_first_pass,,
+H8-R0165,H8,2,discussion,H8-U063,63,34:30,2070,H8-P09,H8-P10,suspect,ambiguous,帮主我认为是偏要的,105,114,198,0,1,AI_first_pass,,“偏要”疑似偏狼的转写，保留原字不独立形成主边。
+H8-R0166,H8,2,discussion,H8-U063,63,34:30,2070,H8-P09,H8-P08,propose_vote,proposal,这轮我肯定上八号的票。,94,105,198,0,0,AI_first_pass,,
+H8-R0167,H8,2,discussion,H8-U063,63,34:30,2070,H8-P09,H8-P08,retract_support,historical,第一轮我确实是瞎投,65,74,198,0,1,AI_first_pass,,9号解释最初给8号投警长的行为；当前转站7号。
+H8-R0168,H8,2,discussion,H8-U064,64,35:28,2128,H8-P08,H8-P06,support,asserted,昨天晚上验了六号是一个金水牌。,0,15,201,1,0,AI_first_pass,,
+H8-R0169,H8,2,discussion,H8-U064,64,35:28,2128,H8-P08,H8-P02,support,asserted,我觉得他不像一张狼牌，他是站错坑的牌。,59,78,201,0,1,AI_first_pass,,；所指玩家在该段已公开出局，不进入在场玩家网络。
+H8-R0170,H8,2,discussion,H8-U064,64,35:28,2128,H8-P08,H8-P06,support,asserted,6 号是一个好人牌。,164,174,201,1,0,AI_first_pass,,
+H8-R0171,H8,2,discussion,H8-U064,64,35:28,2128,H8-P08,H8-P02,retract_suspect,asserted,我觉得他不像一张狼牌，他是站错坑的牌。,59,78,201,0,1,AI_first_pass,,由先前票型狼坑候选调整为站错边的好人，2号已出局。；所指玩家在该段已公开出局，不进入在场玩家网络。
+H8-R0172,H8,2,discussion,H8-U065,65,35:59,2159,H8-P08,H8-P03,suspect,asserted,我已经看出来他们两个存在双狼互打，狼互踩。,73,94,204,0,1,AI_first_pass,,“他们两个”为3号假女巫与7号查杀者。；所指玩家在该段已公开出局，不进入在场玩家网络。
+H8-R0173,H8,2,discussion,H8-U065,65,35:59,2159,H8-P08,H8-P07,suspect,asserted,我已经看出来他们两个存在双狼互打，狼互踩。,73,94,204,1,1,AI_first_pass,,“他们两个”为3号假女巫与7号查杀者。
+H8-R0174,H8,2,discussion,H8-U065,65,35:59,2159,H8-P08,H8-P06,support,asserted,我昨天晚上验了 6 号是一张金水牌，我现在仍然信你是一张民牌,295,325,204,1,0,AI_first_pass,,
+H8-R0175,H8,2,discussion,H8-U065,65,35:59,2159,H8-P08,H8-P12,support,asserted,我觉得酒神是一个可能，认为狼人玩不出来这样花样的一个好人牌。,341,371,204,1,0,AI_first_pass,,
+H8-R0176,H8,2,discussion,H8-U065,65,35:59,2159,H8-P08,H8-P04,suspect,conditional,4 号是应该是最后一匹狼，如果场上三狼的话。,372,394,204,0,0,AI_first_pass,,
+H8-R0177,H8,2,discussion,H8-U065,65,35:59,2159,H8-P08,H8-P02,support,asserted,我到现在我都认为 2 号走的是一张好人牌走的,394,416,204,0,1,AI_first_pass,,；所指玩家在该段已公开出局，不进入在场玩家网络。
+H8-R0178,H8,2,discussion,H8-U065,65,35:59,2159,H8-P08,H8-P11,suspect,asserted,11 号是一个， 4 号是一个。,444,460,204,1,0,AI_first_pass,,
+H8-R0179,H8,2,discussion,H8-U065,65,35:59,2159,H8-P08,H8-P04,suspect,asserted,11 号是一个， 4 号是一个。,444,460,204,1,0,AI_first_pass,,
+H8-R0180,H8,2,discussion,H8-U066,66,37:32,2252,H8-P08,H8-P09,support,ambiguous,我没验，我没验，但是他投过我票，最后再走他,9,30,207,0,1,AI_first_pass,,可据首轮独票推9号，但本段代词无明指且“最后再走”是排序，不当确定认好。
+H8-R0181,H8,2,discussion,H8-U066,66,37:32,2252,H8-P08,H8-P07,propose_vote,proposal,我的票就举在 7 号头上,56,68,207,0,0,AI_first_pass,,
+H8-R0182,H8,2,discussion,H8-U067,67,37:47,2267,H8-P07,H8-P03,suspect,asserted,JY 是我验的查杀,46,55,210,0,1,AI_first_pass,,；所指玩家在该段已公开出局，不进入在场玩家网络。
+H8-R0183,H8,2,discussion,H8-U067,67,37:47,2267,H8-P07,H8-P10,suspect,asserted,邵帮主这头狼自刀成功了。,112,124,210,1,0,AI_first_pass,,
+H8-R0184,H8,2,discussion,H8-U067,67,37:47,2267,H8-P07,H8-P02,suspect,conditional,如果我是狼， 2 号是我的狼同伴吧？ 5 号上我票的是我的狼同伴吧？,184,218,210,0,1,AI_first_pass,,反事实自证，不能作确指2、5狼。
+H8-R0185,H8,2,discussion,H8-U067,67,37:47,2267,H8-P07,H8-P05,suspect,conditional,如果我是狼， 2 号是我的狼同伴吧？ 5 号上我票的是我的狼同伴吧？,184,218,210,0,1,AI_first_pass,,反事实自证，不能作确指2、5狼。
+H8-R0186,H8,2,discussion,H8-U067,67,37:47,2267,H8-P07,H8-P11,undetermined,logic_only,这个 11 号是被逼无奈，他被验查杀了，他无奈站在我这边,218,246,210,0,1,AI_first_pass,,解释其站边被迫性以证明自己无团队，没有独立认11号好人。
+H8-R0187,H8,2,discussion,H8-U067,67,37:47,2267,H8-P07,H8-P02,support,historical,他是场上唯一一个铁定了说他是站在我边的,284,303,210,0,1,AI_first_pass,,回溯已死2号支持关系，未认证新身份。
+H8-R0188,H8,2,discussion,H8-U068,68,38:47,2327,H8-P07,H8-P10,suspect,asserted,昨天晚上我验的邵帮主，邵帮主是个狼。,99,117,213,1,0,AI_first_pass,,
+H8-R0189,H8,2,discussion,H8-U068,68,38:47,2327,H8-P07,H8-P03,suspect,asserted,JY 是个狼,67,73,213,0,1,AI_first_pass,,；所指玩家在该段已公开出局，不进入在场玩家网络。
+H8-R0190,H8,2,discussion,H8-U068,68,38:47,2327,H8-P07,H8-P08,suspect,asserted,8 号是铁定的一个。,130,140,213,1,0,AI_first_pass,,
+H8-R0191,H8,2,discussion,H8-U068,68,38:47,2327,H8-P07,H8-P08,propose_vote,proposal,今天我要全票出 8 号,117,128,213,0,0,AI_first_pass,,
+H8-R0192,H8,2,discussion,H8-U068,68,38:47,2327,H8-P07,H8-P10,propose_vote,proposal,接下来我会出少帮主,140,149,213,0,1,AI_first_pass,,下轮放逐计划，不是本轮归票。
+H8-R0193,H8,2,discussion,H8-U069,69,39:32,2372,H8-P06,H8-P10,support,asserted,他自刀不了，所以说这个就逻辑不成立,242,259,216,1,0,AI_first_pass,,
+H8-R0194,H8,2,discussion,H8-U069,69,39:32,2372,H8-P06,H8-P07,suspect,asserted,你就是一只狼， 11 号一只狼,260,275,216,1,1,AI_first_pass,,“你”指正在对话的7号警长。
+H8-R0195,H8,2,discussion,H8-U069,69,39:32,2372,H8-P06,H8-P11,suspect,asserted,你就是一只狼， 11 号一只狼,260,275,216,1,1,AI_first_pass,,“你”指正在对话的7号警长。
+H8-R0196,H8,2,discussion,H8-U069,69,39:32,2372,H8-P06,H8-P07,propose_vote,proposal,4 号，我管你是狼是民，你也得举举 7 号。,324,346,216,0,0,AI_first_pass,,
+H8-R0197,H8,2,discussion,H8-U069,69,39:32,2372,H8-P06,H8-P04,undetermined,asserted,4 号，我管你是狼是民,324,335,216,1,1,AI_first_pass,,仅要求跟票，未认定4号阵营。
+H8-R0198,H8,2,discussion,H8-U070,70,41:22,2482,H8-P06,H8-P07,propose_vote,proposal,归 7 号,0,5,219,0,0,AI_first_pass,,
+H8-R0199,H8,2,discussion,H8-U070,70,41:22,2482,H8-P06,H8-P10,support,asserted,邵帮主不可能是自刀，也不是骗药的。,130,147,219,1,0,AI_first_pass,,
+H8-R0200,H8,2,discussion,H8-U070,70,41:22,2482,H8-P06,H8-P07,propose_vote,conditional,王，如果你要是一个好人，听到这个逻辑之后，也要举 7 号。,150,179,219,0,0,AI_first_pass,,
+H8-R0201,H8,2,discussion,H8-U071,71,41:56,2516,H8-P04,H8-P08,propose_vote,proposal,所以我只能投 8 号,143,153,222,0,0,AI_first_pass,,
+H8-R0202,H8,2,discussion,H8-U073,73,42:58,2578,H8-P07,H8-P08,propose_vote,proposal,警长归票 8 号。,0,9,228,0,0,AI_first_pass,,
+H8-R0203,H8,2,last_words,H8-U075,75,43:24,2604,H8-P08,H8-P11,suspect,asserted,狼是 11 号、 7 号、 4 号，包括自爆的那匹狼王,35,62,234,0,1,AI_first_pass,,遗言旁表，不进主网络。
+H8-R0204,H8,2,last_words,H8-U075,75,43:24,2604,H8-P08,H8-P07,suspect,asserted,狼是 11 号、 7 号、 4 号，包括自爆的那匹狼王,35,62,234,0,1,AI_first_pass,,遗言旁表，不进主网络。
+H8-R0205,H8,2,last_words,H8-U075,75,43:24,2604,H8-P08,H8-P04,suspect,asserted,狼是 11 号、 7 号、 4 号，包括自爆的那匹狼王,35,62,234,0,1,AI_first_pass,,遗言旁表，不进主网络。
+H8-R0206,H8,2,last_words,H8-U075,75,43:24,2604,H8-P08,H8-P03,suspect,asserted,狼是 11 号、 7 号、 4 号，包括自爆的那匹狼王,35,62,234,0,1,AI_first_pass,,遗言旁表，不进主网络。
+H8-R0207,H8,2,last_words,H8-U075,75,43:24,2604,H8-P08,H8-P10,support,asserted,10 号绝对不可能说什么骗解药什么的,76,94,234,0,0,AI_first_pass,,
+H8-R0208,H8,2,last_words,H8-U075,75,43:24,2604,H8-P08,H8-P09,support,asserted,你投过我的票，我保你,157,167,234,0,1,AI_first_pass,,对首日唯一给8投警长票的9号说，遗言旁表。
+H8-R0209,H8,2,last_words,H8-U075,75,43:24,2604,H8-P08,H8-P04,suspect,asserted,4 号肯定是铁定是最后一匹狼,184,198,234,0,0,AI_first_pass,,
+H8-R0210,H8,3,discussion,H8-U081,81,45:15,2715,H8-P04,H8-P12,logic_agreement,logic_only,12 号，我跟着你走，你投谁我投谁。,10,28,252,0,1,AI_first_pass,,明确跟随投票，不等同明确认12号好人。
+H8-R0211,H8,3,discussion,H8-U081,81,45:15,2715,H8-P04,H8-P07,propose_vote,conditional,你要是投7，我就跟你投7,59,71,252,0,0,AI_first_pass,,
+H8-R0212,H8,3,discussion,H8-U081,81,45:15,2715,H8-P04,H8-P07,retract_support,ambiguous,我好像又站错边了。,40,49,252,0,1,AI_first_pass,,4号前轮投8、先前站7，反思站错边但未直接报7号，保留推断歧义。
+H8-R0213,H8,3,discussion,H8-U082,82,45:31,2731,H8-P01,H8-P04,propose_vote,proposal,要不把 4 号投了吧？,100,111,255,0,0,AI_first_pass,,
+H8-R0214,H8,3,discussion,H8-U083,83,45:57,2757,H8-P12,H8-P07,suspect,asserted,场上还有 3 狼，老鼠一批，王师傅一批，还有王一批。,3,29,258,1,0,AI_first_pass,,
+H8-R0215,H8,3,discussion,H8-U083,83,45:57,2757,H8-P12,H8-P11,suspect,asserted,场上还有 3 狼，老鼠一批，王师傅一批，还有王一批。,3,29,258,1,0,AI_first_pass,,
+H8-R0216,H8,3,discussion,H8-U083,83,45:57,2757,H8-P12,H8-P09,suspect,asserted,场上还有 3 狼，老鼠一批，王师傅一批，还有王一批。,3,29,258,1,0,AI_first_pass,,
+H8-R0217,H8,3,discussion,H8-U083,83,45:57,2757,H8-P12,H8-P04,support,asserted,4 号是个小渔民，跟我们差不多,44,59,258,1,0,AI_first_pass,,
+H8-R0218,H8,3,discussion,H8-U083,83,45:57,2757,H8-P12,H8-P01,undetermined,asserted,你这个票型长得蛮奇怪，我是不是应该怀疑一下你呢？,65,89,258,1,1,AI_first_pass,,对PDD前轮投8提出疑问，未落狼结论。
+H8-R0219,H8,3,discussion,H8-U084,84,47:05,2825,H8-P12,H8-P10,support,asserted,这个消防组不可能自刀的，他自刀是没有收益的,43,64,261,1,0,AI_first_pass,,
+H8-R0220,H8,3,discussion,H8-U084,84,47:05,2825,H8-P12,H8-P01,support,asserted,你们这两个发言状态我感觉是好人的,92,108,261,1,1,AI_first_pass,,继前文对1号和4号的逐一对话，2人状态认可。
+H8-R0221,H8,3,discussion,H8-U084,84,47:05,2825,H8-P12,H8-P04,support,asserted,你们这两个发言状态我感觉是好人的,92,108,261,1,1,AI_first_pass,,继前文对1号和4号的逐一对话，2人状态认可。
+H8-R0222,H8,3,discussion,H8-U085,85,47:30,2850,H8-P12,H8-P07,suspect,asserted,7 号很坏的。,35,42,264,1,0,AI_first_pass,,
+H8-R0223,H8,3,discussion,H8-U085,85,47:30,2850,H8-P12,H8-P10,support,asserted,他是银水，要不我们听他的吧？,71,85,264,1,0,AI_first_pass,,
+H8-R0224,H8,3,discussion,H8-U086,86,47:53,2873,H8-P11,H8-P08,suspect,asserted,八号是假预言家走的,154,163,267,0,1,AI_first_pass,,；所指玩家在该段已公开出局，不进入在场玩家网络。
+H8-R0225,H8,3,discussion,H8-U086,86,47:53,2873,H8-P11,H8-P03,suspect,asserted,三号是自爆的狼人,164,172,267,0,1,AI_first_pass,,；所指玩家在该段已公开出局，不进入在场玩家网络。
+H8-R0226,H8,3,discussion,H8-U086,86,47:53,2873,H8-P11,H8-P12,suspect,alternative_set,我觉得就不是你酒神就是王啊，小魔兽也有可能吧。,186,209,267,0,1,AI_first_pass,,三个候选中择一，不拆成同时三狼。
+H8-R0227,H8,3,discussion,H8-U086,86,47:53,2873,H8-P11,H8-P09,suspect,alternative_set,我觉得就不是你酒神就是王啊，小魔兽也有可能吧。,186,209,267,0,1,AI_first_pass,,三个候选中择一，不拆成同时三狼。
+H8-R0228,H8,3,discussion,H8-U086,86,47:53,2873,H8-P11,H8-P04,suspect,alternative_set,我觉得就不是你酒神就是王啊，小魔兽也有可能吧。,186,209,267,0,1,AI_first_pass,,三个候选中择一，不拆成同时三狼。
+H8-R0229,H8,3,discussion,H8-U088,88,48:41,2921,H8-P11,H8-P10,propose_vote,proposal,这轮肯定出少帮主,3,11,273,0,0,AI_first_pass,,
+H8-R0230,H8,3,discussion,H8-U089,89,48:46,2926,H8-P10,H8-P06,logic_agreement,logic_only,囚徒解释了一下，我是不会自刀的可能,31,48,276,0,0,AI_first_pass,,
+H8-R0231,H8,3,discussion,H8-U090,90,49:23,2963,H8-P10,H8-P05,support,asserted,女巫是真走的,17,23,279,0,1,AI_first_pass,,指5号真女巫，已出局目标。；所指玩家在该段已公开出局，不进入在场玩家网络。
+H8-R0232,H8,3,discussion,H8-U090,90,49:23,2963,H8-P10,H8-P08,support,ambiguous,一个狼人， 8 号会有验人功能吗？,185,202,279,0,1,AI_first_pass,,以7号复验6号的话质疑其身份，隐含8号真预言家但句面为反问，不强制编码主边。

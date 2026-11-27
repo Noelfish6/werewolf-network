@@ -1,0 +1,46 @@
+{
+  "game_id": "H3",
+  "title": "第三期第一局",
+  "category": "human",
+  "day_count": 5,
+  "duration_seconds": 4496,
+  "source_file": "第三期第一局.md",
+  "source_path": "原始资料/人类玩家/第三期第一局/第三期第一局.md",
+  "source_sha256": "bfe22153747da1f9828c466ff54f7442c6f57a417aa0993b7e3d153c00fcb9a2",
+  "coding_status": "AI_first_pass_not_independently_validated",
+  "source_video_reviewed": false,
+  "lifecycle_mode": "events",
+  "snapshot_utterances": {
+    "1": "H3-U044",
+    "2": "H3-U071",
+    "3": "H3-U097",
+    "4": "H3-U116",
+    "5": "H3-U123"
+  },
+  "redactions": [
+    {
+      "utterance_id": "H3-U123",
+      "starts_at": "本轮游戏中，狼人毛毛"
+    }
+  ],
+  "counts": {
+    "players": 12,
+    "player_status": 60,
+    "utterances": 135,
+    "relation_events": 304,
+    "votes": 60,
+    "key_events": 70,
+    "review_issues": 13,
+    "snapshot_dyads": 720,
+    "network_edges": 64,
+    "data_dictionary": 125
+  },
+  "checks": [
+    "Every source segment preserved",
+    "All quote offsets verified",
+    "All player ids game-scoped",
+    "No inferred missing ballots",
+    "No main self-loops",
+    "Unknown identity statuses retained"
+  ]
+}

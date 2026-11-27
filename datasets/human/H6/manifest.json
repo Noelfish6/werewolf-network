@@ -1,0 +1,45 @@
+{
+  "game_id": "H6",
+  "title": "第六期第一局",
+  "category": "human",
+  "day_count": 4,
+  "duration_seconds": 2922,
+  "source_file": "第六期第一局.md",
+  "source_path": "原始资料/人类玩家/第六期第一局/第六期第一局.md",
+  "source_sha256": "253c61b2fc3442fd3e6e9e3d92797525541c471c3e1caefb51bc0b1d17856e62",
+  "coding_status": "AI_first_pass_not_independently_validated",
+  "source_video_reviewed": false,
+  "lifecycle_mode": "events",
+  "snapshot_utterances": {
+    "1": "H6-U052",
+    "2": "H6-U060",
+    "3": "H6-U080",
+    "4": "H6-U092"
+  },
+  "redactions": [
+    {
+      "utterance_id": "H6-U093",
+      "starts_at": "本轮游戏，首夜守卫 JY 自首"
+    }
+  ],
+  "counts": {
+    "players": 12,
+    "player_status": 48,
+    "utterances": 97,
+    "relation_events": 178,
+    "votes": 36,
+    "key_events": 67,
+    "review_issues": 11,
+    "snapshot_dyads": 576,
+    "network_edges": 45,
+    "data_dictionary": 125
+  },
+  "checks": [
+    "Every source segment preserved",
+    "All quote offsets verified",
+    "All player ids game-scoped",
+    "No inferred missing ballots",
+    "No main self-loops",
+    "Unknown identity statuses retained"
+  ]
+}

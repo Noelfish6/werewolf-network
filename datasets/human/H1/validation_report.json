@@ -1,0 +1,39 @@
+{
+  "verified_at": "2026-11-27T14:36:18+08:00",
+  "result": "PASS",
+  "source_sha256": "3bd6d4a6ae8b1cc9722b4b9bccd2da15562f11a499b59b7d0c14549f581100e1",
+  "counts": {
+    "players": 12,
+    "player_status": 36,
+    "utterances": 110,
+    "relation_events": 255,
+    "votes": 48,
+    "key_events": 51,
+    "review_issues": 16,
+    "snapshot_dyads": 432,
+    "network_edges": 94,
+    "data_dictionary": 123
+  },
+  "xlsx_sheets": 11,
+  "xlsx_cells_compared_to_csv": 16593,
+  "matrix_files": 16,
+  "graphml_files": 6,
+  "checks": [
+    "source transcript unchanged",
+    "all relation quote offsets exact",
+    "all node and utterance keys valid",
+    "unknown identities retained",
+    "unreported vote retained",
+    "self-vote isolated",
+    "no main self-loops",
+    "NA cells not filled with zero",
+    "GraphML counts reconcile",
+    "every saved workbook data cell equals CSV",
+    "saved workbook has no error cells"
+  ],
+  "limits": [
+    "semantic coding not independently double-coded",
+    "video reviewed only for seat 7/12 nickname nameplates; full video not audited",
+    "speaker mapping and ballot ambiguities remain in review_issues"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "source_video": "第一期第一局_视频.mp4",
+  "method": "Read the on-screen seat number and nickname nameplate; no face recognition.",
+  "verified_on": "2026-11-27",
+  "players": [
+    {
+      "player_id": "H1-P07",
+      "display_name": "LOT29",
+      "timestamp": "04:25",
+      "evidence_frame": "evidence/frame_04-25.png",
+      "verified_on": "2026-11-27"
+    },
+    {
+      "player_id": "H1-P12",
+      "display_name": "魔兽后裔",
+      "timestamp": "40:30",
+      "evidence_frame": "evidence/frame_40-30.png",
+      "verified_on": "2026-11-27"
+    }
+  ]
+}

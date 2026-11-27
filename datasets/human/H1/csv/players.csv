@@ -1,0 +1,13 @@
+﻿game_id,player_id,seat,display_name,aliases,true_role,role_status,true_camp,camp_status,role_evidence,name_status,notes
+H1,H1-P01,1,王师傅,王师傅,seer,confirmed,good,confirmed,H1-U097,contextual,仅赛后旁白明确确认的四人标confirmed。
+H1,H1-P02,2,风行云,风行云|云哥,,unknown,,unknown,,contextual,真实身份未确认。
+H1,H1-P03,3,老鼠,老鼠,witch,inferred,good,inferred,H1-U023|H1-U024|H1-U052,contextual,自述和上下文支持，未见规则翻牌确认。
+H1,H1-P04,4,小楼,小楼,idiot,inferred,good,inferred,H1-U067|H1-U083,contextual,自述和上下文支持，未见规则翻牌确认。
+H1,H1-P05,5,JY,JY,werewolf,confirmed,wolf,confirmed,H1-U097,contextual,仅赛后旁白明确确认的四人标confirmed。
+H1,H1-P06,6,瓦莉拉,瓦莉拉|瓦力拉|瓦利拉|瓦伊拉|瓦娘,,unknown,wolf,inferred,H1-U104,contextual,54:44原发言人12与局内6号一致，自称我们这么多狼；赛后说话人未可靠核实，仅推定狼人。
+H1,H1-P07,7,LOT29,LOT29,,unknown,,unknown,,video_confirmed,真实身份未确认。昵称经原视频04:25右下角7号姓名栏确认（见evidence/frame_04-25.png）。
+H1,H1-P08,8,囚徒,囚徒|秋图,hunter,confirmed,good,confirmed,H1-U097,contextual,仅赛后旁白明确确认的四人标confirmed。
+H1,H1-P09,9,毛毛,毛毛,,unknown,,unknown,,contextual,真实身份未确认。
+H1,H1-P10,10,酒神,酒神|大酒神|9神|九神|零九|09,villager,inferred,good,inferred,H1-U095,contextual,自述和上下文支持，未见规则翻牌确认。
+H1,H1-P11,11,邵帮主,邵帮主|少帮主|肖帮主|商帮主|双帮主|赵帮主,werewolf,confirmed,wolf,confirmed,H1-U097,contextual,仅赛后旁白明确确认的四人标confirmed。
+H1,H1-P12,12,魔兽后裔,魔兽后裔,,unknown,,unknown,,video_confirmed,真实身份未确认。昵称经原视频40:30右下角12号姓名栏确认（见evidence/frame_40-30.png）。

@@ -1,0 +1,13 @@
+﻿player_id,game_id,seat,display_name,aliases,name_status,true_role,role_status,true_camp,camp_status,role_evidence,notes
+H3-P01,H3,1,毛毛,,contextual,werewolf,confirmed,wolf,confirmed,H3-U123,旁白明确称狼人毛毛悍跳；U6/U42自称预言家仅为公开声称。
+H3-P02,H3,2,鼠大王,老鼠|鼠的|楚楚大王,contextual,werewolf,inferred,wolf,inferred,H3-U015|H3-U067|H3-U068|H3-U069|H3-U079|H3-U090|H3-U123,以发言顺序和金水接收者定位2号。假女巫、坚持1号真预言家以及全局叙述支持狼身份；旁白未直接逐字点名鼠大王为狼，不以四狼配额升格确认。
+H3-P03,H3,3,邵帮主,少帮主|邵邦主|双爆主,contextual,werewolf,confirmed,wolf,confirmed,H3-U123,旁白明确称最后一匹狼少帮主并被女巫盲毒。
+H3-P04,H3,4,囚徒,裘大|秋族|修图|楚楚,contextual,,unknown,good,inferred,H3-U007|H3-U008|H3-U063|H3-U113|H3-U123,自称强神，但U113明确否认猎人；不按剩余神民配额指派白痴或平民。多名玩家认可其好身份，好阵营为推断。
+H3-P05,H3,5,酒神,大酒神|九神|9神|大酒唇,contextual,idiot,inferred,good,inferred,H3-U009|H3-U012|H3-U023|H3-U107|H3-U110|H3-U123,自称弱神，规则仅有预言家/女巫/猎人/白痴，故白痴为推断，未被票决翻牌。9神/酒神在2号女巫声称中ASR冲突需保留。
+H3-P06,H3,6,王师傅,,contextual,hunter,confirmed,good,confirmed,H3-U122|H3-U123,主持明确6号发动技能，旁白称猎人王师傅准确一枪。
+H3-P07,H3,7,风行云,云哥|风寻云|风星云|风信云|老云,contextual,villager,inferred,good,inferred,H3-U028|H3-U087|H3-U099|H3-U120,自称愚民/民；出局并不证明好身份，未有旁白单独揭示，保持推断。
+H3-P08,H3,8,PDD,PD|P 弟弟|P弟弟|B D D|骚猪,contextual,villager,inferred,good,inferred,H3-U030|H3-U056|H3-U057|H3-U120,自称民；离场采访自责与最终局势支持好阵营，不凭游戏未结束认定身份。
+H3-P09,H3,9,瓦利拉,瓦力拉|瓦莉拉|瓦伊拉|瓦利拉|瓦娘|婉良|瓦丫,contextual,seer,confirmed,good,confirmed,H3-U012|H3-U032|H3-U123,旁白明确真预言家瓦利拉，9号自述验5号金水。
+H3-P10,H3,10,JY,结外|大嘴唇,contextual,witch,confirmed,good,confirmed,H3-U034|H3-U053|H3-U078|H3-U123,自称女巫后退水；旁白确认女巫JY盲毒3号；U53末尾“我毒的是个3号”与退水语句矛盾保留。
+H3-P11,H3,11,刘沙基,流沙姬|流沙基|刘沙姬|流沙机|刘沙记|刘沙进|流沙击|龙虾机|鸡哥,contextual,werewolf,confirmed,wolf,confirmed,H3-U103|H3-U106|H3-U123,主持确认猎人带走11号；旁白直接确认狼人流沙基。发言人2标签同时覆盖本人与2号。
+H3-P12,H3,12,小楼,小罗,contextual,villager,inferred,good,inferred,H3-U040|H3-U041|H3-U094|H3-U101,以警徽流12号与自述接警徽定位。自称平民，夜死不构成角色确认。

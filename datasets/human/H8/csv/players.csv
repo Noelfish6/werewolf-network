@@ -1,0 +1,13 @@
+﻿player_id,game_id,seat,display_name,aliases,name_status,true_role,role_status,true_camp,camp_status,role_evidence,notes
+H8-P01,H8,1,PDD,PD|七弟弟,contextual,hunter,inferred,good,confirmed,H8-U032,姓名由本局上下文定位；阵营以U96主持完整狼人名单及好人点名为证。具体职业依据玩家声明及后续一致性推定，未作主持证实。
+H8-P02,H8,2,毛毛,,contextual,,unknown,good,confirmed,,姓名由本局上下文定位；阵营以U96主持完整狼人名单及好人点名为证。仅见夜死，无足够直接职业揭示，具体职业保留未知，不按配置补平民。
+H8-P03,H8,3,JY,Z Y|街外,contextual,white_wolf_king,confirmed,wolf,confirmed,H8-U044|H8-U096,姓名由本局上下文定位；阵营以U96主持完整狼人名单及好人点名为证。
+H8-P04,H8,4,魔兽后羿,小魔兽|魔兽,contextual,werewolf,confirmed,wolf,confirmed,H8-U096,姓名由本局上下文定位；阵营以U96主持完整狼人名单及好人点名为证。
+H8-P05,H8,5,陈小柏,小柏|小博|陈小博,contextual,witch,confirmed,good,confirmed,H8-U042|H8-U044|H8-U096,姓名由本局上下文定位；阵营以U96主持完整狼人名单及好人点名为证。发言人10在U42、U45为5号，其他多数段为10号；U96真女巫陈小柏与U44被带走5号相互定位。
+H8-P06,H8,6,囚徒,金面具,contextual,villager,inferred,good,confirmed,H8-U009|H8-U011|H8-U064|H8-U096,姓名由本局上下文定位；阵营以U96主持完整狼人名单及好人点名为证。具体职业依据玩家声明及后续一致性推定，未作主持证实。
+H8-P07,H8,7,鼠大王,老鼠|鼠,contextual,werewolf,confirmed,wolf,confirmed,H8-U091|H8-U093|H8-U096,姓名由本局上下文定位；阵营以U96主持完整狼人名单及好人点名为证。
+H8-P08,H8,8,桃子,,contextual,seer,confirmed,good,confirmed,H8-U096,姓名由本局上下文定位；阵营以U96主持完整狼人名单及好人点名为证。
+H8-P09,H8,9,王,,contextual,villager,inferred,good,confirmed,H8-U022|H8-U096,姓名由本局上下文定位；阵营以U96主持完整狼人名单及好人点名为证。具体职业依据玩家声明及后续一致性推定，未作主持证实。仅定位昵称“王”，明确区别11号王师傅，不外推全名。
+H8-P10,H8,10,少帮主,邵帮主|帮主|萧帮主|消防组,contextual,guard,inferred,good,confirmed,H8-U060|H8-U096,姓名由本局上下文定位；阵营以U96主持完整狼人名单及好人点名为证。具体职业依据玩家声明及后续一致性推定，未作主持证实。
+H8-P11,H8,11,王师傅,老王,contextual,werewolf,confirmed,wolf,confirmed,H8-U095|H8-U096,姓名由本局上下文定位；阵营以U96主持完整狼人名单及好人点名为证。
+H8-P12,H8,12,酒神,九神|9 神|九哥,contextual,villager,inferred,good,confirmed,H8-U004|H8-U028|H8-U096,姓名由本局上下文定位；阵营以U96主持完整狼人名单及好人点名为证。具体职业依据玩家声明及后续一致性推定，未作主持证实。
