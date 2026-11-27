@@ -1,12 +1,12 @@
 ﻿player_id,game_id,seat,display_name,aliases,name_status,true_role,role_status,true_camp,camp_status,role_evidence,notes
 H6-P01,H6,1,囚徒,,contextual,witch,inferred,good,inferred,H6-U032|H6-U033|H6-U069,U32-34自称女巫；U69由JY说明其真实女巫身份及未救11号。主持只宣布夜死，故真实角色保留inferred。
 H6-P02,H6,2,毛毛,,contextual,villager,inferred,good,inferred,H6-U033|H6-U058|H6-U087|H6-U093,警上穿女巫衣服，不能据此认女巫或狼人。U70将2号认狼是9号当时推断，与四名实际狼的自爆及终局证据不合；按后续局势推断好人平民。
-H6-P03,H6,3,3号玩家,王,unresolved,,unknown,good,inferred,H6-U087,U87仅称“3号王”；不沿用他局昵称。强神发言与最后隐藏猎人的格局不足以直接确认猎人，真实角色留空。
+H6-P03,H6,3,SOL,王,user_confirmed,,unknown,good,inferred,H6-U087,用户明确确认3号昵称为SOL；原稿U87称“3号王”。仅有强神声称，具体神职仍未确认。
 H6-P04,H6,4,少帮主,邵帮主|商帮主|尚帮主|少班主|卢西奥|陆笑,contextual,seer,confirmed,good,confirmed,H6-U093,自称卢西奥是开场玩笑别名；终局旁白明确称真预言家少帮主。
 H6-P05,H6,5,王师傅,,contextual,,unknown,wolf,confirmed,H6-U062|H6-U093,主持确认自爆且旁白点名王师傅自爆；白狼王子类型未能可靠定位，角色留空，仅狼阵营confirmed。
 H6-P06,H6,6,魔兽后羿,魔兽|小魔兽,contextual,villager,inferred,good,inferred,H6-U086|H6-U087|H6-U093,U10明确6号魔兽后羿；验人金水属预言家玩家报告。平民为后续角色格局推断。
 H6-P07,H6,7,桃子,,contextual,,unknown,wolf,confirmed,H6-U093,U24称7号桃子，U93旁白明确桃子悍跳；白狼王子类型未明。
-H6-P08,H6,8,8号玩家,,unresolved,villager,inferred,good,inferred,H6-U046|H6-U072|H6-U093,U46轮序及其自述警长票投4号对应8号；U72-73称9号JY为第三人，U76呼应8号发言。U19转录“强”可能指8号，但与12号强神混淆，不强行归昵称。
+H6-P08,H6,8,大奶强,强,user_confirmed,villager,inferred,good,inferred,H6-U046|H6-U072|H6-U093,用户明确确认8号昵称为大奶强；原稿“强”作为昵称简称保留。U46及U72–73发言人归属按原轮序证据；平民角色仍为推定。
 H6-P09,H6,9,JY,,contextual,guard,confirmed,good,confirmed,H6-U093,U73明确9号JY；U93旁白确认守卫。U41-45先自称猎人，U68才认守卫。
 H6-P10,H6,10,鼠大王,,contextual,,unknown,wolf,confirmed,H6-U081|H6-U082,U24明确10号鼠大王，U65自报10号；U81确认自爆。U24猜测白狼王不是终局证据。
 H6-P11,H6,11,09,零九,contextual,villager,inferred,good,inferred,H6-U058|H6-U069|H6-U093,U37手滑投票被U49指认11号；U69“没有救09”后立即称“救了十一号”，姓名09映射11。平民身份为后续格局推断，未由主持直接揭示。

@@ -8,7 +8,7 @@ players,role_status,string,角色证据等级：confirmed旁白确认，inferred
 players,true_camp,string,赛后阵营：good好人、wolf狼人；空白未知。,空字段；不可直接填0,good
 players,camp_status,string,阵营证据等级，与角色等级分别记录。,空字段；不可直接填0,inferred
 players,role_evidence,string,用于判断赛后身份的发言ID，不代表当时其他玩家已知道。,空字段；不可直接填0,H6-U032|H6-U033|H6-U069
-players,name_status,string,contextual据语境识别；video_confirmed经视频座位号及姓名栏确认；unresolved未解决。,空字段；不可直接填0,contextual
+players,name_status,string,contextual据语境识别；video_confirmed经视频座位号及姓名栏确认；unresolved未解决。；user_confirmed为用户明确确认昵称。,空字段；不可直接填0,contextual
 players,notes,string,编码理由、指代处理或限制；不是原话。,空字段；不可直接填0,U32-34自称女巫；U69由JY说明其真实女巫身份及未救11号。主持只宣布夜死，故真实角色保留inferred。
 player_status,game_id,string,对局唯一ID，H1/H3/H6/H8对应四期人类玩家第一局；不可跨局合并座位。,空字段；不可直接填0,H6
 player_status,day,integer,按主持昼夜切换划分从1递增；0为开场或赛后。,空字段；不可直接填0,1
@@ -96,7 +96,7 @@ review_issues,utterance_ids,string,问题涉及段落ID，竖线分隔。,空字
 review_issues,timestamps,string,对应时间戳。,空字段；不可直接填0,19:35|20:12|26:48|32:43|33:26|38:28|38:59|41:56|42:01|46:13|46:38
 review_issues,description,string,需要核查的具体问题。,空字段；不可直接填0,发言人9混合8、12；发言人12在U61实际自爆者5号；发言人13短声无法唯一确认。
 review_issues,handling,string,当前采用的保守处理。,空字段；不可直接填0,依主持报位、轮序和自指逐段还原；U78/80保留speaker0。
-review_issues,status,string,open尚未人工解决。,空字段；不可直接填0,open
+review_issues,status,string,open待核查；resolved已根据明确证据或用户确认解决，见reviewer/resolution。,空字段；不可直接填0,open
 review_issues,reviewer,string,人工复核者，初始留空。,空字段；不可直接填0,
 review_issues,resolution,string,核查结论，初始留空。,空字段；不可直接填0,
 snapshot_dyads,game_id,string,对局唯一ID，H1/H3/H6/H8对应四期人类玩家第一局；不可跨局合并座位。,空字段；不可直接填0,H6

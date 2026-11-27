@@ -77,7 +77,10 @@ def compile_game(annotation):
     def issue(category,us,description,handling):
         issues.append(dict(issue_id=f'{game}-Q{len(issues)+1:03}',category=category,utterance_ids='|'.join(uid(n) for n in us),
           timestamps='|'.join(by_u[n]['timestamp'] for n in us),description=description,handling=handling,status='open',reviewer='',resolution=''))
-    for a in annotation.get('review_issues',[]):issue(a['category'],a['us'],a['description'],a['handling'])
+    for a in annotation.get('review_issues',[]):
+        issue(a['category'],a['us'],a['description'],a['handling'])
+        for field in ['status','reviewer','resolution']:
+            if field in a:issues[-1][field]=a[field]
     for r in relations:
         if r['main_eligible'] and (r['source'] not in alive_at(r['utterance_order']) or r['target'] not in alive_at(r['utterance_order'])):
             r['main_eligible']=0;r['needs_review']=1;r['notes']+='；所指玩家在该段已公开出局，不进入在场玩家网络。'
@@ -144,6 +147,8 @@ def compile_game(annotation):
         if r['field']=='true_role':r['description_zh']='赛后角色：seer预言家、witch女巫、hunter猎人、idiot白痴、guard守卫、white_wolf_king白狼王、werewolf狼人、villager平民；空白未知。'
         if r['field']=='game_id':r['description_zh']='对局唯一ID，H1/H3/H6/H8对应四期人类玩家第一局；不可跨局合并座位。'
         if r['field']=='cell_status':r['description_zh']+='；NA_NO_DISCUSSION为仅夜间/终局公告、没有公开讨论机会的白天，不按观测零值分析。'
+        if r['field']=='name_status' and any(p['name_status']=='user_confirmed' for p in players):r['description_zh']+='；user_confirmed为用户明确确认昵称。'
+        if r['field']=='status' and any(q['status']=='resolved' for q in issues):r['description_zh']='open待核查；resolved已根据明确证据或用户确认解决，见reviewer/resolution。'
     existing={(r['table'],r['field']) for r in dictionary}
     for table,rows in tables.items():
         for field in rows[0] if rows else []:
@@ -190,6 +195,7 @@ def compile_game(annotation):
     meta=dict(game_id=game,title=annotation['title'],category='human',day_count=len(days),duration_seconds=annotation['duration_seconds'],
       source_file=source.name,source_path=annotation['source_path'],source_sha256=hashlib.sha256(source.read_bytes()).hexdigest(),
       coding_status='AI_first_pass_not_independently_validated',source_video_reviewed=False,lifecycle_mode='events',snapshot_utterances=snapshots,redactions=redactions)
+    if annotation.get('name_confirmations'):meta['name_confirmations']=annotation['name_confirmations']
     web={**meta,**tables,'campaign_events':[k for k in events if k['event_type']=='sheriff_withdrawal']}
     manifest={**meta,'counts':{k:len(v) for k,v in tables.items()},'checks':['Every source segment preserved','All quote offsets verified','All player ids game-scoped','No inferred missing ballots','No main self-loops','Unknown identity statuses retained']}
     for filename,obj in [('tables.json',tables),('web.json',web),('manifest.json',manifest)]:

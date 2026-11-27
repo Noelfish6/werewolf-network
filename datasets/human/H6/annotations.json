@@ -39,11 +39,11 @@
     },
     {
       "seat": 3,
-      "display_name": "3号玩家",
+      "display_name": "SOL",
       "aliases": [
         "王"
       ],
-      "name_status": "unresolved",
+      "name_status": "user_confirmed",
       "true_role": "",
       "role_status": "unknown",
       "true_camp": "good",
@@ -51,7 +51,7 @@
       "role_evidence": [
         87
       ],
-      "notes": "U87仅称“3号王”；不沿用他局昵称。强神发言与最后隐藏猎人的格局不足以直接确认猎人，真实角色留空。"
+      "notes": "用户明确确认3号昵称为SOL；原稿U87称“3号王”。仅有强神声称，具体神职仍未确认。"
     },
     {
       "seat": 4,
@@ -124,9 +124,11 @@
     },
     {
       "seat": 8,
-      "display_name": "8号玩家",
-      "aliases": [],
-      "name_status": "unresolved",
+      "display_name": "大奶强",
+      "aliases": [
+        "强"
+      ],
+      "name_status": "user_confirmed",
       "true_role": "villager",
       "role_status": "inferred",
       "true_camp": "good",
@@ -136,7 +138,7 @@
         72,
         93
       ],
-      "notes": "U46轮序及其自述警长票投4号对应8号；U72-73称9号JY为第三人，U76呼应8号发言。U19转录“强”可能指8号，但与12号强神混淆，不强行归昵称。"
+      "notes": "用户明确确认8号昵称为大奶强；原稿“强”作为昵称简称保留。U46及U72–73发言人归属按原轮序证据；平民角色仍为推定。"
     },
     {
       "seat": 9,
@@ -3076,7 +3078,10 @@
         93
       ],
       "description": "8号可能被转录为“强”；12号旁白明确强神；3号仅“王”，不能当5号王师傅。",
-      "handling": "3、8显示座位名并标unresolved；不跨局复制姓名。"
+      "handling": "已将3号/8号昵称补为SOL/大奶强并标user_confirmed。原文不改写；角色与阵营证据等级保持原样。",
+      "status": "resolved",
+      "reviewer": "用户",
+      "resolution": "用户在本对话明确确认：3号SOL、8号大奶强（2026-11-27）。"
     },
     {
       "category": "wolf_subtype_unknown",
@@ -3182,6 +3187,22 @@
       ],
       "description": "AI交叉检查发现发言评价、判断认可或查验计划与身份立场边界需人工复核。",
       "handling": "已按H1保守口径降级为逻辑认可或歧义候选，不进入明确关系网络；原话保留。"
+    }
+  ],
+  "name_confirmations": [
+    {
+      "seat": 3,
+      "display_name": "SOL",
+      "confirmed_by": "user",
+      "confirmed_on": "2026-11-27",
+      "source": "本对话用户明确提供座位与昵称"
+    },
+    {
+      "seat": 8,
+      "display_name": "大奶强",
+      "confirmed_by": "user",
+      "confirmed_on": "2026-11-27",
+      "source": "本对话用户明确提供座位与昵称"
     }
   ]
 }

@@ -22,6 +22,22 @@
       "starts_at": "本轮游戏，首夜守卫 JY 自首"
     }
   ],
+  "name_confirmations": [
+    {
+      "seat": 3,
+      "display_name": "SOL",
+      "confirmed_by": "user",
+      "confirmed_on": "2026-11-27",
+      "source": "本对话用户明确提供座位与昵称"
+    },
+    {
+      "seat": 8,
+      "display_name": "大奶强",
+      "confirmed_by": "user",
+      "confirmed_on": "2026-11-27",
+      "source": "本对话用户明确提供座位与昵称"
+    }
+  ],
   "players": [
     {
       "player_id": "H6-P01",
@@ -55,15 +71,15 @@
       "player_id": "H6-P03",
       "game_id": "H6",
       "seat": 3,
-      "display_name": "3号玩家",
+      "display_name": "SOL",
       "aliases": "王",
-      "name_status": "unresolved",
+      "name_status": "user_confirmed",
       "true_role": "",
       "role_status": "unknown",
       "true_camp": "good",
       "camp_status": "inferred",
       "role_evidence": "H6-U087",
-      "notes": "U87仅称“3号王”；不沿用他局昵称。强神发言与最后隐藏猎人的格局不足以直接确认猎人，真实角色留空。"
+      "notes": "用户明确确认3号昵称为SOL；原稿U87称“3号王”。仅有强神声称，具体神职仍未确认。"
     },
     {
       "player_id": "H6-P04",
@@ -125,15 +141,15 @@
       "player_id": "H6-P08",
       "game_id": "H6",
       "seat": 8,
-      "display_name": "8号玩家",
-      "aliases": "",
-      "name_status": "unresolved",
+      "display_name": "大奶强",
+      "aliases": "强",
+      "name_status": "user_confirmed",
       "true_role": "villager",
       "role_status": "inferred",
       "true_camp": "good",
       "camp_status": "inferred",
       "role_evidence": "H6-U046|H6-U072|H6-U093",
-      "notes": "U46轮序及其自述警长票投4号对应8号；U72-73称9号JY为第三人，U76呼应8号发言。U19转录“强”可能指8号，但与12号强神混淆，不强行归昵称。"
+      "notes": "用户明确确认8号昵称为大奶强；原稿“强”作为昵称简称保留。U46及U72–73发言人归属按原轮序证据；平民角色仍为推定。"
     },
     {
       "player_id": "H6-P09",
@@ -8682,10 +8698,10 @@
       "utterance_ids": "H6-U019|H6-U024|H6-U033|H6-U087|H6-U093",
       "timestamps": "09:47|11:43|17:07|44:44|47:12",
       "description": "8号可能被转录为“强”；12号旁白明确强神；3号仅“王”，不能当5号王师傅。",
-      "handling": "3、8显示座位名并标unresolved；不跨局复制姓名。",
-      "status": "open",
-      "reviewer": "",
-      "resolution": ""
+      "handling": "已将3号/8号昵称补为SOL/大奶强并标user_confirmed。原文不改写；角色与阵营证据等级保持原样。",
+      "status": "resolved",
+      "reviewer": "用户",
+      "resolution": "用户在本对话明确确认：3号SOL、8号大奶强（2026-11-27）。"
     },
     {
       "issue_id": "H6-Q003",
@@ -17958,7 +17974,7 @@
       "table": "players",
       "field": "name_status",
       "type": "string",
-      "description_zh": "contextual据语境识别；video_confirmed经视频座位号及姓名栏确认；unresolved未解决。",
+      "description_zh": "contextual据语境识别；video_confirmed经视频座位号及姓名栏确认；unresolved未解决。；user_confirmed为用户明确确认昵称。",
       "missing_value": "空字段；不可直接填0",
       "example": "contextual"
     },
@@ -18662,7 +18678,7 @@
       "table": "review_issues",
       "field": "status",
       "type": "string",
-      "description_zh": "open尚未人工解决。",
+      "description_zh": "open待核查；resolved已根据明确证据或用户确认解决，见reviewer/resolution。",
       "missing_value": "空字段；不可直接填0",
       "example": "open"
     },

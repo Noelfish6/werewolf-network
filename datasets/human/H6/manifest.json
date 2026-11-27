@@ -22,6 +22,22 @@
       "starts_at": "本轮游戏，首夜守卫 JY 自首"
     }
   ],
+  "name_confirmations": [
+    {
+      "seat": 3,
+      "display_name": "SOL",
+      "confirmed_by": "user",
+      "confirmed_on": "2026-11-27",
+      "source": "本对话用户明确提供座位与昵称"
+    },
+    {
+      "seat": 8,
+      "display_name": "大奶强",
+      "confirmed_by": "user",
+      "confirmed_on": "2026-11-27",
+      "source": "本对话用户明确提供座位与昵称"
+    }
+  ],
   "counts": {
     "players": 12,
     "player_status": 48,
