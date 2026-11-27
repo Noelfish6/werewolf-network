@@ -83,7 +83,9 @@
    nodes.select('title').text(p=>name(p.player_id)+(current.out.has(p.player_id)?' · 已出局':'')+(reveal?'\n'+E.roleLabel(p,true):''));
    center.select('.center-label').text(`第 ${current.day} 天`);
    center.select('.center-subtitle').text(`${12-current.out.size} 人在场`);
-   $('#graph-empty').hidden=edges.some(relevant);
+   const hasVisibleEdges=edges.some(relevant);
+   center.attr('visibility',hasVisibleEdges?'visible':'hidden');
+   $('#graph-empty').hidden=hasVisibleEdges;
    if(!$('#graph-empty').hidden)$('#graph-empty .graph-empty-title').textContent=focus?`${seat(focus)}号当前没有可见连线`:'当前没有可见连线';
    $('#clear-focus').hidden=!focus;
    $('#focus-summary').textContent=focus?`${name(focus)} · ${edges.filter(relevant).length} 条可见关系`:'点击玩家聚焦，点击连线查看原话';
