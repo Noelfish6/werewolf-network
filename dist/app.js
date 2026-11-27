@@ -1,6 +1,6 @@
 (() => {
  'use strict';
- const $=s=>document.querySelector(s), data=window.NETWORK_DATA, E=window.NetworkEngine;
+ const $=s=>document.querySelector(s), data=window.NETWORK_DATA&&{...window.NETWORK_DATA,campaign_events:window.CAMPAIGN_EVENTS||[]}, E=window.NetworkEngine;
  if(!window.d3||!data||!E){$('#inspector-content').textContent='页面资源未完整加载，请重新打开完整页面。';return;}
  const frames=E.buildFrames(data), playerById=new Map(data.players.map(p=>[p.player_id,p]));
  const frameIndex=new Map(frames.map((f,i)=>[f.utterance_id,i]));
@@ -28,6 +28,12 @@
 
  function name(id){const p=playerById.get(id);return p?`${p.seat}号 · ${p.display_name}`:'未识别玩家';}
  function seat(id){return playerById.get(id)?.seat||'?';}
+ function campaignLabel(id){
+   const e=current.election;
+   if(id===e.winner)return '警长';
+   if(!e.winner&&e.candidates.includes(id))return e.withdrawn.includes(id)?'已退水':'参选';
+   return '';
+ }
  function quote(edge){return E.quoteForDisplay(edge.quote,edge.utterance_id,reveal);}
  function el(tag,cls,text){const node=document.createElement(tag);if(cls)node.className=cls;if(text!==undefined)node.textContent=text;return node;}
  function toast(text){const n=$('#toast');n.textContent=text;n.classList.add('visible');clearTimeout(toast.timer);toast.timer=setTimeout(()=>n.classList.remove('visible'),2300);}
@@ -67,7 +73,7 @@
      g.append('circle').attr('class','speaker-halo').attr('r',32);
      g.append('circle').attr('class','seat-disc').attr('r',24);
      g.append('text').attr('class','seat-number').text(p=>p.seat);
-     g.append('text').attr('class','player-name');g.append('text').attr('class','role-label');
+     g.append('text').attr('class','player-name');g.append('text').attr('class','role-label');g.append('text').attr('class','campaign-label');
      const out=g.append('g').attr('class','out-indicator').attr('transform','translate(18,18)');
      out.append('circle').attr('class','out-mark').attr('r',7);out.append('path').attr('class','out-cross').attr('d','M-2.5,-2.5 L2.5,2.5 M-2.5,2.5 L2.5,-2.5');
      g.append('title');return g;
@@ -75,12 +81,13 @@
    nodes.attr('transform',p=>{const pos=nodePosition.get(p.player_id);return `translate(${pos.x},${pos.y})`;})
      .classed('selected',p=>p.player_id===focus).classed('is-out',p=>current.out.has(p.player_id))
      .attr('aria-pressed',p=>String(p.player_id===focus))
-     .attr('aria-label',p=>name(p.player_id)+(current.out.has(p.player_id)?'，已出局':'')+(reveal?'，'+E.roleLabel(p,true):'')+'，聚焦关系');
+     .attr('aria-label',p=>name(p.player_id)+(campaignLabel(p.player_id)?'，'+campaignLabel(p.player_id):'')+(current.out.has(p.player_id)?'，已出局':'')+(reveal?'，'+E.roleLabel(p,true):'')+'，聚焦关系');
    nodes.select('.speaker-halo').attr('visibility',p=>p.player_id===current.frame.speaker_id?'visible':'hidden');
    nodes.select('.out-indicator').attr('visibility',p=>current.out.has(p.player_id)?'visible':'hidden');
    nodes.select('.player-name').attr('x',p=>labelPosition(p).x).attr('y',p=>labelPosition(p).y).attr('text-anchor',p=>labelPosition(p).anchor).text(p=>p.display_name);
    nodes.select('.role-label').attr('x',p=>labelPosition(p).x).attr('y',p=>labelPosition(p).y+15).attr('text-anchor',p=>labelPosition(p).anchor).text(p=>E.roleLabel(p,reveal));
-   nodes.select('title').text(p=>name(p.player_id)+(current.out.has(p.player_id)?' · 已出局':'')+(reveal?'\n'+E.roleLabel(p,true):''));
+   nodes.select('.campaign-label').attr('x',p=>labelPosition(p).x).attr('y',p=>labelPosition(p).y-16).attr('text-anchor',p=>labelPosition(p).anchor).text(p=>campaignLabel(p.player_id));
+   nodes.select('title').text(p=>name(p.player_id)+(campaignLabel(p.player_id)?' · '+campaignLabel(p.player_id):'')+(current.out.has(p.player_id)?' · 已出局':'')+(reveal?'\n'+E.roleLabel(p,true):''));
    center.select('.center-label').text(`第 ${current.day} 天`);
    center.select('.center-subtitle').text(`${12-current.out.size} 人在场`);
    const hasVisibleEdges=edges.some(relevant);
@@ -108,6 +115,33 @@
    const line=el('div','source-info');line.append(el('span','',edge.utterance_id));
    const jump=el('button','text-button',`跳到 ${edge.timestamp}`);jump.addEventListener('click',()=>{selectedEdge=null;seek(frameIndex.get(edge.utterance_id));});line.append(jump);return line;
  }
+ function jumpEvidence(event,label){
+   const f=frames[frameIndex.get(event.utterance_id)],button=el('button','text-button',label||`${f.timestamp} 原话`);
+   button.title=event.evidence_quote;button.addEventListener('click',()=>{focus=null;seek(frameIndex.get(event.utterance_id));});return button;
+ }
+ function renderCampaign(){
+   const e=current.election,content=$('#campaign-content');content.replaceChildren();
+   const winnerVotes=e.votes.filter(v=>v.action==='vote'&&Number(v.is_valid)===1&&v.target===e.winner).length;
+   $('#campaign-summary').textContent=e.winner?`${e.candidates.length}人参选 · ${e.withdrawn.length}人退水 · ${seat(e.winner)}号当选（${winnerVotes}票）`:e.candidates.length?`${e.candidates.length}人参选 · 已退水 ${e.withdrawn.length}人`:'尚未开始';
+   if(!e.registration){content.append(el('p','empty-note','回放尚未到报名阶段。'));return;}
+   const row=(label)=>{const r=el('div','campaign-row');r.append(el('span','campaign-row-label',label));content.append(r);return r;};
+   function playerButton(id){const b=el('button','campaign-player',`${seat(id)}号 ${playerById.get(id).display_name}`);b.addEventListener('click',()=>choosePlayer(id));return b;}
+   const candidates=row('参选');for(const id of e.candidates)candidates.append(playerButton(id));candidates.append(jumpEvidence(e.registration));
+   const withdrawn=row('退水');
+   for(const event of [...e.withdrawals].sort((a,b)=>frameOrder.get(a.utterance_id)-frameOrder.get(b.utterance_id))){const f=frames[frameIndex.get(event.utterance_id)];withdrawn.append(jumpEvidence(event,`${seat(event.actor)}号 · ${f.timestamp}`));}
+   if(!e.withdrawals.length)withdrawn.append(el('span','campaign-muted','尚未观察到明确退水'));
+   if(e.winner){
+     const votes=row('选警票');
+     for(const id of e.remaining){const voters=e.votes.filter(v=>v.action==='vote'&&Number(v.is_valid)===1&&v.target===id).map(v=>seat(v.voter));
+       const result=el('span','campaign-result'+(id===e.winner?' elected':''));result.append(playerButton(id),el('strong','',`${voters.length}票`),el('span','campaign-muted',voters.length?`← ${voters.join('、')}号`:'无人投给'));votes.append(result);
+     }
+     const abstain=e.votes.filter(v=>v.action==='abstain').map(v=>seat(v.voter));
+     if(abstain.length)votes.append(el('span','campaign-muted',`${abstain.join('、')}号弃票`));
+     votes.append(jumpEvidence(e.elected,'08:36 选警原话'));
+     content.append(el('p','campaign-note','参选者（包括已退水者）无投票资格；选警票与身份支持分别记录。8号退水由08:36主持汇总确认。'));
+   }else content.append(el('p','campaign-note','只展示当前已公开的信息；退水名单随发言更新。'));
+   if(e.nomination){const r=row('本日归票');r.append(el('span','',`${seat(e.nomination.actor)}号警长 → ${seat(e.nomination.target)}号`),jumpEvidence(e.nomination));}
+ }
  function listEdges(parent,edges,title){
    const heading=el('div','section-label',title);heading.append(el('span','',`${edges.length} 条`));parent.append(heading);
    if(!edges.length){parent.append(el('p','empty-note','当前没有符合条件的关系。可打开其他图层，或查看另一段发言。'));return;}
@@ -132,6 +166,11 @@
    }else if(focus){
      $('#inspector-title').textContent='玩家关系';
      content.append(speakerCard(focus,current.out.has(focus)?'当前已出局，座位仍保留':'当前仍在场'));
+     if(current.election.candidates.includes(focus)){
+       const e=current.election,withdrawal=e.withdrawals.find(k=>k.actor===focus),r=el('div','player-election');
+       r.append(el('strong','',focus===e.winner?'警长竞选 · 当选警长':withdrawal?'警长竞选 · 已退水':e.winner?'警长竞选 · 最终候选':'警长竞选 · 参选'));
+       r.append(jumpEvidence(focus===e.winner?e.elected:withdrawal||e.registration));content.append(r);
+     }
      if(!reveal)content.append(el('p','player-overview','身份信息已隐藏。需要赛后比较时，可开启右上方的赛后视角。'));
      const edges=shownEdges().filter(relevant);
      listEdges(content,edges.filter(e=>e.source===focus),'发出的关系');
@@ -179,7 +218,7 @@
    $('#previous').disabled=cursor===0;$('#next').disabled=cursor===frames.length-1;
    document.querySelectorAll('.day-button').forEach(b=>{b.classList.toggle('active',Number(b.dataset.day)===current.day);b.setAttribute('aria-pressed',String(Number(b.dataset.day)===current.day));});
    cursorLine.attr('x1',scale(cursor)).attr('x2',scale(cursor));
-   renderGraph();renderInspector();
+   renderCampaign();renderGraph();renderInspector();
  }
  function pause(){playing=false;clearTimeout(timer);timer=null;$('#play span').textContent='播放';$('#play use').setAttribute('href','#i-play');$('#play').setAttribute('aria-label','播放后续发言');}
  function schedule(){clearTimeout(timer);if(!playing)return;timer=setTimeout(()=>{if(cursor>=frames.length-1){pause();toast('已到本局结束');return;}cursor++;selectedEdge=null;render();schedule();},1700/Number($('#speed').value));}
@@ -188,6 +227,8 @@
  $('#play').addEventListener('click',()=>playing?pause():start());
  $('#previous').addEventListener('click',()=>seek(cursor-1));$('#next').addEventListener('click',()=>seek(cursor+1));
  $('#timeline').addEventListener('input',event=>seek(event.target.value));
+ $('#jump-campaign').addEventListener('click',()=>{focus=null;$('#campaign-details').open=true;seek(frameIndex.get('H1-U003'));});
+ $('#jump-election').addEventListener('click',()=>{focus=null;$('#campaign-details').open=true;seek(frameIndex.get('H1-U017'));});
  $('#speed').addEventListener('change',schedule);
  $('#restart').addEventListener('click',()=>{pause();cursor=0;selectedEdge=null;focus=null;start();});
  document.querySelectorAll('.day-button').forEach(button=>button.addEventListener('click',()=>seek(E.snapshotIndex(frames,Number(button.dataset.day)))));
@@ -198,7 +239,7 @@
  $('#reset-view').addEventListener('click',()=>{svg.call(zoom.transform,d3.zoomIdentity);});
  svg.on('click.clear',event=>{if(event.target===svg.node()){focus=null;selectedEdge=null;render();}});
  document.addEventListener('keydown',event=>{
-   if(event.target.closest('input,select,textarea,button,[role="button"],dialog')||$('#method-dialog').open)return;
+   if(event.target.closest('input,select,textarea,button,summary,[role="button"],dialog')||$('#method-dialog').open)return;
    if(event.key===' '){event.preventDefault();playing?pause():start();}
    if(event.key==='ArrowLeft'){event.preventDefault();seek(cursor-1);}
    if(event.key==='ArrowRight'){event.preventDefault();seek(cursor+1);}
@@ -219,6 +260,6 @@
  });
  render();pause();
  const narrow=window.matchMedia('(max-width:800px)');
- const resizeCanvas=()=>svg.attr('viewBox',narrow.matches?'80 45 700 650':'0 0 860 740');
+ const resizeCanvas=()=>svg.attr('viewBox',narrow.matches?'80 20 700 675':'0 0 860 740');
  narrow.addEventListener('change',resizeCanvas);resizeCanvas();
 })();

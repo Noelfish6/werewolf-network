@@ -50,7 +50,16 @@
     for(const k of data.key_events){
       if(['exile','night_death'].includes(k.event_type)&&frameOrder.get(k.utterance_id)<=order&&k.target)out.add(k.target);
     }
-    return {frame,index,day,edges,out,alive,ballot,notices,latest};
+    const observed=k=>frameOrder.get(k.utterance_id)<=order;
+    const registration=data.key_events.find(k=>k.event_type==='sheriff_candidates'&&observed(k));
+    const elected=data.key_events.find(k=>k.event_type==='sheriff_elected'&&observed(k));
+    const candidates=registration?registration.value.split('|').map(n=>'H1-P'+n.padStart(2,'0')):[];
+    const withdrawals=(data.campaign_events||[]).filter(k=>k.event_type==='sheriff_withdrawal'&&observed(k)&&candidates.includes(k.actor));
+    const withdrawn=candidates.filter(id=>withdrawals.some(k=>k.actor===id));
+    const nomination=data.key_events.filter(k=>k.event_type==='sheriff_nomination'&&Number(k.day)===day&&observed(k)).at(-1)||null;
+    const election={candidates,withdrawn,remaining:candidates.filter(id=>!withdrawn.includes(id)),winner:elected?.actor||null,
+      votes:data.votes.filter(v=>v.ballot_type==='sheriff'&&observed(v)),registration:registration||null,elected:elected||null,withdrawals,nomination};
+    return {frame,index,day,edges,out,alive,ballot,notices,latest,election};
   }
   function roleLabel(player,reveal){
     if(!reveal)return '';

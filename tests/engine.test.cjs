@@ -3,6 +3,7 @@ const assert=require('node:assert/strict');
 const fs=require('node:fs');
 const path=require('node:path');
 const data=JSON.parse(fs.readFileSync(path.join(__dirname,'../dist/data.js'),'utf8').replace(/^window\.NETWORK_DATA=/,'').replace(/;\s*$/,''));
+data.campaign_events=require('../dist/campaign-events.js');
 const expectedEdges=JSON.parse(fs.readFileSync(path.join(__dirname,'expected-snapshots.json'),'utf8'));
 let engine={};try{engine=require('../dist/engine.js');}catch(e){if(e.code!=='MODULE_NOT_FOUND')throw e;}
 function ready(){assert.equal(typeof engine.buildFrames,'function','replay model must exist');return engine.buildFrames(data);}
@@ -51,4 +52,34 @@ test('final narrator identities are gated in both the speech and ballot evidence
  assert.equal(engine.quoteForDisplay(vote.evidence_quote,vote.utterance_id,false).includes('五号狼同伴'),false);
  const claim=data.utterances.find(u=>u.utterance_id==='H1-U032');
  assert.equal(engine.quoteForDisplay(claim.raw_text,claim.utterance_id,false),claim.raw_text);
+});
+test('sheriff election reveals registration and withdrawals only when observed',()=>{
+ const frames=ready(),at=id=>engine.stateAt(data,frames,frames.findIndex(f=>f.utterance_id==='H1-'+id)).election;
+ assert.ok(at('U003'),'election state must exist');
+ assert.deepEqual(at('U003').candidates,['H1-P01','H1-P03','H1-P07','H1-P08','H1-P10','H1-P11','H1-P12']);
+ assert.deepEqual(at('U003').withdrawn,[]);assert.equal(at('U003').winner,null);
+ assert.deepEqual(at('U006').withdrawn,['H1-P07']);
+ assert.deepEqual(at('U010').withdrawn,['H1-P07','H1-P10']);
+ assert.deepEqual(at('U016').withdrawn,['H1-P07','H1-P10','H1-P12']);
+ assert.equal(at('U016').winner,null);assert.deepEqual(at('U016').votes,[]);
+ assert.deepEqual(at('U017').withdrawn,['H1-P07','H1-P08','H1-P10','H1-P12']);
+ assert.deepEqual(at('U017').remaining,['H1-P01','H1-P03','H1-P11']);
+ assert.equal(at('U017').winner,'H1-P11');
+ assert.deepEqual(at('U017').votes.filter(v=>v.action==='vote').map(v=>[v.voter,v.target]),[['H1-P02','H1-P11'],['H1-P05','H1-P11'],['H1-P06','H1-P11'],['H1-P09','H1-P01']]);
+ assert.deepEqual(at('U006').withdrawn,['H1-P07']);assert.equal(at('U006').winner,null);
+});
+test('sheriff persists across days while nomination follows the current day',()=>{
+ const frames=ready(),at=id=>engine.stateAt(data,frames,frames.findIndex(f=>f.utterance_id==='H1-'+id));
+ const d2=at('U051');assert.equal(d2.election.winner,'H1-P11');assert.equal(d2.election.nomination,null);assert.equal(d2.ballot,'');
+ assert.equal(at('U047').election.nomination.target,'H1-P01');
+ assert.equal(at('U076').election.nomination.target,'H1-P09');
+ assert.equal(at('U096').election.nomination.target,'H1-P08');
+});
+test('withdrawals retain exact source evidence without assigning the unknown voice',()=>{
+ const utterances=new Map(data.utterances.map(u=>[u.utterance_id,u]));
+ for(const event of data.campaign_events){
+  const u=utterances.get(event.utterance_id);assert.ok(u.raw_text.includes(event.evidence_quote));
+  if(event.fact_status==='player_announced')assert.equal(event.actor,u.speaker_id);
+ }
+ assert.equal(data.campaign_events.find(e=>e.actor==='H1-P08').utterance_id,'H1-U017');
 });
