@@ -84,7 +84,7 @@
    center.select('.center-label').text(`第 ${current.day} 天`);
    center.select('.center-subtitle').text(`${12-current.out.size} 人在场`);
    $('#graph-empty').hidden=edges.some(relevant);
-   if(!$('#graph-empty').hidden)$('#graph-empty').firstChild.textContent=focus?`${seat(focus)}号当前没有可见连线`:'当前没有可见连线';
+   if(!$('#graph-empty').hidden)$('#graph-empty .graph-empty-title').textContent=focus?`${seat(focus)}号当前没有可见连线`:'当前没有可见连线';
    $('#clear-focus').hidden=!focus;
    $('#focus-summary').textContent=focus?`${name(focus)} · ${edges.filter(relevant).length} 条可见关系`:'点击玩家聚焦，点击连线查看原话';
    styleEdges();

@@ -35,7 +35,7 @@
     </fieldset>
     <div class="canvas-actions"><button id="reset-view" class="icon-button" aria-label="重置图形视图" title="重置图形视图"><svg class="icon"><use href="#i-reset"/></svg></button><button id="export-svg" class="icon-button" aria-label="下载当前网络图" title="下载 SVG 网络图"><svg class="icon"><use href="#i-download"/></svg></button></div>
    </div>
-   <div class="graph-wrap"><svg id="network" viewBox="0 0 860 740" role="group" aria-label="12位玩家的有向关系网络，节点可用键盘选择"><title>狼人杀关系网络</title><desc>玩家按座位号顺时针排列。选择玩家可以聚焦关系，选择连线可以查看原话。</desc></svg><div id="graph-empty" class="graph-empty" hidden>当前没有可见连线<span>打开关系图层，或拖动时间线查看其他发言。</span></div></div>
+   <div class="graph-wrap"><svg id="network" viewBox="0 0 860 740" role="group" aria-label="12位玩家的有向关系网络，节点可用键盘选择"><title>狼人杀关系网络</title><desc>玩家按座位号顺时针排列。选择玩家可以聚焦关系，选择连线可以查看原话。</desc></svg><div id="graph-empty" class="graph-empty" hidden><div class="graph-empty-line"><span class="graph-empty-title">当前没有可见连线</span></div><div class="graph-empty-line"><span class="graph-empty-hint">打开关系图层，或拖动时间线查看其他发言。</span></div></div></div>
    <div class="graph-footer"><span id="focus-summary">点击玩家聚焦，点击连线查看原话</span><button id="clear-focus" class="text-button" hidden>显示所有玩家</button><span class="graph-hint">滚轮缩放 · 拖动平移</span></div>
   </section>
   <aside class="inspector" aria-label="发言与关系证据">
