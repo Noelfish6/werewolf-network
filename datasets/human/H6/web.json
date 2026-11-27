@@ -1998,14 +1998,14 @@
       "source_line_start": 180,
       "source_line_end": 181,
       "day": 1,
-      "phase": "setup",
+      "phase": "last_words",
       "speaker_id": "",
       "speaker_seat": "",
       "speaker_kind": "host",
       "speaker_resolution": "host",
       "public_prevote": 0,
       "coding_disposition": "no_explicit_identity_relation",
-      "notes": ""
+      "notes": "主持确认上一段撕毁警徽，属于当日离场程序，不是新开场。"
     },
     {
       "utterance_id": "H6-U058",
@@ -8235,7 +8235,7 @@
       "key_event_id": "H6-K041",
       "game_id": "H6",
       "day": 1,
-      "phase": "setup",
+      "phase": "last_words",
       "timestamp": "31:52",
       "utterance_id": "H6-U057",
       "event_type": "sheriff_badge_destroyed",

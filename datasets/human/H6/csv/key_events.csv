@@ -39,7 +39,7 @@ H6-K037,H6,1,discussion,30:36,H6-U052,sheriff_nomination,H6-P07,H6-P04,警长归
 H6-K038,H6,1,exile_ballot,30:37,H6-U053,sheriff_nomination,H6-P07,H6-P04,主持复述警长归票4号,host_confirmed,警长归票 4 号,168,
 H6-K039,H6,1,exile_ballot,30:37,H6-U053,exile,,H6-P07,首日投票放逐7号,host_confirmed,7 号玩家出局,168,
 H6-K040,H6,1,last_words,31:51,H6-U056,sheriff_badge_destroyed,H6-P07,,7号宣布撕毁警徽、不移交,player_announced,撕了。,177,
-H6-K041,H6,1,setup,31:52,H6-U057,sheriff_badge_destroyed,H6-P07,,主持确认警徽作废，之后无警长,host_confirmed,警徽作废,180,
+H6-K041,H6,1,last_words,31:52,H6-U057,sheriff_badge_destroyed,H6-P07,,主持确认警徽作废，之后无警长,host_confirmed,警徽作废,180,
 H6-K042,H6,2,night_result,32:14,H6-U058,night_death,,H6-P02,第二夜死亡；死因主持未区分,host_confirmed,昨晚 2 号、 11 号玩家被害,183,
 H6-K043,H6,2,night_result,32:14,H6-U058,night_death,,H6-P11,第二夜死亡；死因主持未区分,host_confirmed,昨晚 2 号、 11 号玩家被害,183,
 H6-K044,H6,2,self_explosion,32:43,H6-U061,self_explosion,H6-P05,H6-P05,主动宣布自爆,player_announced,那我爆。,192,

@@ -70,3 +70,9 @@ test('speech praise, agreement with judgments and inspection plans are not ident
  }
  const direct=games.find(g=>g.game_id==='H3').data.relation_events.filter(r=>r.utterance_order===8&&r.relation==='support');assert.ok(direct.some(r=>r.main_eligible===1));
 });
+test('public badge and departure events always have a replayable source segment',()=>{
+ for(const {game_id,data} of games){
+  const frames=new Set(E.buildFrames(data).map(f=>f.utterance_id));
+  for(const event of data.key_events.filter(k=>['sheriff_elected','sheriff_transfer','sheriff_badge_destroyed','night_death','exile','self_explosion','skill_death'].includes(k.event_type)))assert.ok(frames.has(event.utterance_id),`${game_id} ${event.event_type} ${event.utterance_id}`);
+ }
+});

@@ -604,9 +604,10 @@
     {
       "u": 57,
       "day": 1,
-      "phase": "setup",
+      "phase": "last_words",
       "speaker": 0,
-      "speaker_kind": "host"
+      "speaker_kind": "host",
+      "notes": "主持确认上一段撕毁警徽，属于当日离场程序，不是新开场。"
     },
     {
       "u": 58,

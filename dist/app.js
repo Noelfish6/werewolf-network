@@ -122,8 +122,9 @@
    const jump=el('button','text-button',`跳到 ${edge.timestamp}`);jump.addEventListener('click',()=>{selectedEdge=null;seek(frameIndex.get(edge.utterance_id));});line.append(jump);return line;
  }
  function jumpEvidence(event,label){
-   const f=frames[frameIndex.get(event.utterance_id)],button=el('button','text-button',label||`${f.timestamp} 原话`);
-   button.title=event.evidence_quote;button.addEventListener('click',()=>{focus=null;seek(frameIndex.get(event.utterance_id));});return button;
+   const f=data.utterances.find(u=>u.utterance_id===event.utterance_id),index=frameIndex.get(event.utterance_id);
+   const button=el('button','text-button',label||`${f?.timestamp||event.timestamp} 原话`);button.disabled=index===undefined;
+   button.title=event.evidence_quote;button.addEventListener('click',()=>{focus=null;seek(index);});return button;
  }
  function renderCampaign(){
    const e=current.election,content=$('#campaign-content');content.replaceChildren();
